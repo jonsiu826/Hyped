@@ -5,7 +5,8 @@ class SessionForm extends React.Component {
         super(props);
         this.state = {
             username: "",
-            password: ""
+            password: "",
+            errors: []
         };
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -13,18 +14,24 @@ class SessionForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
-        this.props.processForm(user);
+        this.props.processForm(user).then(
+            () => this.props.history.push("/")
+        ).fail(() => this.setState({errors: this.props.errors}))
     }
 
-    handleInput(type){
+    handleInput(type) {
         return (e) => {
-            this.setState({[type]: e.target.value});
+            this.setState({ [type]: e.target.value });
         }
     }
 
-    render(){
+    render() {
+
+        let errors = this.props.errors.map((el, idx) => {
+            return <li key={idx}>{el}</li>
+        })
         let link
-        if (this.props.formtype === "login"){
+        if (this.props.formtype === "login") {
             link = (
                 <div>
                     <h1> Login! </h1>
@@ -42,30 +49,23 @@ class SessionForm extends React.Component {
                 </div>
             )
         }
-        debugger
-        return(
-
-            <div>
-                    {this.props.errors.map(errors => {
-                        return 
-                            <div>
-                                {errors}
-                            </div>
-            
-                    })}
+        
+        return (
+           <div> 
                 <p> {link} </p>
                 <form onSubmit={this.handleSubmit}>
-                    <label> Username 
-                        <input type="text" value={this.state.username} onChange={this.handleInput('username')}/>
+                    <label> Username
+                        <input type="text" value={this.state.username} onChange={this.handleInput('username')} />
                     </label>
                     <label>Password
-                        <input type="password" value={this.state.password} onChange={this.handleInput('password')}/>  
+                        <input type="password" value={this.state.password} onChange={this.handleInput('password')} />
                     </label>
+                    {errors}
                     <button onClick={this.handleSubmit}> {this.props.formType} </button>
                 </form>
             </div> 
         )
-        
+
 
     }
 

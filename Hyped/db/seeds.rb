@@ -14,3 +14,8 @@ u2 = User.create!(
   username: 'username',
   password: 'password'
 )
+
+u3 = User.create!(
+  username: 'jon',
+  password: 'password'
+)
