@@ -12,13 +12,16 @@ class SessionForm extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    handleSubmit(e) {
 
-        e.preventDefault();
-        const user = Object.assign({}, this.state);
-        this.props.processForm(user).then(() => this.props.history.push("/")).fail(() => {
-            this.setState({ errors: this.props.errors })
-        })
+        handleSubmit(e) {
+            e.preventDefault();
+            const user = Object.assign({}, this.state);
+            this.props.processForm(user).then(() => {
+                this.props.closeModal()
+                this.props.history.push("/")
+            }).fail(() => {
+                this.setState({ errors: this.props.errors })
+            })
         //     this.setState({ email: "", username: "", password: "" });
     }
 
@@ -52,19 +55,19 @@ class SessionForm extends React.Component {
         //         </div>
         //     )
         // }
-        let link
-        if (this.props.formType === 'signup')
-        link = (
-            <Link to="/login">Already have an account? Login now!</Link>
-        )
-        if (this.props.formType === 'login')
-        link = (
-            <Link to="/signup">Don't have an account? Sign up now!</Link>
-        )
+        // let link
+        // if (this.props.formType === 'signup')
+        // link = (
+        //     <Link to="/login">Already have an account? Login now!</Link>
+        // )
+        // if (this.props.formType === 'login')
+        // link = (
+        //     <Link to="/signup">Don't have an account? Sign up now!</Link>
+        // )
         
         return (
            <div> 
-                <p> {link} </p>
+                
                 <form onSubmit={this.handleSubmit}>
                     <label> Username
                         <input type="text" value={this.state.username} onChange={this.handleInput('username')} />
