@@ -1,5 +1,5 @@
 import React from 'react'
-import {link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 class SessionForm extends React.Component {
     constructor(props) {
@@ -33,25 +33,34 @@ class SessionForm extends React.Component {
         let errors = this.state.errors.map((el, idx) => {
             return <li key={idx}>{el}</li>
         })
+        // let link
+        // if (this.props.formtype === "login") {
+        //     link = (
+        //         <div>
+        //             <h1> Login! </h1>
+        //             <Link to="./signup">link to signup</Link>
+        //         </div>
+        //     )
+        // }
+
+
+        // if (this.props.formtype === "signup") {
+        //     link = (
+        //         <div>
+        //             <h1> SignUp! </h1>
+        //             <Link to="./login">link to login</Link>
+        //         </div>
+        //     )
+        // }
         let link
-        if (this.props.formtype === "login") {
-            link = (
-                <div>
-                    <h1> Login! </h1>
-                    <Link to="./signup">link to signup</Link>
-                </div>
-            )
-        }
-
-
-        if (this.props.formtype === "signup") {
-            link = (
-                <div>
-                    <h1> SignUp! </h1>
-                    <Link to="./login">link to login</Link>
-                </div>
-            )
-        }
+        if (this.props.formType === 'signup')
+        link = (
+            <Link to="/login">Already have an account? Login now!</Link>
+        )
+        if (this.props.formType === 'login')
+        link = (
+            <Link to="/signup">Don't have an account? Sign up now!</Link>
+        )
         
         return (
            <div> 

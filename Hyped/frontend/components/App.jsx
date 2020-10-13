@@ -6,10 +6,11 @@ import SignupFormContainer from './sessions/signup_form_container'
 
 const App = () => (
     <div>
+        
         <header>
             <h1>Welcome to Hyped</h1>
-            {/* <Route exact path="/" component={GreetingContainer} /> */}
-            <GreetingContainer/>
+            <Route exact path="/" component={GreetingContainer} />
+
         </header>
 
         <Route path="/login" component={LoginFormContainer} />
