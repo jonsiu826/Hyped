@@ -1,4 +1,5 @@
 import React from 'react'
+import {link} from 'react-router-dom'
 
 class SessionForm extends React.Component {
     constructor(props) {
@@ -12,11 +13,13 @@ class SessionForm extends React.Component {
     }
 
     handleSubmit(e) {
+
         e.preventDefault();
         const user = Object.assign({}, this.state);
-        this.props.processForm(user).then(
-            () => this.props.history.push("/")
-        ).fail(() => this.setState({errors: this.props.errors}))
+        this.props.processForm(user).then(() => this.props.history.push("/")).fail(() => {
+            this.setState({ errors: this.props.errors })
+        })
+        //     this.setState({ email: "", username: "", password: "" });
     }
 
     handleInput(type) {
@@ -27,7 +30,7 @@ class SessionForm extends React.Component {
 
     render() {
 
-        let errors = this.props.errors.map((el, idx) => {
+        let errors = this.state.errors.map((el, idx) => {
             return <li key={idx}>{el}</li>
         })
         let link

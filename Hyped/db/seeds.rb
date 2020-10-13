@@ -7,15 +7,30 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 User.delete_all
 u1 = User.create!(
-  username: 'guest',
+  username: 'jon',
   password: 'password'
 )
 u2 = User.create!(
-  username: 'username',
+  username: 'Chrisenpai',
   password: 'password'
 )
 
 u3 = User.create!(
-  username: 'jon',
+  username: 'DJ JD',
+  password: 'password'
+)
+
+u4 = User.create!(
+  username: 'TreeTop',
+  password: 'password'
+)
+
+u5 = User.create!(
+  username: 'PeterMax',
+  password: 'password'
+)
+
+u3 = User.create!(
+  username: 'WackyJacky ',
   password: 'password'
 )
