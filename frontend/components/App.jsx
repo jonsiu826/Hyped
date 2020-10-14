@@ -18,15 +18,13 @@ const App = () => (
         <Modal />
         <header>
             <Link to="/" className="header-link"></Link>
-              
-                <HeaderContainer/>
-               
-                <Route exact path="/" component={GreetingContainer} />
+                <HeaderContainer/> 
+                {/* <Route exact path="/" component={GreetingContainer} /> */}
          {/* <GreetingContainer /> */}
         </header>
 
-        {/* <Route path="/login" component={LoginFormContainer} />
-        <Route path="/signup" component={SignupFormContainer} /> */}
+        <Route path="/login" component={LoginFormContainer} />
+        <Route path="/signup" component={SignupFormContainer} />
     </div>
 )
 

@@ -19,7 +19,7 @@ class SessionForm extends React.Component {
             const user = Object.assign({}, this.state);
             this.props.processForm(user).then(() => {
                 this.props.closeModal()
-                // this.props.history.push("/")
+                this.props.history.push("/")
             }).fail(() => {
                 this.setState({ errors: this.props.errors })
             })
@@ -59,7 +59,7 @@ class SessionForm extends React.Component {
                         this.props.demoLogin(demo).then(
                             () => {
                                 this.props.closeModal()
-                                // this.props.history.push("/home")
+                                this.props.history.push("/home")
                             })
                     }
                 }, speed);
@@ -73,7 +73,7 @@ class SessionForm extends React.Component {
             return <li key={idx}>{el}</li>
         })
       
-        let link
+        let links
         if (this.props.formType === 'signup')
         link = (
             <Link to="/login">Already have an account? Login now!</Link>
@@ -95,6 +95,7 @@ class SessionForm extends React.Component {
                         <input type="password" value={this.state.password} placeholder="Password" onChange={this.handleInput('password')} />
                     </label>
                     {errors}
+                    {links}
                     <div>
                         <button className="button" onClick={this.handleSubmit}> {this.props.formType} </button>
                         <button className="button" onClick={this.demoLogin}>Demo Login</button>

@@ -11,9 +11,15 @@ class Greeting extends React.Component {
 
         const sessionLinks = (
             <nav className="login-signup">
-                <button onClick={() => this.props.openModal('login')}>Login</button>
-            &nbsp;or&nbsp;
-                <button onClick={() => this.props.openModal('signup')}>Signup</button>
+                <div>
+                    {/* <button onClick={() => this.props.openModal('login')}>Login</button> */}
+                    <Link to="/login" onClick={this.props.closeModal}>Login </Link>
+
+                </div>
+                <div>
+                    <Link to="/signup" onClick={this.props.closeModal}>SignUp </Link>
+                </div>
+
             </nav>
         );
 
@@ -29,13 +35,13 @@ class Greeting extends React.Component {
 
 
 
-        let notLoggedIn = (
-            <div className="loginSignup">
-                <Link to="/login">Login </Link>
-                <Link to="/signup">Signup</Link>
-            </div>
+        // let notLoggedIn = (
+        //     <div className="loginSignup">
+        //         <Link to="/login">Login </Link>
+        //         <Link to="/signup">Signup</Link>
+        //     </div>
 
-        )
+        // )
 
         return (
             this.props.currentUser ? welcome : sessionLinks
