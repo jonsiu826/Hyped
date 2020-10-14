@@ -59,7 +59,7 @@ class SessionForm extends React.Component {
                         this.props.demoLogin(demo).then(
                             () => {
                                 this.props.closeModal()
-                                this.props.history.push("/home")
+                                this.props.history.push("/")
                             })
                     }
                 }, speed);

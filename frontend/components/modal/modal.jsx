@@ -13,7 +13,7 @@ function Modal({ modal, closeModal }) {
     switch (modal) {
         case 'login_signup':
             component = <GreetingContainer />;
-            break;
+            // break;
         // case 'signup':
         //     component = <SignupFormContainer />;
         //     break;
