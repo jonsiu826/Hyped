@@ -73,15 +73,15 @@ class SessionForm extends React.Component {
             return <li key={idx}>{el}</li>
         })
       
-        // let link
-        // if (this.props.formType === 'signup')
-        // link = (
-        //     <Link to="/login">Already have an account? Login now!</Link>
-        // )
-        // if (this.props.formType === 'login')
-        // link = (
-        //     <Link to="/signup">Don't have an account? Sign up now!</Link>
-        // )
+        let link
+        if (this.props.formType === 'signup')
+        link = (
+            <Link to="/login">Already have an account? Login now!</Link>
+        )
+        if (this.props.formType === 'login')
+        link = (
+            <Link to="/signup">Don't have an account? Sign up now!</Link>
+        )
         
         return (
            <div className="session-wrapper"> 

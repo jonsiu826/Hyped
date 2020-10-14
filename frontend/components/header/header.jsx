@@ -13,25 +13,21 @@ class Header extends React.Component{
         return(
             <nav className="header-nav">
                 <h1 className="header-logo">
-                    <a href="#">H Y P E D</a>
+                    <a href="#">HYPED</a>
                 </h1>
                 <ul className="header-list">
                     <li>
-                        <span className="nav-links">Discover</span>
+                        <span className="header-discover">Discover</span>
                     </li>
                     <br />
                     <li>
-                        <span className="nav-links">Shop All</span>
+                        <span className="header-shopall">Shop All</span>
                     </li>
                     <li>
-                        <a href="#">
-                            <span className="nav-links"><i className="fas fa-search"></i></span>
-                        </a>
+                        <span className="header-search">🔍</span>
                     </li>
                     <li>
-                        <a href="#">
-                            <span><i className="fas fa-bars" id="menu-icon"></i></span>
-                        </a>
+                        <span className="header-bars">≡</span>
                     </li>
                 </ul>
             </nav>

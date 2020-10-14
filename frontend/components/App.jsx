@@ -18,7 +18,7 @@ const App = () => (
         <Modal />
         <header>
             <Link to="/" className="header-link"></Link>
-                
+              
                 <HeaderContainer/>
                
                 <Route exact path="/" component={GreetingContainer} />
