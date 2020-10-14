@@ -11,21 +11,20 @@
 .modal-child {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 94%;
   transform: translate(-50%, -50%);
 }
 
 .session-form {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   background-color: palegreen;
-  vertical-align: center;
+  flex-direction: column;
   // height: 700px
 }
 
 .loginsignupbuttons{
   display: flex;
-  justify-content: left;
 }
 
 .modal-content {
@@ -35,6 +34,10 @@
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
-  height: 700px;
-  // vertical-align: center;
+  height: 800px;
+  vertical-align: right;
+}
+
+.button{
+  width: 100%
 }

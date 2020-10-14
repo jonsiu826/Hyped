@@ -84,20 +84,20 @@ class SessionForm extends React.Component {
         // )
         
         return (
-           <div> 
+           <div className="session-wrapper"> 
                 
                 <form onSubmit={this.handleSubmit} className="session-form">
                     <label> Username
-                        <input type="text" value={this.state.username} onChange={this.handleInput('username')} />
+                        <input type="text" value={this.state.username} placeholder="Username" onChange={this.handleInput('username')} />
                     </label>
                     <br/>
                     <label>Password
-                        <input type="password" value={this.state.password} onChange={this.handleInput('password')} />
+                        <input type="password" value={this.state.password} placeholder="Password" onChange={this.handleInput('password')} />
                     </label>
                     {errors}
-                    <div className="loginsignupbuttons">
-                        <button onClick={this.handleSubmit}> {this.props.formType} </button>
-                        <button onClick={this.demoLogin}>Demo Login</button>
+                    <div>
+                        <button className="button" onClick={this.handleSubmit}> {this.props.formType} </button>
+                        <button className="button" onClick={this.demoLogin}>Demo Login</button>
                     </div>
                 </form>
             </div> 

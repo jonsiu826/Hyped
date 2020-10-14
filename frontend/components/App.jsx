@@ -4,6 +4,7 @@ import LoginFormContainer from './sessions/login_form_container';
 import SignupFormContainer from './sessions/signup_form_container';
 import { Provider } from 'react-redux';
 import Modal from './modal/modal';
+import HeaderContainer from './header/header_container'
 import {
     Route,
     Redirect,
@@ -17,8 +18,9 @@ const App = () => (
         <Modal />
         <header>
             <Link to="/" className="header-link"></Link>
-                <h1>H Y P E D</h1>
                 
+                <HeaderContainer/>
+               
                 <Route exact path="/" component={GreetingContainer} />
          {/* <GreetingContainer /> */}
         </header>
