@@ -7,7 +7,7 @@ import React from 'react';
 const mapStateToProps = (state, ownProps) => {
 
     return {
-        formType: 'signup',
+        formType: 'SignUp',
         errors: state.errors.session
     }
 
@@ -21,7 +21,8 @@ const mapDispatchToProps = (dispatch, ownProps) => {
                 Login
             </button>
         ),
-        closeModal: () => dispatch(closeModal())
+        closeModal: () => dispatch(closeModal()),
+        demoLogin: (user) => dispatch(login(user))
     };
 }
 

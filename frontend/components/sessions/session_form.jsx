@@ -10,6 +10,7 @@ class SessionForm extends React.Component {
             errors: []
         };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.demoLogin = this.demoLogin.bind(this);
     }
 
 
@@ -18,7 +19,7 @@ class SessionForm extends React.Component {
             const user = Object.assign({}, this.state);
             this.props.processForm(user).then(() => {
                 this.props.closeModal()
-                this.props.history.push("/")
+                // this.props.history.push("/")
             }).fail(() => {
                 this.setState({ errors: this.props.errors })
             })
@@ -31,30 +32,47 @@ class SessionForm extends React.Component {
         }
     }
 
+    demoLogin(e) {
+        e.preventDefault()
+        const demo = { username: "demo_user", password: "password" }
+        const speed = 100;
+
+        if (this.state.username !== demo.username) {
+            const inputUsername = setInterval(() => {
+                if (this.state.username !== demo.username) {
+                    const temp = demo.username.slice(0, this.state.username.length + 1);
+                    this.setState({ username: temp })
+                } else {
+                    clearInterval(inputUsername);
+                    animatePW();
+                }
+            }, speed)
+        }
+        const animatePW = () => {
+            if (this.state.password !== demo.password) {
+                const inputPassword = setInterval(() => {
+                    if (this.state.password !== demo.password) {
+                        const temp = demo.password.slice(0, this.state.password.length + 1);
+                        this.setState({ password: temp });
+                    } else {
+                        clearInterval(inputPassword);
+                        this.props.demoLogin(demo).then(
+                            () => {
+                                this.props.closeModal()
+                                // this.props.history.push("/home")
+                            })
+                    }
+                }, speed);
+            }
+        }
+    }
+
     render() {
 
         let errors = this.state.errors.map((el, idx) => {
             return <li key={idx}>{el}</li>
         })
-        // let link
-        // if (this.props.formtype === "login") {
-        //     link = (
-        //         <div>
-        //             <h1> Login! </h1>
-        //             <Link to="./signup">link to signup</Link>
-        //         </div>
-        //     )
-        // }
-
-
-        // if (this.props.formtype === "signup") {
-        //     link = (
-        //         <div>
-        //             <h1> SignUp! </h1>
-        //             <Link to="./login">link to login</Link>
-        //         </div>
-        //     )
-        // }
+      
         // let link
         // if (this.props.formType === 'signup')
         // link = (
@@ -68,15 +86,19 @@ class SessionForm extends React.Component {
         return (
            <div> 
                 
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={this.handleSubmit} className="session-form">
                     <label> Username
                         <input type="text" value={this.state.username} onChange={this.handleInput('username')} />
                     </label>
+                    <br/>
                     <label>Password
                         <input type="password" value={this.state.password} onChange={this.handleInput('password')} />
                     </label>
                     {errors}
-                    <button onClick={this.handleSubmit}> {this.props.formType} </button>
+                    <div className="loginsignupbuttons">
+                        <button onClick={this.handleSubmit}> {this.props.formType} </button>
+                        <button onClick={this.demoLogin}>Demo Login</button>
+                    </div>
                 </form>
             </div> 
         )

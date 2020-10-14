@@ -30,7 +30,7 @@ class Greeting extends React.Component {
 
 
         let notLoggedIn = (
-            <div>
+            <div className="loginSignup">
                 <Link to="/login">Login </Link>
                 <Link to="/signup">Signup</Link>
             </div>

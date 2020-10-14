@@ -14,3 +14,27 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.session-form {
+  display: flex;
+  justify-content: center;
+  background-color: palegreen;
+  vertical-align: center;
+  // height: 700px
+}
+
+.loginsignupbuttons{
+  display: flex;
+  justify-content: left;
+}
+
+.modal-content {
+  display: flex;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  height: 700px;
+  // vertical-align: center;
+}

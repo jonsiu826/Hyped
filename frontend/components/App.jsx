@@ -17,7 +17,7 @@ const App = () => (
         <Modal />
         <header>
             <Link to="/" className="header-link"></Link>
-                <h1>Welcome to Hyped</h1>
+                <h1>H Y P E D</h1>
                 
                 <Route exact path="/" component={GreetingContainer} />
          {/* <GreetingContainer /> */}
