@@ -15,10 +15,10 @@ import {
 
 const App = () => (
     <div>
-        <Modal />
-        <header>
-            <Link to="/" className="header-link"></Link>
+        <Modal/>
                 <HeaderContainer/> 
+        <header>
+            {/* <Link to="/" className="header-link"></Link> */}
                 {/* <Route exact path="/" component={GreetingContainer} /> */}
          {/* <GreetingContainer /> */}
         </header>

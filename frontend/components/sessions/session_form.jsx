@@ -59,7 +59,7 @@ class SessionForm extends React.Component {
                         this.props.demoLogin(demo).then(
                             () => {
                                 this.props.closeModal()
-                                this.props.history.push("/home")
+                                this.props.history.push("/")
                             })
                     }
                 }, speed);
@@ -75,11 +75,11 @@ class SessionForm extends React.Component {
       
         let links
         if (this.props.formType === 'signup')
-        link = (
+        links = (
             <Link to="/login">Already have an account? Login now!</Link>
         )
         if (this.props.formType === 'login')
-        link = (
+        links = (
             <Link to="/signup">Don't have an account? Sign up now!</Link>
         )
         
