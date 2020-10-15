@@ -13,7 +13,7 @@ class Header extends React.Component{
         return(
             <nav className="header-nav">
                 <div>
-                    <Link className="header-logo" to="/" href="#">H Y P E D</Link>
+                    <Link className="header-logo" to="/" href="#">HYPED</Link>
                 </div>
                 
                 <ul className="header-list">

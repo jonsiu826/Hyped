@@ -34,11 +34,40 @@
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 250px; /* Could be more or less, depending on screen size */
+  width: 450px; /* Could be more or less, depending on screen size */
   height: 900px;
   vertical-align: right;
 }
 
 .button{
   width: 100%
+}
+
+.login-signup{
+  display: flex;
+  align-content: center;
+}
+
+.logingreeting{
+  
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-right: 1px solid gray;
+    padding: 5px 5px 5px 5px;
+    color: black;
+}
+
+.signupgreeting{
+  
+   color: black;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 5px 5px 5px 5px;
+}
+
+.logingreeting,
+.signupgreeting{
+  text-decoration: underline;
 }

@@ -85,6 +85,9 @@ class SessionForm extends React.Component {
         
         return (
            <div className="session-wrapper"> 
+                <div>
+                    <img src={Jordan1} />
+                </div>
                 
                 <form onSubmit={this.handleSubmit} className="session-form">
                     <label> Username

@@ -13,11 +13,12 @@ class Greeting extends React.Component {
             <nav className="login-signup">
                 <div>
                     {/* <button onClick={() => this.props.openModal('login')}>Login</button> */}
-                    <Link to="/login" onClick={this.props.closeModal}>Login </Link>
+                    <Link className="logingreeting" to="/login" onClick={this.props.closeModal}>Login </Link>
 
                 </div>
+                <br/>
                 <div>
-                    <Link to="/signup" onClick={this.props.closeModal}>SignUp </Link>
+                    <Link className="signupgreeting" to="/signup" onClick={this.props.closeModal}>SignUp </Link>
                 </div>
 
             </nav>
