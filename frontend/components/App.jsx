@@ -5,6 +5,8 @@ import SignupFormContainer from './sessions/signup_form_container';
 import { Provider } from 'react-redux';
 import Modal from './modal/modal';
 import HeaderContainer from './header/header_container'
+import {AuthRoute} from '../util/route_util';
+import ProductContainer from './products/product_container'
 import {
     Route,
     Redirect,
@@ -21,10 +23,13 @@ const App = () => (
             {/* <Link to="/" className="header-link"></Link> */}
         </header>
                 {/* <Route exact path="/" component={GreetingContainer} /> */}
-        <switch>
-            <Route path="/login" component={LoginFormContainer} />
-            <Route path="/signup" component={SignupFormContainer} />
-        </switch>
+        <Switch>
+            <AuthRoute exact path="/login" component={LoginFormContainer} />
+            <AuthRoute exact path="/signup" component={SignupFormContainer} />
+            {/* <Route exact path="/" component={HomeContainer} /> */}
+            <Route exact path="/" component={ProductContainer}/>
+            <Redirect to="/"></Redirect>
+        </Switch>
     </div>
 )
 
