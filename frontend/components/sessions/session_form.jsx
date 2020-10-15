@@ -74,12 +74,14 @@ class SessionForm extends React.Component {
         })
       
         let links
-        if (this.props.formType === 'signup')
+        if (this.props.formType === 'SignUp')
+        
         links = (
             <Link to="/login">Already have an account? Login now!</Link>
         )
-        if (this.props.formType === 'login')
+        if (this.props.formType === 'Login')
         links = (
+            
             <Link to="/signup">Don't have an account? Sign up now!</Link>
         )
         
@@ -91,15 +93,16 @@ class SessionForm extends React.Component {
                 <div className="session-form">
                     <form onSubmit={this.handleSubmit} className="session-form">
                         <h1 className="session-title"> {this.props.formType}</h1>
-                        <label> Username
-                            <input type="text" value={this.state.username} placeholder="Username" onChange={this.handleInput('username')} />
+                        <nav className="extralink">{links}</nav>
+                        <label className="field-label-username"> 
+                            <input className="input-bar" type="text" value={this.state.username} placeholder="Username" onChange={this.handleInput('username')} />
                         </label>
                         <br/>
-                        <label>Password
-                            <input type="password" value={this.state.password} placeholder="Password" onChange={this.handleInput('password')} />
+                        <label className="field-label-password">
+                            <input className="input-bar" type="password" value={this.state.password} placeholder="Password" onChange={this.handleInput('password')} />
                         </label>
                         {errors}
-                        {links}
+                        
                         <div className="session-button">
                             <button className="login-signup-button" onClick={this.handleSubmit}> {this.props.formType} </button>
                             <button className="demo-button" onClick={this.demoLogin}>Demo Login</button>

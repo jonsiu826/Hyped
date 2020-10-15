@@ -10,18 +10,19 @@ class Greeting extends React.Component {
     render() {
 
         const sessionLinks = (
-            <nav className="login-signup">
-                <div>
-                    {/* <button onClick={() => this.props.openModal('login')}>Login</button> */}
-                    <Link className="logingreeting" to="/login" onClick={this.props.closeModal}>Login </Link>
+            <div className="greeting-wrapper">
+                <nav className="login-signup">
+                    <div>
+                        {/* <button onClick={() => this.props.openModal('login')}>Login</button> */}
+                        <Link className="logingreeting" to="/login" onClick={this.props.closeModal}>Login </Link>
 
-                </div>
-                <br/>
-                <div>
-                    <Link className="signupgreeting" to="/signup" onClick={this.props.closeModal}>SignUp </Link>
-                </div>
-
-            </nav>
+                    </div>
+                    <br/>
+                    <div>
+                        <Link className="signupgreeting" to="/signup" onClick={this.props.closeModal}>SignUp </Link>
+                    </div>
+                </nav>
+            </div>
         );
 
         let welcome
