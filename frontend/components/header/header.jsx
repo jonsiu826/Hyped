@@ -20,13 +20,12 @@ class Header extends React.Component{
                     <li>
                         <span className="header-discover">Discover</span>
                     </li>
-                    <br />
                     <li>
                         <span className="header-shopall">Shop All</span>
                     </li>
                     <li>
-                        
-                        <span className="header-search">🔍</span>
+                
+                        <span className="header-search"><i class="fas fa-search"></i>🔍</span>
                     </li>
                     <li>
                         <span onClick={() => this.props.openModal('login_signup')} className="header-bars">≡</span>

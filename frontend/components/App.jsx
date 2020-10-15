@@ -19,7 +19,7 @@ const App = () => (
                 <HeaderContainer/> 
         <header>
             {/* <Link to="/" className="header-link"></Link> */}
-                {/* <Route exact path="/" component={GreetingContainer} /> */}
+                <Route exact path="/" component={GreetingContainer} />
          {/* <GreetingContainer /> */}
         </header>
 

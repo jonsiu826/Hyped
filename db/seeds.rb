@@ -5,21 +5,23 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-User.delete_all
+User.destroy_all
+
+# puts du.errors.full_messages
 u1 = User.create!(
   username: 'jon',
   password: 'password'
-)
-u2 = User.create!(
-  username: 'Chrisenpai',
-  password: 'password'
-)
-
-u3 = User.create!(
-  username: 'DJ JD',
-  password: 'password'
-)
-
+  )
+  u2 = User.create!(
+    username: 'Chrisenpai',
+    password: 'password'
+    )
+    
+    u3 = User.create!(
+      username: 'DJ JD',
+      password: 'password'
+      )
+      
 u4 = User.create!(
   username: 'TreeTop',
   password: 'password'
@@ -30,7 +32,12 @@ u5 = User.create!(
   password: 'password'
 )
 
-u3 = User.create!(
+u6 = User.create!(
   username: 'WackyJacky ',
   password: 'password'
-)
+  )
+  
+  du = User.create!(
+    username: 'demo_user',
+    password: 'password'
+  )
