@@ -1,0 +1,56 @@
+.session-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    height: 90%;
+    padding-bottom: 70px;
+    border-bottom: 1px solid black;
+}
+
+.session-form-jordan{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgray;
+//   border-top-right-radius: 3px;
+  width: 60%;
+}
+
+.session-form{
+   display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid lightgray;
+    border-top-right-radius: 3px;
+}
+
+.session-button{
+    display: flex;
+    align-items: center;
+}
+
+.login-signup-button{
+   background-color: white;
+    color: gray;
+    height: 50px;
+    width: 300px;
+    font-size: 12px;
+    border-right: none;
+    border-bottom: none;
+
+}
+
+.demo-button{
+    background-color: white;
+    color: gray;
+    height: 50px;
+    width: 300px;
+    font-size: 12px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.session-form{
+    font-size: 30px;
+    align-self: center;
+
+}
