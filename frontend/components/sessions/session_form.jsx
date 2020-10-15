@@ -88,19 +88,18 @@ class SessionForm extends React.Component {
         return (
            <div className="session-wrapper"> 
                 <div className="session-form-jordan">
-                    <img src={Jordan1} />
+                    <img className="jordan-image" src={Jordan1} />
                 </div>
                 <div className="session-form">
                     <form onSubmit={this.handleSubmit} className="session-form">
                         <h1 className="session-title"> {this.props.formType}</h1>
                         <nav className="extralink">{links}</nav>
-                        <label className="field-label-username"> 
-                            <input className="input-bar" type="text" value={this.state.username} placeholder="Username" onChange={this.handleInput('username')} />
-                        </label>
+                        <label className="field-label"> Username</label>
+                            <input className="input-bar-user" type="text" value={this.state.username} placeholder="Username" onChange={this.handleInput('username')} />
+                        
                         <br/>
-                        <label className="field-label-password">
-                            <input className="input-bar" type="password" value={this.state.password} placeholder="Password" onChange={this.handleInput('password')} />
-                        </label>
+                        <label className="field-label"> Password</label>
+                            <input className="input-bar-password" type="password" value={this.state.password} placeholder="Password" onChange={this.handleInput('password')} />
                         {errors}
                         
                         <div className="session-button">
