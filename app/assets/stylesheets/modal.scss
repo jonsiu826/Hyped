@@ -6,6 +6,7 @@
   left: 0;
   background: rgba(0, 0, 0, 0.7);
   z-index: 10;
+
 }
 
 .modal-child {
@@ -13,6 +14,7 @@
   top: 60%;
   left: 94%;
   transform: translate(-50%, -50%);
+  height: 150%;
 }
 
 
@@ -20,8 +22,9 @@
 .loginsignupbuttons{
   display: flex;
   align-self: center;
-  
 }
+
+
 
 .modal-content {
   display: flex;
@@ -30,7 +33,7 @@
   padding: 20px;
   border: 1px solid #888;
   width: 450px; /* Could be more or less, depending on screen size */
-  height: 900px;
+  height: 100%;
   vertical-align: right;
 }
 
@@ -43,6 +46,15 @@
   align-content: center;
 }
 
+.logout-session{
+  padding-top: 300px;
+}
+.greeting-wrapper{
+  display: flex;
+  padding-top: 300px;
+  padding-bottom: 300px;
+
+}
 .logingreeting{
     font-size: 14px;
     font-weight: 500;

@@ -20,10 +20,11 @@ const App = () => (
                 <HeaderContainer/> 
             {/* <Link to="/" className="header-link"></Link> */}
         </header>
-                <Route exact path="/" component={GreetingContainer} />
-
-        <Route path="/login" component={LoginFormContainer} />
-        <Route path="/signup" component={SignupFormContainer} />
+                {/* <Route exact path="/" component={GreetingContainer} /> */}
+        <switch>
+            <Route path="/login" component={LoginFormContainer} />
+            <Route path="/signup" component={SignupFormContainer} />
+        </switch>
     </div>
 )
 
