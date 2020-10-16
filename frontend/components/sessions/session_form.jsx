@@ -77,19 +77,23 @@ class SessionForm extends React.Component {
             return <li key={idx}>{el}</li>
         })
 
-        let errorUsername 
+        let errorUsername;
+        let errorUsernameStyle = "";
         // debugger
         if (this.props.errors.includes("Username can't be blank")){
             // debugger
-            errorUsername = "Username can't be blank"
+            errorUsername = "Username can't be blank";
+            errorUsernameStyle = "redunderline";
         }
         
 
-        let errorPassword
+        let errorPassword;
+        let errorPasswordStyle = "";
         if (this.props.errors.includes("Password is too short (minimum is 6 characters)")) {
             // debugger
-            errorPassword = "Password is too short (minimum is 6 character)"
-        }  
+            errorPassword = "Password is too short (minimum is 6 character)";
+            errorPasswordStyle = "redunderline";
+        };
 
         let errorlogin
         if (this.props.errors.includes("username or password are invalid, please retry")) {
@@ -119,11 +123,12 @@ class SessionForm extends React.Component {
                         <h1 className="session-title"> {this.props.formType}</h1>
                         <nav className="extralink">{links}</nav>
                         <label className="field-label"> Username</label>
-                            <input className="input-bar-user" type="text" value={this.state.username} placeholder="Username" onChange={this.handleInput('username')} />
+                            <input className={`input-bar-user ${errorUsernameStyle}`} type="text" value={this.state.username} placeholder="Username" onChange={this.handleInput('username')} />
+                            
                              <p className="errors">{errorUsername}</p>
                         {/* <br/> */}
                         <label className="field-label"> Password</label>
-                            <input className="input-bar-password" type="password" value={this.state.password} placeholder="Password" onChange={this.handleInput('password')} />
+                        <input className={`input-bar-password ${errorPasswordStyle}`} type="password" value={this.state.password} placeholder="Password" onChange={this.handleInput('password')} />
                             <p className="errors">{errorPassword}</p>
                         
                         <div className="session-button">

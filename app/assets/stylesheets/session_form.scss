@@ -55,6 +55,7 @@
     border-left: none;
     border-bottom: none;
     cursor: pointer;
+    border-radius: 4px;
     
 }
 
@@ -74,6 +75,7 @@
     border-left: none;
     border-bottom: none;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 .demo-button:hover{
@@ -102,11 +104,16 @@
     color: lightgray;
 }
 
+
 .extralink{
     font-size: 15px;
     align-self: center;
     margin-bottom: 70px;
     margin-top: 5px;
+}
+.redunderline{
+  border-bottom: 1px solid red;
+  
 }
 
 
@@ -162,5 +169,6 @@
   list-style: none;
   // align-self: center;
   margin-left: 80px;
+  padding-top: 5px;
 }
 
