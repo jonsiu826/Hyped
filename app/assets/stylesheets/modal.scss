@@ -26,6 +26,19 @@
   align-self: center;
 }
 
+.logout-button{
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  letter-spacing: 1px;
+  text-decoration: underline;
+}
+
+.logout-message{
+  color: gray;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
 
 
 .modal-content {

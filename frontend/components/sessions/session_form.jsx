@@ -20,10 +20,14 @@ class SessionForm extends React.Component {
             this.props.processForm(user).then(() => {
                 this.props.closeModal()
                 this.props.history.push("/")
-            }).fail(() => {
-                this.setState({ errors: this.props.errors })
+            // }).fail(() => {
+            //     this.setState({ errors: this.props.errors })
             })
         //     this.setState({ email: "", username: "", password: "" });
+    }
+
+    componentWillUnmount(){
+        return (this.props.clearErrors())
     }
 
     handleInput(type) {
@@ -72,6 +76,27 @@ class SessionForm extends React.Component {
         let errors = this.state.errors.map((el, idx) => {
             return <li key={idx}>{el}</li>
         })
+
+        let errorUsername 
+        // debugger
+        if (this.props.errors.includes("Username can't be blank")){
+            // debugger
+            errorUsername = "Username can't be blank"
+        }
+        
+
+        let errorPassword
+        if (this.props.errors.includes("Password is too short (minimum is 6 characters)")) {
+            // debugger
+            errorPassword = "Password is too short (minimum is 6 character)"
+        }  
+
+        let errorlogin
+        if (this.props.errors.includes("username or password are invalid, please retry")) {
+            errorPassword = "username or password are invalid, please retry"
+        }  
+
+        
       
         let links
         if (this.props.formType === 'SignUp')
@@ -81,7 +106,6 @@ class SessionForm extends React.Component {
         )
         if (this.props.formType === 'Login')
         links = (
-            
             <Link to="/signup">Don't have an account? Sign up now!</Link>
         )
         
@@ -96,11 +120,11 @@ class SessionForm extends React.Component {
                         <nav className="extralink">{links}</nav>
                         <label className="field-label"> Username</label>
                             <input className="input-bar-user" type="text" value={this.state.username} placeholder="Username" onChange={this.handleInput('username')} />
-                        
-                        <br/>
+                             <p className="errors">{errorUsername}</p>
+                        {/* <br/> */}
                         <label className="field-label"> Password</label>
                             <input className="input-bar-password" type="password" value={this.state.password} placeholder="Password" onChange={this.handleInput('password')} />
-                        {errors}
+                            <p className="errors">{errorPassword}</p>
                         
                         <div className="session-button">
                             <button className="login-signup-button" onClick={this.handleSubmit}> {this.props.formType} </button>

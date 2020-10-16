@@ -30,8 +30,8 @@ class Greeting extends React.Component {
             welcome = (
                 <div className="logout-form">
                     <div className="logout-session">
-                        <h1 className="logout-message">Hello {this.props.currentUser.username} </h1>
-                        <button className="logout-button" onClick={this.props.logout}>Logout</button>
+                        <h1 className="logout-message">{this.props.currentUser.username} </h1>
+                        <button className="logout-button" onClick={this.props.logout}>LOG OUT</button>
                     </div>
                 </div>
             )

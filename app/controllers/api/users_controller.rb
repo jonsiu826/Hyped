@@ -7,7 +7,7 @@ class Api::UsersController < ApplicationController
             login!(@user)
             render :show 
         else 
-            render json:["Insufficient information"], status: 404
+            render json: @user.errors.full_messages, status: 404
         end
     end
 
