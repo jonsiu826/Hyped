@@ -15,8 +15,7 @@ class Header extends React.Component{
                 <div>
                     <Link className="header-logo" to="/" href="#">HYPED</Link>
                 </div>
-                
-                <ul className="header-list">
+                 <ul className="header-list">
                     <li>
                         <span className="header-discover">Discover</span>
                     </li>
@@ -24,15 +23,13 @@ class Header extends React.Component{
                         <span className="header-shopall">Shop All</span>
                     </li>
                     <li>
-                
-                        <span className="header-search"><i class="fas fa-search"></i>🔍</span>
+                        <span className="header-search"><i class="fas fa-search"></i></span>
                     </li>
                     <li>
-                        <span onClick={() => this.props.openModal('login_signup')} className="header-bars">≡</span>
+                        <span onClick={() => this.props.openModal('login_signup')} className="header-bars"><i class="fas fa-bars"></i></span>
                     </li>
                 </ul>
             </nav>
-
         )
     }
 }

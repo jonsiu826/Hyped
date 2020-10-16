@@ -3,8 +3,9 @@
     justify-content: center;
     padding-top: 98px;
     height: 90%;
-    padding-bottom: 70px;
-    border-bottom: 1px solid black;
+    padding-bottom: 60px;
+    // padding-bottom: 70px;
+    // border-bottom: 1px solid black;
 }
 
 .session-form-jordan{
@@ -77,12 +78,14 @@
     height: 25px;
     font-size: 20px;
     text-decoration: none;
+    color: lightgray;
 }
 
 .extralink{
     font-size: 15px;
     align-self: center;
     margin-bottom: 100px;
+    margin-top: 5px;
 }
 
 
@@ -92,9 +95,8 @@
   display: flex;
   margin: 0px 10% 15px;
   padding: 20px 0px 0px;
-  font-size: 20px;
-  font-weight: 900;
-  letter-spacing: 2px;
+  font-size: 17px;
+  color: lightgray;
 }
 
 .field-label-password {
@@ -109,7 +111,7 @@
 }
 
 .input-bar-user{
-  color:gray;
+  color:black;
   font-family: sans-serif;
   width: 80%;
   align-self: center;
@@ -117,17 +119,20 @@
   border-left: none;
   border-right:none;
   height: 30px;
+  outline-width: 0;
+  
 }
 
 .input-bar-password{
-  color:gray;
+  color:black;
   font-family: sans-serif;
   width: 80%;
   align-self: center;
   border-top:none;
   border-left: none;
   border-right:none;
-  margin-bottom: 127px;
+  margin-bottom: 150px;
   height: 30px;
+  outline-width: 0;
 }
 

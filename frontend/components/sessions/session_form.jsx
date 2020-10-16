@@ -31,7 +31,7 @@ class SessionForm extends React.Component {
             this.setState({ [type]: e.target.value });
         }
     }
-
+    //credits to Chris Thompson from AA Class of Dec 19
     demoLogin(e) {
         e.preventDefault()
         const demo = { username: "demo_user", password: "password" }

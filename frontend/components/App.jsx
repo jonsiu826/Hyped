@@ -6,6 +6,7 @@ import { Provider } from 'react-redux';
 import Modal from './modal/modal';
 import HeaderContainer from './header/header_container'
 import {AuthRoute} from '../util/route_util';
+import Footer from './footer/footer'
 import ProductContainer from './products/product_container'
 import {
     Route,
@@ -26,10 +27,12 @@ const App = () => (
         <Switch>
             <AuthRoute exact path="/login" component={LoginFormContainer} />
             <AuthRoute exact path="/signup" component={SignupFormContainer} />
-            {/* <Route exact path="/" component={HomeContainer} /> */}
             <Route exact path="/" component={ProductContainer}/>
             <Redirect to="/"></Redirect>
         </Switch>
+        <footer>
+            <Footer />
+        </footer>
     </div>
 )
 
