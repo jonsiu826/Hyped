@@ -1,20 +1,17 @@
 import { connect } from 'react-redux'
-import { logout } from '../../actions/session_actions'
 import ProductIndex from './product_index';
-import { openModal, closeModal } from '../../actions/modal_actions';
+import {fetchProducts} from '../../actions/product_actions';
 
 const mapStateToProps = (state) => {
+    debugger
     return {
-        currentUser: state.entities.users[state.session.id]
+        products: Object.values(state.entities.products)
     }
 }
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        logout: () => dispatch(logout()),
-        openModal: modal => dispatch(openModal(modal)),
-        closeModal: modal => dispatch(closeModal(modal))
-
+        fetchProducts: () => dispatch(fetchProducts())
     }
 }
 
