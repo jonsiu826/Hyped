@@ -7,7 +7,7 @@ import Modal from './modal/modal';
 import HeaderContainer from './header/header_container'
 import {AuthRoute} from '../util/route_util';
 import Footer from './footer/footer'
-import ProductContainer from './products/product_container'
+import ProductIndexContainer from './products/product_index_container'
 import {
     Route,
     Redirect,
@@ -27,7 +27,7 @@ const App = () => (
         <Switch>
             <AuthRoute exact path="/login" component={LoginFormContainer} />
             <AuthRoute exact path="/signup" component={SignupFormContainer} />
-            <Route exact path="/" component={ProductContainer}/>
+            <Route exact path="/" component={ProductIndexContainer}/>
             <Redirect to="/"></Redirect>
         </Switch>
         <footer>

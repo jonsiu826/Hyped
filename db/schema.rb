@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_16_224348) do
+ActiveRecord::Schema.define(version: 2020_10_17_040226) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,9 +46,9 @@ ActiveRecord::Schema.define(version: 2020_10_16_224348) do
     t.string "silhouette", null: false
     t.string "main_color", null: false
     t.string "designer", null: false
-    t.float "size", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "description", null: false
     t.index ["name"], name: "index_products_on_name", unique: true
   end
 

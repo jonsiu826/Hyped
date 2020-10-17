@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { logout } from '../../actions/session_actions'
-import ProductIndex from '../products/product_index';
+import ProductIndex from './product_index';
 import { openModal, closeModal } from '../../actions/modal_actions';
 
 const mapStateToProps = (state) => {
