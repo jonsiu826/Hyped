@@ -96,8 +96,8 @@ class SessionForm extends React.Component {
         };
 
         let errorlogin
-        if (this.props.errors.includes("username or password are invalid, please retry")) {
-            errorPassword = "username or password are invalid, please retry"
+        if (this.props.errors.includes("Username or Password is invalid, please retry")) {
+            errorPassword = "Username or Password is invalid, please retry"
         }  
 
         
