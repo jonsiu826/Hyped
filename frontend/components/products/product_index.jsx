@@ -21,7 +21,7 @@ class ProductIndex extends React.Component {
                 <div className="kobe-logo">
                     <img className="kobe-image" src={Kobe1} />
                 </div>
-                <ul>
+                <ul className="product-ul">
                     {products}
                 </ul>
             </div>

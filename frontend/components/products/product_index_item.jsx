@@ -6,11 +6,15 @@ class PostIndexItem extends React.Component{
     }
     render(){
         return (
-            <li>
-                <div>{this.props.product.name}</div>
-                <div>{this.props.product.description}</div>
-                <img src={this.props.product.photo_url} className="product-image"/>
-            </li>
+            <div className="sneaker-container">
+                <li className="sneaker-indexitem">
+                    <div className="sneaker-info">
+                        <div className="release-date">{this.props.product.release_date}</div>
+                        <img src={this.props.product.photo_url} className="product-image"/>
+                    </div>
+                </li>
+                    <div className="sneaker-name">{this.props.product.name}</div>
+            </div>
         )
     }
 }
