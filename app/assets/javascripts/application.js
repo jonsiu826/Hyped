@@ -14,3 +14,4 @@
 //= require activestorage
 //= require jquery
 //= require_tree .
+//= require slick-carousel

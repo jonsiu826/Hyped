@@ -5,7 +5,8 @@
 }
 
 .kobe-image{
-    width: 100%
+    width: 100%;
+    height: 80%
 }
 
 .kobe-text{
@@ -83,6 +84,52 @@
     padding: 5%;
     // border: 1px solid black;
 }
+
+.carousel-title{
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.carousel-photo{
+  // width: 100px;
+  // background-color: blue;
+}
+
+.carousel-bar{
+  width: 100%;
+  // background-color: yellow;
+}
+
+.carousel-shoe-photo{
+  width: 80%;
+  // background-color: red;
+  // height: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-shoe-name{
+  display: flex;
+  // justify-content: center;
+  padding-left: 10%;
+  padding-top: 5%;
+}
+
+.carousel-box{
+  display: flex;
+  flex-direction: column;
+  padding-top: 10%;
+}
+
+.carousel-box:hover{
+   text-decoration: underline;
+   cursor: pointer;
+   color: black;
+  
+}
+
+
 
 // .hero-header {
 //   position: absolute;
