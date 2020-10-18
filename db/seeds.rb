@@ -174,3 +174,33 @@ product10 = Product.create!(
    designer:"Eric Avar",
    description: "A special colorway made for the NBA athlete and noted sneaker enthusiast, the Nike Zoom Kobe 5 Protro ‘P.J. Tucker’ PE features tonal animal prints throughout the lightweight synthetic upper, finished in neutral grey and off-white tones and supported by Flywire technology. Bright red mesh stands out on the collar, contrasted by a black heel counter marked with Kobe Bryant’s signature. A dot matrix-like design fills in the signature Swoosh on the sneaker’s quarter panel."
 )
+
+file1 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan1_chicago.jpeg")
+product1.photo.attach(io: file1, filename: "img_#{product1.id}.jpg")
+
+file2 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan1_green.jpeg")
+product2.photo.attach(io: file2, filename: "img_#{product2.id}.jpg")
+
+file3 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan1_mocha.jpeg")
+product3.photo.attach(io: file3, filename: "img_#{product3.id}.jpg")
+
+file4 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan1_obsidian.jpeg")
+product4.photo.attach(io: file4, filename: "img_#{product4.id}.jpg")
+
+file5 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/Jordan1_TravisScott.jpeg")
+product5.photo.attach(io: file5, filename: "img_#{product5.id}.jpg")
+
+file6 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe_demar_PE.jpeg")
+product6.photo.attach(io: file6, filename: "img_#{product6.id}.jpg")
+
+file7 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/Kobe_5rings.jpeg")
+product7.photo.attach(io: file7, filename: "img_#{product7.id}.jpg")
+
+file8 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe_gold.jpeg")
+product8.photo.attach(io: file8, filename: "img_#{product8.id}.jpg")
+
+file9 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/Kobe_5eyeybl.jpeg")
+product9.photo.attach(io: file9, filename: "img_#{product9.id}.jpg")
+
+file10 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe_tucker_PE.jpeg")
+product10.photo.attach(io: file10, filename: "img_#{product10.id}.jpg")
