@@ -23,7 +23,7 @@ class ProductIndex extends React.Component {
                     <h1 className="kobe-text">LEAVE YOUR LEGACY</h1>
                     {/* <button className="kobe-button">Shop Kobes</button> */}
                 </div>
-                <h1 className="product-header">View All Collection</h1>
+                <h1 className="product-header">View Our Collection</h1>
                 <ul className="product-ul">
                     {products}
                 </ul>
