@@ -24,35 +24,41 @@ class ProductIndex extends React.Component {
         const photos = [
             {
                 name: "Zoom Kobe 5 Protro 'DeMar DeRozan' PE",
-                url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe_demar_PE.jpeg"
-               
+                url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe_demar_PE.jpeg",
+                link: "/products/8"
             },
             {
                 name: "Zoom Kobe 5 Protro 'P.J. Tucker' PE",
-                url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe_tucker_PE.jpeg"
+                url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe_tucker_PE.jpeg",
+                link: "/products/12"
 
             },
             {
                 name: "Zoom Kobe 5 Protro '5 Rings'",
-                url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/Kobe_5rings.jpeg"
+                url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/Kobe_5rings.jpeg",
+                link: "/products/9"
             },
             {
                 name: "Zoom Kobe 5 Protro 'EYBL'",
-                url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/Kobe_5eyeybl.jpeg"
+                url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/Kobe_5eyeybl.jpeg",
+                link: "/products/11"
 
             },
             {
                 name: "Air Jordan 1 Retro High OG 'Obsidian'",
-                url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan1_obsidian.jpeg"
+                url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan1_obsidian.jpeg",
+                link: "/products/4"
 
             },
             {
                 name: "Air Jordan 1 Retro High OG 'Crimson Tint'",
-                url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/Jordan1_crimsontint.jpeg"
+                url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/Jordan1_crimsontint.jpeg",
+                link: "/products/6"
             },
             {
                 name: "Air Jordan 1 Mid 'Pine Green'",
-                url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan1_green.jpeg"
+                url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan1_green.jpeg",
+                link: "/products/2"
             }
          
         ]
@@ -91,10 +97,10 @@ class ProductIndex extends React.Component {
                     <Carousel className="carousel-bar"breakPoints={breakPoints}>
                        {photos.map((photo , idx) => {
                            return(
-                               <div key={idx} className="carousel-box">
+                               <Link key={idx} to={photo.link}className="carousel-box">
                                    <img className="carousel-shoe-photo" src={photo.url}/>
-                                 <p className="carousel-shoe-name" > {photo.name} </p>
-                             </div>  
+                                 <p className="carousel-shoe-name">{photo.name}</p>
+                             </Link>  
                            )
                        }
                        )}
