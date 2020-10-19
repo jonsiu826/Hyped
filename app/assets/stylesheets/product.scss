@@ -39,6 +39,7 @@
   justify-content: center;
   margin-top: -1px;
   margin-left: -1px;
+  font-size: 15px;
 }
 
 .sneaker-indexitem{
@@ -69,10 +70,10 @@
 
 .sneaker-name{
     padding-top: 10%;
-    padding-left: 15%;
+    // padding-left: 15%;
     font-family: serif;
     justify-content: center;
-    width: 70%;
+    // width: 70%;
 }
 
 .product-ul{
@@ -107,7 +108,7 @@
 }
 
 .carousel-shoe-photo{
-  width: 60%;
+  width: 180px;
   height: 100px;
   // width: 195px;
   // height: 110px;
@@ -119,7 +120,7 @@
 .carousel-shoe-name{
   display: flex;
   // justify-content: center;
-  padding-left: 10%;
+  // padding-left: 10%;
   padding-top: 5%;
   width: 50%;
 }
@@ -135,6 +136,13 @@
    cursor: pointer;
    color: black;
   
+}
+
+.sneaker-info:hover{
+   text-decoration: underline;
+   cursor: pointer;
+   color: black;
+
 }
 
 // .sneaker-container:hover{

@@ -41,18 +41,18 @@ class ProductIndex extends React.Component {
 
             },
             {
-                name: "Air Jordan 1 Retro High OG 'Chicago' 2015",
-                url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan1_chicago.jpeg"
+                name: "Air Jordan 1 Retro High OG 'Obsidian'",
+                url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan1_obsidian.jpeg"
 
-            },
-            {
-                name: "Air Jordan 1 Mid 'Pine Green'",
-                url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan1_green.jpeg"
             },
             {
                 name: "Air Jordan 1 Retro High OG 'Crimson Tint'",
                 url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/Jordan1_crimsontint.jpeg"
             },
+            {
+                name: "Air Jordan 1 Mid 'Pine Green'",
+                url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan1_green.jpeg"
+            }
          
         ]
 
@@ -85,7 +85,7 @@ class ProductIndex extends React.Component {
                 <ul className="product-ul">
                     {products}
                 </ul>
-                <h2 className="carousel-title"> Other Sneakers</h2>
+                <h2 className="carousel-title"> Top Trending Sneakers</h2>
                 <div className="carousel-container">
                     <Carousel className="carousel-bar"breakPoints={breakPoints}>
                        {photos.map((photo) => {
