@@ -25,6 +25,7 @@ class ProductIndex extends React.Component {
             {
                 name: "Zoom Kobe 5 Protro 'DeMar DeRozan' PE",
                 url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe_demar_PE.jpeg"
+               
             },
             {
                 name: "Zoom Kobe 5 Protro 'P.J. Tucker' PE",

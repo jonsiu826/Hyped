@@ -55,13 +55,14 @@ class ProductShow extends React.Component {
         ]
 
         const breakPoints = [
-            { width: 100, itemsToShow: 1 },
-            { width: 200, itemsToShow: 2 },
-            { width: 300, itemsToShow: 3 },
-            { width: 400, itemsToShow: 4 }
+            { width: 100, itemsToShow: 2 },
+            { width: 200, itemsToShow: 3 },
+            { width: 300, itemsToShow: 4 },
+            { width: 400, itemsToShow: 5 }
         ];
         return (
             !showProduct ? <div></div> : (
+                <section>
                 <section className="show-page-container">
                     <div className="left-right-show">
                         <div className="show-page-shoe-container">
@@ -79,6 +80,7 @@ class ProductShow extends React.Component {
                                 <h2 className="product-details">Product Details</h2>
                                 <p className="show-page-description">{this.props.product.description}</p>
                             </div>
+                </section>
                     <div className="details-carousel-container" >
                         <Carousel className="details-carousel" breakPoints={breakPoints}>
                             {details.map((detail, idx) =>{
