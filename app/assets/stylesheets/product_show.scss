@@ -33,6 +33,7 @@
     text-align: center;
     flex-direction: column;
     width: 80%;
+    border-bottom: none;
 }
 
 
@@ -40,7 +41,8 @@
     font-size: 30px;
     justify-content: center;
     width: 80%;
-    padding: 10%
+    padding-top:30%;
+    padding-left: 10%;
 }
 
 .description-container{
@@ -73,4 +75,67 @@
     border: 1px solid lightgray;
     border-radius: 2px;
 }
+
+.showpage-buttons{
+    display: flex;
+    align-items: center;
+    padding-top: 57%;
+}
+
+.buy-new-button{
+    background-color: black;
+    border-color: lightgray;
+    color: white;
+    height: 50px;
+    width: 100%;
+    font-size: 12px;
+    border-left: none;
+    border-bottom: none;
+    cursor: pointer;
+    border-radius: 4px;
+    outline:none;
+}
+
+.buy-used-button{
+    background-color: white;
+    border-color: lightgray;
+    color: lightgray;
+    height: 50px;
+    width: 100%;
+    font-size: 12px;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    cursor: pointer;
+    border-radius: 4px;
+    outline:none;
+}
+
+.details-carousel-container{
+    display: flex;
+    width: 100%;
+}
+
+.details-carousel{
+    display: flex;
+    width: 100%;
+}
+
+.detail-carousel-box{
+    // display: flex;
+    // justify-content: center;
+}
+
+.detail-name{
+    // font-size: 100px;
+    width: 100%;
+    font-size: 10px;
+    color: gray;
+}
+
+.detail-description{
+    padding-top: 10px;
+    font-size: 20px;
+}
+
 
