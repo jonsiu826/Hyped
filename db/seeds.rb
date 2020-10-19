@@ -145,7 +145,7 @@ kobe5_1 = Product.create!(
    silhouette: "Zoom Kobe 5", 
    main_color: "Grey", 
    designer:"Eric Avar",
-   description: "A special colorway made for the NBA athlete and noted sneaker enthusiast, the Nike Zoom Kobe 5 Protro ‘P.J. Tucker’ PE features tonal animal prints throughout the lightweight synthetic upper, finished in neutral grey and off-white tones and supported by Flywire technology. Bright red mesh stands out on the collar, contrasted by a black heel counter marked with Kobe Bryant’s signature. A dot matrix-like design fills in the signature Swoosh on the sneaker’s quarter panel."
+   description: "A PE colorway made for San Antonio’s DeMar DeRozan, the Nike Zoom Kobe 5 Protro ‘DeMar DeRozan’ features a neutral palette consistent with the Spurs’ signature palette. The sneaker’s lightweight synthetic upper is covered in a blend of checkerboard and zebra patterns, both rendered in subdued grey and white tones. A glossy black finish is applied to the Nike Swoosh, matching the heel counter marked with Kobe Bryant’s signature."
 )
 
 kobe5_2 = Product.create!(

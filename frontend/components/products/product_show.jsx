@@ -19,10 +19,20 @@ class ProductShow extends React.Component {
         this.props.product ? showProduct = this.props.product : showProduct = null
         return (
             !showProduct ? <div></div> : (
-                <div className="show-page-container">
-                    <p className="show-page-name">{this.props.product.name}</p>
-                    <p className="show-page-description">{this.props.product.description}</p>
-                </div>
+                <section className="show-page-container">
+                    <div className="left-right-show">
+                        <div className="show-page-shoe-container">
+                            <img src={this.props.product.photo_url} className="product-show-image" />
+                        </div>
+                        <div className="right-show">
+                            <p className="show-page-name">{this.props.product.name}</p>
+                        </div>
+                    </div>
+                            <div className="description-container">
+                                <h2 >Product Details</h2>
+                                <p className="show-page-description">{this.props.product.description}</p>
+                            </div>
+                </section>
             )
         )
     }
