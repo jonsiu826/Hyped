@@ -46,9 +46,22 @@
 .description-container{
     text-align: center;
     padding-bottom: 100px;
-    font-family: serif;
+    // font-family: Plain;
+    // font-size: 20px;
+    width: 800px;
+}
+
+.product-details{
+    line-height: 1.5;
+    font-family: Plain;
     font-size: 20px;
-    width: 800px
+    padding-bottom: 10px;
+}
+
+.show-page-container{
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .left-right-show{
@@ -60,3 +73,4 @@
     border: 1px solid lightgray;
     border-radius: 2px;
 }
+

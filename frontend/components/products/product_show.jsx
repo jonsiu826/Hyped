@@ -9,9 +9,8 @@ class ProductShow extends React.Component {
    
     componentDidMount(){
         // debugger
-        this.props.fetchProduct(this.props.match.params.productId).then(() => {
-            this.setState(this.props.product)
-        })
+        this.props.fetchProduct(this.props.match.params.productId)
+
     }
 
     render() {
@@ -26,10 +25,12 @@ class ProductShow extends React.Component {
                         </div>
                         <div className="right-show">
                             <p className="show-page-name">{this.props.product.name}</p>
+                            <button className="buy-new-button">Buy New</button>
+                            <button className="buy-used-button">Buy Used</button>
                         </div>
                     </div>
                             <div className="description-container">
-                                <h2 >Product Details</h2>
+                                <h2 className="product-details">Product Details</h2>
                                 <p className="show-page-description">{this.props.product.description}</p>
                             </div>
                 </section>
