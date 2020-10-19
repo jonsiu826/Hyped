@@ -99,28 +99,7 @@ class ProductIndex extends React.Component {
                        )}
                     </Carousel>
                 </div>
-                    {/* <div>
-                        <h3 className="carousel-photo">{photo[1]}</h3>
-                    </div>
-                    <div>
-                        <h3 className="carousel-photo">{photo[2]}</h3>
-                    </div>
-                    <div>
-                        <h3 className="carousel-photo">{photo[3]}</h3>
-                    </div>
-                    <div>
-                        <h3 className="carousel-photo">{photo[4]}</h3>
-                    </div>
-                    <div>
-                        <h3 className="carousel-photo">{photo[5]}</h3>
-                    </div>
-                    <div>
-                        <h3 className="carousel-photo">{photo[6]}</h3>
-                    </div>  
-                    <div>
-                        <h3 className="carousel-photo">{photo[7]}</h3>
-                    </div>   */}
-                   
+                    
             </div>
         )
     }

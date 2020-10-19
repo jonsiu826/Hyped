@@ -13,7 +13,9 @@ class PostIndexItem extends React.Component{
                         <img src={this.props.product.photo_url} className="product-image"/>
                     </div>
                 </li>
+                <div className="sneaker-name-container">
                     <div className="sneaker-name">{this.props.product.name}</div>
+                </div> 
             </div>
         )
     }
