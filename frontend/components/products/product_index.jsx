@@ -88,11 +88,11 @@ class ProductIndex extends React.Component {
                 <h2 className="carousel-title"> Top Trending Sneakers</h2>
                 <div className="carousel-container">
                     <Carousel className="carousel-bar"breakPoints={breakPoints}>
-                       {photos.map((photo) => {
+                       {photos.map((photo , idx) => {
                            return(
-                             <div className="carousel-box">
-                                 <img className="carousel-shoe-photo"src={photo.url}/>
-                                 <p className="carousel-shoe-name"> {photo.name} </p>
+                               <div key={idx} className="carousel-box">
+                                   <img className="carousel-shoe-photo" src={photo.url}/>
+                                 <p className="carousel-shoe-name" > {photo.name} </p>
                              </div>  
                            )
                        }

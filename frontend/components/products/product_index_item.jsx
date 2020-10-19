@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 class PostIndexItem extends React.Component{
     constructor(props){
@@ -9,13 +10,12 @@ class PostIndexItem extends React.Component{
             <div className="sneaker-container">
                 <li className="sneaker-indexitem">
                         <div className="release-date">{this.props.product.release_date}</div>
-                    <div className="sneaker-info">
+                  
+                    <Link className="sneaker-info" to={`/products/${this.props.product.id}`}>
                         <img src={this.props.product.photo_url} className="product-image"/>
                         <div className="sneaker-name">{this.props.product.name}</div>
-                    </div>
-                </li>
-         
-                
+                     </Link>
+                </li>       
             </div>
         )
     }

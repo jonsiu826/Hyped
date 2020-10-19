@@ -16,5 +16,6 @@
  *= require modal
  *= require session_form
  *= require footer
- *= require product
+ *= require product_index
+ *= require product_show
  */

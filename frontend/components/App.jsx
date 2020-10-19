@@ -26,9 +26,9 @@ const App = () => (
         </header>
                 {/* <Route exact path="/" component={GreetingContainer} /> */}
         <Switch>
+            <Route exact path="/products/:productId" component={ProductShowContainer}/>
             <AuthRoute exact path="/login" component={LoginFormContainer} />
             <AuthRoute exact path="/signup" component={SignupFormContainer} />
-            <Route exact path="/product/:productId" component={ProductShowContainer}/>
             <Route exact path="/" component={ProductIndexContainer}/>
             <Redirect to="/"></Redirect>
         </Switch>
