@@ -1,4 +1,5 @@
 import { RECEIVE_CURRENT_USER } from '../actions/session_actions'
+import { RECEIVE_PRODUCT } from '../actions/product_actions'
 
 const usersReducers = (state = {}, action) => {
 
@@ -6,8 +7,10 @@ const usersReducers = (state = {}, action) => {
     let nextState = Object.assign({}, state);
 
     switch (action.type) {
-        case RECEIVE_CURRENT_USER:
+        // case RECEIVE_PRODUCT:
 
+        //     return Object.assign({}, action.payload.reviews)
+        case RECEIVE_CURRENT_USER:
             nextState[action.currentUser.id] = action.currentUser
             return nextState;
         default:

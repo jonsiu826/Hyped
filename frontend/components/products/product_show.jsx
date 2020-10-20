@@ -1,6 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
-import Carousel from 'react-elastic-carousel'
+import { Link } from 'react-router-dom';
+import Carousel from 'react-elastic-carousel';
+import CreateReviewContainer from '../review/create_review_container';
+import ReviewIndexContainer from '../review/review_index_container';
 class ProductShow extends React.Component {
     constructor(props) {
         super(props)
@@ -80,6 +82,13 @@ class ProductShow extends React.Component {
                                 <h2 className="product-details">Product Details</h2>
                                 <p className="show-page-description">{this.props.product.description}</p>
                             </div>
+                            <div className="reviews-container">
+                                
+                               
+                                <ReviewIndexContainer/>
+                                <CreateReviewContainer/>
+                            </div>
+                            
                 </section>
                     <div className="details-carousel-container" >
                         <Carousel className="details-carousel" breakPoints={breakPoints}>

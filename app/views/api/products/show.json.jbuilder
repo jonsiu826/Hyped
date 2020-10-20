@@ -1,4 +1,7 @@
-json.partial! "api/products/product", product: @product 
+
+json.product do 
+    json.partial! "api/products/product", product: @product 
+end 
 
 json.reviews do 
     @product.reviews.each do |review|
@@ -7,3 +10,4 @@ json.reviews do
         end
     end
 end 
+

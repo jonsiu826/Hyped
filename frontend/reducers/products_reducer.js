@@ -7,10 +7,11 @@ const productsReducer = (state = {} , action) => {
     switch(action.type){
 
         case RECEIVE_ALL_PRODUCTS:
-            // debugger
+           
             return action.products;
         case RECEIVE_PRODUCT:
-            nextState[action.product.id] = action.product
+            // debugger
+            nextState[action.payload.product.id] = action.payload.product
             return nextState;
         default: 
             return state;

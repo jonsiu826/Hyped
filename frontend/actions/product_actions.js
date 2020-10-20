@@ -10,10 +10,10 @@ const receiveProducts = products => {
     }
 }
 
-const receiveProduct = product => {
+const receiveProduct = payload => {
     return{
         type: RECEIVE_PRODUCT,
-        product
+        payload
     }
 }
 
