@@ -241,7 +241,7 @@ jordan1_7.photo.attach(io: file12, filename: "img_#{jordan1_7.id}.jpg")
 review1 = Review.create!(
   description: "Upper leather was butter. These shoes gave me a +5 to my midrange.",
   rating: 5,
-  user_id: u3.id,
+  user_id: u1.id,
   product_id: jordan1_1.id
 )
 

@@ -1,17 +1,21 @@
 import { connect } from 'react-redux'
-import ProductIndex from './product_index';
+import ReviewForm from './review_form';
 import { createReview, deleteReview} from './review_form'
 
 const mapStateToProps = (state) => {
-    // debugger
     return {
-        review: Object.values(state.entities.products)
+        post: {
+            description: "",
+            rating: ""
+        },
+        formType: "Create Review"
     }
 }
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        createReview: (review) => dispatch(fetchProducts(review))
+        createReview: (review) => dispatch(createReview(review)),
+        deleteReview: (reviewId) => dispatch(deleteReview(reviewId))
     }
 }
 

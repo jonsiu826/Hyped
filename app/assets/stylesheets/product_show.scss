@@ -99,30 +99,34 @@
 }
 
 .buy-new-button{
-    background-color: black;
-    border-color: lightgray;
-    color: white;
-    height: 100%;
-    width: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    text-align: center; 
     font-size: 12px;
-    border-left: none;
-    border-bottom: none;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    padding: 15px 0px;
     cursor: pointer;
+    outline: none;
     border-radius: 4px;
-    outline:none;
-    // border-top: 50%;
 }
 
 .buy-used-button{
-    background-color: white;
-    // border-color: black;
+    border-top: 1px solid lightgray;
+    position: absolute;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    text-align: center; 
     color: lightgray;
-    height: 50px;
-    width: 100%;
+    bottom: 0;
+    right: 0;
+    width: 50%;
     font-size: 12px;
-    border-radius: 4px;
+    padding: 15px 0px;
     outline: none;
-    
+    border-radius: 4px;
 }
 
 .buy-new-button:hover{
@@ -168,6 +172,7 @@
     font-size: 16px;
     justify-content: center;
     width: 100%;
+  
     // align-items: center;
 }
 
