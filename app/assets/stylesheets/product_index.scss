@@ -127,30 +127,34 @@
   padding-top: 5%;
   width: 50%;
   justify-content: center;
+  color: black;
 }
 
 .carousel-box{
   display: flex;
   flex-direction: column;
   padding-top: 10%;
+  outline: none;
 }
 
-// .carousel-box:hover{
-//    text-decoration: underline;
-//    cursor: pointer;
-//    color: black;
+.carousel-box:hover{
+   text-decoration: underline;
+   cursor: pointer;
+   color: black;
   
-// }
+}
 
 .sneaker-info:hover{
    text-decoration: underline;
    cursor: pointer;
    color: black;
+  //  outline: none;
 }
 
 .details-carousel-container{
   border: 1px solid lightgray;
   width: 100%;
+  // outline: none;
 }
 
 // .sneaker-container:hover{

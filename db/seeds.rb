@@ -7,8 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 User.destroy_all
 Product.destroy_all
+Review.destroy_all
 ActiveRecord::Base.connection.reset_pk_sequence!('users')
 ActiveRecord::Base.connection.reset_pk_sequence!('products')
+ActiveRecord::Base.connection.reset_pk_sequence!('reviews')
 
 # puts du.errors.full_messages
 u1 = User.create!(
@@ -40,9 +42,9 @@ u6 = User.create!(
   password: 'password'
 )
   
-  du = User.create!(
-    username: 'demo_user',
-    password: 'password'
+du = User.create!(
+  username: 'demo_user',
+  password: 'password'
 )
 
 jordan1_1 = Product.create!(
@@ -235,3 +237,38 @@ jordan1_6.photo.attach(io: file11, filename: "img_#{jordan1_6.id}.jpg")
 
 file12 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan1_turbogreen.jpeg")
 jordan1_7.photo.attach(io: file12, filename: "img_#{jordan1_7.id}.jpg")
+
+review1 = Review.create!(
+  description: "Upper leather was butter. These shoes gave me a +5 to my midrange.",
+  rating: 5,
+  user_id: u3.id,
+  product_id: jordan1_1.id
+)
+
+review2 = Review.create!(
+  description: "Shoes came with a slight crease in toebox, but overall, I am happy.",
+  rating: 4,
+  user_id: u1.id,
+  product_id: jordan1_5.id
+)
+
+review3 = Review.create!(
+  description: "Can't go wrong with Kobe's. KOBE 4 LYFE!",
+  rating: 5,
+  user_id: u5.id,
+  product_id: kobe5_1.id
+)
+
+review4 = Review.create!(
+  description: "Best colorway I've ever seen. So glad I got a pair.",
+  rating: 5,
+  user_id: u2.id,
+  product_id: kobe5_3.id
+)
+
+review5 = Review.create!(
+  description: "Shoes never arrived. Just plain awful.",
+  rating: 1,
+  user_id: u4.id,
+  product_id: jordan1_6.id
+)
