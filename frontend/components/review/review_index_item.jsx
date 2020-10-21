@@ -9,10 +9,19 @@ class ReviewIndexItem extends React.Component{
     }
 
     render(){
+       
         if (!this.props.users) return null;
         let user;
         if (!this.props.review) return null;
         user = this.props.users[this.props.review.user_id]
+        // debugger
+
+        let deleteButton;
+        if (this.props.currentUser.id === user.id) {
+            deleteButton = <button onClick={() => this.props.deleteReview(this.props.review.id)}>Delete Review</button>
+        } else {
+            deleteButton = null
+        }
         
     
         return(
@@ -21,7 +30,7 @@ class ReviewIndexItem extends React.Component{
                     <li className="single-review-username"> {user.username}</li>
                     <li className="single-review-desc">{this.props.review.description}</li>  
                     <li className="single-review-rating">{this.props.review.rating}</li>
-                    <button onClick={() => this.props.deleteReview(this.props.review.id)}>Delete Review</button>
+                    <li>{deleteButton}</li>
                 </ul>
             </div>
         )
