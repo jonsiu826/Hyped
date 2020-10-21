@@ -37,8 +37,8 @@ export const updateReview = (review) => {
 
 export const deleteReview = (reviewId) => {
     return (dispatch) => {
-        return ReviewApiUtil.deleteReview(reviewId).then((payload) => {
-            dispatch(removeReview(payload))
+        return ReviewApiUtil.deleteReview(reviewId).then(() => {
+            dispatch(removeReview(reviewId))
         })
     }
 }
