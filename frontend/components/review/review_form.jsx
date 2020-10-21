@@ -17,7 +17,7 @@ class ReviewForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         // debugger
-        let review = { description: "testing", rating: 5, user_id: this.props.currentUser.id, product_id: this.props.match.params.productId}
+        let review = { description: this.state.description, rating: this.state.rating, user_id: this.props.currentUser.id, product_id: this.props.match.params.productId}
         this.props.createReview(review);
     }
 

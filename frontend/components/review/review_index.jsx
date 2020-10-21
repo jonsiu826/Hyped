@@ -16,7 +16,7 @@ class ReviewIndex extends React.Component {
         let reviews = this.props.reviews.map((review, idx) => {
             return <ReviewIndexItem review={review} key={idx} users={this.props.users}/>
         })
-
+debugger
         // let reviews;
 
         // (this.props.review) ? reviews = this.props.review.map((review, idx) => {
@@ -30,7 +30,7 @@ class ReviewIndex extends React.Component {
         return (
             <div>
                 <ul>
-                    <div>{reviews}</div>
+                    <li>{reviews}</li>
                     
                 </ul>
             </div>
