@@ -22,16 +22,18 @@ class ReviewForm extends React.Component {
     }
 
     render() {
+
+
         return (
             <div className="create-review-container">
                 <h1>Create a Review</h1>
-                <form onSubmit={this.handleSubmit}>
+                <form>
                     <h3>Description</h3>
                     <textarea type="text" onChange={this.handleChange("description")} value={this.state.description} />
                     <h3>Rating</h3>
                     <input onChange={this.handleChange("rating")} value={this.state.rating} />
                     {/* <textarea onChange={(e) => this.setState({body: e.currentTarget.value})} value={this.state.body}/> */}
-                    <button>Add Review</button>
+                    <button onClick={this.handleSubmit}>Add Review</button>
                 </form>
             </div>
         )

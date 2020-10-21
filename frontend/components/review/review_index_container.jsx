@@ -1,9 +1,10 @@
 import { connect } from 'react-redux';
 import ReviewIndex from './review_index';
 import { fetchProducts } from '../../actions/product_actions';
+import { deleteReview } from '../../actions/review_actions';
 
 const mapStateToProps = (state) => {
-    debugger
+    // debugger
     return {
         reviews: Object.values(state.entities.reviews),
         users: state.entities.users
@@ -12,7 +13,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        
+        deleteReview: (reviewId) => dispatch(deleteReview(reviewId))
     }
 }
 

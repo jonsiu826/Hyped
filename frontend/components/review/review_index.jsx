@@ -14,9 +14,9 @@ class ReviewIndex extends React.Component {
     render() {
         
         let reviews = this.props.reviews.map((review, idx) => {
-            return <ReviewIndexItem review={review} key={idx} users={this.props.users}/>
+            return <ReviewIndexItem review={review} key={idx} users={this.props.users} deleteReview={this.props.deleteReview}/>
         })
-debugger
+// debugger
         // let reviews;
 
         // (this.props.review) ? reviews = this.props.review.map((review, idx) => {

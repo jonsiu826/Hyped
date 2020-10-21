@@ -5,7 +5,7 @@ class Api::ReviewsController < ApplicationController
         if @review.save
             render :show
         else 
-            render json: @review.errors.full_messages, status: 409
+            render json:["Must be signed in to leave a review"], status: 409
         end
     end 
 
