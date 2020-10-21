@@ -21,7 +21,6 @@ export const fetchProducts = () => {
     return (dispatch) => {
     //    debugger
         return ProductApiUtil.fetchProducts().then((payload) => {
-            
             dispatch(receiveProducts(payload))
         })
     }

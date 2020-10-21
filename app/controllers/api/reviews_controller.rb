@@ -1,10 +1,11 @@
 class Api::ReviewsController < ApplicationController
     def create
         @review = Review.new(review_params)
+        # debugger
         if @review.save
             render :show
         else 
-            render json: @review.errors.full_messages, status: 420
+            render json: @review.errors.full_messages, status: 409
         end
     end 
 
@@ -13,7 +14,7 @@ class Api::ReviewsController < ApplicationController
         if @review.update(review_params)
             render :show 
         else
-            render json: @review.errors.full_messages, status: 420
+            render json: @review.errors.full_messages, status: 409
         end
     end
 
@@ -22,11 +23,11 @@ class Api::ReviewsController < ApplicationController
         if @review.destroy
             render :show 
         else
-            render json: @review.errors.full_messages, status: 420
+            render json: @review.errors.full_messages, status: 409
         end
     end
 
     def review_params
-        params.require(:review).permit(:description, :rating)
+        params.require(:review).permit(:description, :rating, :user_id, :product_id)
     end
 end

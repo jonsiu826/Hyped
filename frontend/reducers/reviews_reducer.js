@@ -7,9 +7,9 @@ const reviewReducer = (state = {}, action) => {
 
     switch (action.type) {
         case RECEIVE_PRODUCT:
-            // debugger
             return Object.assign({}, action.payload.reviews)
         case RECEIVE_REVIEW:
+            // debugger
              nextState[action.review.id] = action.review
              return nextState
         case REMOVE_REVIEW:

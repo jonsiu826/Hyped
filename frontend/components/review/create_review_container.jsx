@@ -1,14 +1,17 @@
 import { connect } from 'react-redux'
 import ReviewForm from './review_form';
-import { createReview, deleteReview} from './review_form'
+import { createReview, deleteReview} from '../../actions/review_actions'
+import {withRouter} from 'react-router-dom'
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state, ownProps) => {
+    // debugger
     return {
-        post: {
+        review: {
             description: "",
             rating: ""
         },
-        formType: "Create Review"
+        formType: "Create Review",
+        currentUser: state.entities.users[state.session.id]
     }
 }
 
@@ -19,4 +22,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(ReviewForm)
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(ReviewForm))

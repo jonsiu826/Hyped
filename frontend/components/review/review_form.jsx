@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 class ReviewForm extends React.Component {
     constructor(props) {
         super(props)
-        this.state = this.props.post;
+        this.state = this.props.review;
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
@@ -16,7 +16,9 @@ class ReviewForm extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        this.props.createReview(this.state);
+        // debugger
+        let review = { description: "testing", rating: 5, user_id: this.props.currentUser.id, product_id: this.props.match.params.productId}
+        this.props.createReview(review);
     }
 
     render() {
@@ -25,11 +27,10 @@ class ReviewForm extends React.Component {
                 <h1>Create a Review</h1>
                 <form onSubmit={this.handleSubmit}>
                     <h3>Description</h3>
-                    <input type="text" onChange={this.handleChange("description")} value={this.state.description} />
-                    {/* <textarea onChange={(e) => this.setState({body: e.currentTarget.value})} value={this.state.body}/> */}
+                    <textarea type="text" onChange={this.handleChange("description")} value={this.state.description} />
                     <h3>Rating</h3>
-                    <textarea onChange={this.handleChange("rating")} value={this.state.rating} />
-
+                    <input onChange={this.handleChange("rating")} value={this.state.rating} />
+                    {/* <textarea onChange={(e) => this.setState({body: e.currentTarget.value})} value={this.state.body}/> */}
                     <button>Add Review</button>
                 </form>
             </div>

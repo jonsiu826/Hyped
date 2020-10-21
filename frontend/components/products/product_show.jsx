@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Carousel from 'react-elastic-carousel';
 import CreateReviewContainer from '../review/create_review_container';
 import ReviewIndexContainer from '../review/review_index_container';
+import ReviewIndex from '../review/review_index'
 class ProductShow extends React.Component {
     constructor(props) {
         super(props)
@@ -84,7 +85,7 @@ class ProductShow extends React.Component {
                             </div>
                             <div className="reviews-container">
                                 
-                               
+                               {/* <ReviewIndex review={this.props.reviews}/> */}
                                 <ReviewIndexContainer/>
                                 <CreateReviewContainer/>
                             </div>

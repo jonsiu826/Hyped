@@ -4,6 +4,7 @@ import configureStore from './store/store'
 import React from 'react'
 import { logout, login, signup } from './actions/session_actions'
 import {fetchProducts, fetchProduct} from './actions/product_actions'
+import {createReview, deleteReview} from './actions/review_actions'
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -31,5 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
     window.getState = store.getState;
     window.dispatch = store.dispatch;
     window.fetchProducts = fetchProducts;
-    window.fetchProduct = fetchProduct
+    window.fetchProduct = fetchProduct;
+    window.createReview = createReview;
+    window.deleteReview = deleteReview;
+
 });

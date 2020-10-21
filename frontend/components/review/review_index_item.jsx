@@ -7,9 +7,16 @@ class ReviewIndexItem extends React.Component{
     }
 
     render(){
+        if (!this.props.user) return null;
+        let user;
+        if (!this.props.review) return null;
+        user = this.props.users[this.props.review.user_id]
+        
+
         return(
-            <div className="single-review-container"> 
-                <li className="single-review-desc">{this.props.review.description}</li> 
+            <div className="single-review-container">Reviews
+                <li className="single-review-username"> {user.username}</li>
+                <li className="single-review-desc">{this.props.review.description}</li>  
                 <li className="single-review-rating">{this.props.review.rating}</li>
             </div>
         )
