@@ -16,9 +16,9 @@ class Header extends React.Component{
                     <Link className="header-logo" to="/" href="#">HYPED</Link>
                 </div>
                  <ul className="header-list">
-                    <li>
+                    <Link to="/">
                         <span className="header-discover">Discover</span>
-                    </li>
+                    </Link>
                     <li>
                         <span className="header-shopall">Shop All</span>
                     </li>

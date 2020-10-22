@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Carousel from 'react-elastic-carousel';
 import CreateReviewContainer from '../review/create_review_container';
 import ReviewIndexContainer from '../review/review_index_container';
+import EditReviewContainer from '../review/edit_review_container';
 import ReviewIndex from '../review/review_index'
 class ProductShow extends React.Component {
     constructor(props) {
@@ -104,9 +105,12 @@ class ProductShow extends React.Component {
                             <CreateReviewContainer />
                         </div>
                         <div className="reviews"> 
-                            <p className="review-title">Reviews</p>
-                            <ReviewIndexContainer />
+                            {/* <div className="rev-container"> */}
+                                <p className="review-title">Reviews</p>
+                                <ReviewIndexContainer />
+                            {/* </div> */}
                         </div>
+                            {/* <EditReviewContainer/> */}
                     </div>
                 </section>
             )
