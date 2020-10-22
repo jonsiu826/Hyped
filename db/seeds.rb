@@ -241,14 +241,14 @@ jordan1_7.photo.attach(io: file12, filename: "img_#{jordan1_7.id}.jpg")
 review1 = Review.create!(
   description: "Upper leather was butter. These shoes gave me a +5 to my midrange.",
   rating: 5,
-  user_id: u1.id,
+  user_id: u3.id,
   product_id: jordan1_1.id
 )
 
 review2 = Review.create!(
   description: "Shoes came with a slight crease in toebox, but overall, I am happy.",
   rating: 4,
-  user_id: u1.id,
+  user_id: u3.id,
   product_id: jordan1_5.id
 )
 
@@ -271,4 +271,39 @@ review5 = Review.create!(
   rating: 1,
   user_id: u4.id,
   product_id: jordan1_6.id
+)
+
+review6 = Review.create!(
+  description: "Cactus Jack sent me. It's lit!",
+  rating: 5,
+  user_id: u6.id,
+  product_id: jordan1_5.id
+)
+
+review7 = Review.create!(
+  description: "Nice colorway, should've gotten 2 pairs.",
+  rating: 4,
+  user_id: u6.id,
+  product_id: jordan1_4.id
+)
+
+review8 = Review.create!(
+  description: "Favorite shoes of all time.",
+  rating: 5,
+  user_id: u1.id,
+  product_id: jordan1_1.id
+)
+
+review9 = Review.create!(
+  description: "Package came with only 1 shoe. Not happy.",
+  rating: 1,
+  user_id: u3.id,
+  product_id: kobe5_5.id
+)
+
+review10 = Review.create!(
+  description: "Traction was fantastic. Cushion was great.",
+  rating: 5,
+  user_id: u3.id,
+  product_id: kobe5_2.id
 )

@@ -38,6 +38,13 @@
     max-width: 450px;
     min-width: 450px;
     line-height: 1.5;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+textarea{
+  width: 350px;
+  height: 70px;
 }
 
 .review-title{
@@ -76,6 +83,8 @@
     max-width: 450px;
     min-width: 450px;
     border-right:none;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .form-title{
