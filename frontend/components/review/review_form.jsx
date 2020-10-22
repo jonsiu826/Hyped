@@ -37,7 +37,21 @@ class ReviewForm extends React.Component {
                             <h3 className="form-desc">Description</h3>
                             <textarea className="form-desc-input" type="text" onChange={this.handleChange("description")} value={this.state.description} />
                             <h3 className="form-rating">Rating</h3>
-                            <input className="form-rating-input" onChange={this.handleChange("rating")} value={this.state.rating} />
+                            <label> 1
+                                <input type="radio" className="form-rating-input"  name="rating" onChange={this.handleChange("rating")} value= "1" />
+                            </label>  
+                             <label> 2
+                                <input type="radio" className="form-rating-input" name="rating" onChange={this.handleChange("rating")} value= "2" />
+                            </label>  
+                            <label> 3
+                                <input type="radio" className="form-rating-input" name="rating" onChange={this.handleChange("rating")} value="3" />
+                            </label> 
+                            <label> 4
+                                <input type="radio" className="form-rating-input" name="rating" onChange={this.handleChange("rating")} value="4" />
+                            </label> 
+                            <label> 5
+                                <input type="radio" className="form-rating-input" name="rating" onChange={this.handleChange("rating")} value="5" />
+                            </label> 
                         </div>
                         {/* <textarea onChange={(e) => this.setState({body: e.currentTarget.value})} value={this.state.body}/> */}
                         <button className="form-button"onClick={this.handleSubmit}>Add Review</button>
