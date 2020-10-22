@@ -1,6 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-
 
 class ReviewIndexItem extends React.Component{
     constructor(props){
@@ -9,15 +7,15 @@ class ReviewIndexItem extends React.Component{
     }
 
     render(){
-       
+        
         if (!this.props.users) return null;
         let user;
         if (!this.props.review) return null;
         user = this.props.users[this.props.review.user_id]
-        // debugger
+        debugger
 
         let deleteButton;
-        if (this.props.currentUser.id === user.id) {
+        if (this.props.currentUser && this.props.currentUser.id === user.id) {
             deleteButton = <button onClick={() => this.props.deleteReview(this.props.review.id)}>Delete Review</button>
         } else {
             deleteButton = null

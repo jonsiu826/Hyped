@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import ReviewForm from './review_form';
-import { createReview, deleteReview} from '../../actions/review_actions'
+import { createReview } from '../../actions/review_actions'
 import {withRouter} from 'react-router-dom'
 
 const mapStateToProps = (state, ownProps) => {
@@ -17,8 +17,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        createReview: (review) => dispatch(createReview(review)),
-        deleteReview: (reviewId) => dispatch(deleteReview(reviewId))
+        createReview: (review) => dispatch(createReview(review))
     }
 }
 
