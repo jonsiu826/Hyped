@@ -82,14 +82,7 @@ class ProductShow extends React.Component {
                             <div className="description-container" >
                                 <h2 className="product-details">Product Details</h2>
                                 <p className="show-page-description">{this.props.product.description}</p>
-                            </div>
-                            <div className="reviews-container">
-                                
-                               {/* <ReviewIndex review={this.props.reviews}/> */}
-                                <ReviewIndexContainer/>
-                                <CreateReviewContainer/>
-                            </div>
-                            
+                            </div> 
                 </section>
                     <div className="details-carousel-container" >
                         <Carousel className="details-carousel" breakPoints={breakPoints}>
@@ -104,6 +97,16 @@ class ProductShow extends React.Component {
 
                         </Carousel>
 
+                    </div>
+
+                    <div className="review-container">
+                        <div className="review-form">
+                            <CreateReviewContainer />
+                        </div>
+                        <div className="reviews"> 
+                            <p className="review-title">Reviews</p>
+                            <ReviewIndexContainer />
+                        </div>
                     </div>
                 </section>
             )

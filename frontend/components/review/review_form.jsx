@@ -22,20 +22,32 @@ class ReviewForm extends React.Component {
     }
 
     render() {
+        const signin = (
+            <p className="signin-review">Please sign in to leave a review</p>
+        )
 
-        
+        let leavereview;
+        if (this.props.currentUser) {
+            leavereview = (
+                <div className="create-review-container">
+                   
+                    <form className="create-review-form">
+                        <div className="review-wrapper">
+                            <h1 className="form-title">Create a Review</h1>
+                            <h3 className="form-desc">Description</h3>
+                            <textarea className="form-desc-input" type="text" onChange={this.handleChange("description")} value={this.state.description} />
+                            <h3 className="form-rating">Rating</h3>
+                            <input className="form-rating-input" onChange={this.handleChange("rating")} value={this.state.rating} />
+                        </div>
+                        {/* <textarea onChange={(e) => this.setState({body: e.currentTarget.value})} value={this.state.body}/> */}
+                        <button className="form-button"onClick={this.handleSubmit}>Add Review</button>
+                    </form>
+                </div>
+            )
+        }
+        // debugger
         return (
-            <div className="create-review-container">
-                <h1>Create a Review</h1>
-                <form>
-                    <h3>Description</h3>
-                    <textarea type="text" onChange={this.handleChange("description")} value={this.state.description} />
-                    <h3>Rating</h3>
-                    <input onChange={this.handleChange("rating")} value={this.state.rating} />
-                    {/* <textarea onChange={(e) => this.setState({body: e.currentTarget.value})} value={this.state.body}/> */}
-                    <button onClick={this.handleSubmit}>Add Review</button>
-                </form>
-            </div>
+          this.props.currentUser ? leavereview : signin
         )
     }
 }

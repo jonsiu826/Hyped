@@ -1,5 +1,5 @@
 .show-page-container{
-    padding-top: 100px;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,9 +7,9 @@
     padding-top: 10%;
     padding-left: 10%;
     padding-right: 10%;
-    justify-content: space-around;
+    justify-content: space-between;
     border-right: none;
-    // height: 80%;
+  
 
 }
 
@@ -21,8 +21,6 @@
     justify-content: center;
     border-right: 1px solid lightgray;
     border-top-left-radius: 50px;
-    // min-width: 600px;
-    // max-width: 600px;
     width: 100%;
     font-size: 25px;
  

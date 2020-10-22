@@ -12,7 +12,7 @@ class ReviewIndexItem extends React.Component{
         let user;
         if (!this.props.review) return null;
         user = this.props.users[this.props.review.user_id]
-        debugger
+        // debugger
 
         let deleteButton;
         if (this.props.currentUser && this.props.currentUser.id === user.id) {
@@ -23,13 +23,13 @@ class ReviewIndexItem extends React.Component{
         
     
         return(
-            <div className="single-review-container">Reviews
-                <ul>
-                    <li className="single-review-username"> {user.username}</li>
-                    <li className="single-review-desc">{this.props.review.description}</li>  
-                    <li className="single-review-rating">{this.props.review.rating}</li>
-                    <li>{deleteButton}</li>
+            <div className="single-review-container">
+                <ul className="right-pane-review">
+                    <li className="single-review-username">User: {user.username}</li>
+                    <li className="single-review-desc">Description: {this.props.review.description}</li>  
+                    <li className="single-review-rating">Rating:{this.props.review.rating}/5</li>
                 </ul>
+                    <div className="review-delete">{deleteButton}</div>
             </div>
         )
     }

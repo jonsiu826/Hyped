@@ -4,12 +4,8 @@ import ReviewIndexItem from './review_index_item';
 class ReviewIndex extends React.Component {
     constructor(props) {
         super(props)
-        // this.handleClick = this.handleClick.bind(this)
     }
-    // handleClick() {
-    //     this.props.logout()
-    //     this.props.history.push("/")
-    // }
+
     render() {
         
         let reviews = this.props.reviews.map((review, idx) => {
