@@ -38,5 +38,13 @@ When signed in, users are allowed to leave reviews for specific products as well
 ![image](https://github.com/jonsiu826/fullstack_project/blob/main/app/assets/images/reviews.png)
 
 
+One feature that adds a new dimension to Hyped is the carousel. It's a simple design that can make any website look more organized and more intricate. For the show page's carousel, I wanted to make display the many details a shoe has. From designer to colorway to brand, it was difficult to fit all of the details on one page row without makes it look condensed or cluttered on the screen. With the implementation of the carousel, it allows the user to view the many details while allowing the website to maintain a minimal look. I needed to make the carousel dynamic in the sense that every sneaker would have different information. 
+Through my thunk action creator and frontend route, I was able to collect the specific sneaker along with all of it's information from the database. From there, I created a variable that included each specific category and mapped through the array. From there a created another variable that controlled the amount of sneakers being displayed within the carousel based on the width of the browser.
+
+![image](https://github.com/jonsiu826/fullstack_project/blob/main/app/assets/images/carousel1.png)
+![image](https://github.com/jonsiu826/fullstack_project/blob/main/app/assets/images/carousel2.png)
+
+
+
 Future Directions
  * implementation of searching for specific sneakers
