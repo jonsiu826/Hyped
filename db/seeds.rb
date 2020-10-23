@@ -230,7 +230,7 @@ kobe5_6 = Product.create!(
 )
 
 kobe5_7 = Product.create!(
-   name: "Zoom Kobe 6 'Grinch", 
+   name: "Zoom Kobe 6 'Grinch'", 
    brand: "Nike", 
    release_date: "2010-12-25", 
    colorway: "Lime Green/Varsity Red-Black", 
