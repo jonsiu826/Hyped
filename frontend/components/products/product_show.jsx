@@ -14,8 +14,8 @@ class ProductShow extends React.Component {
     }
    
     componentDidMount(){
-        // debugger
         this.props.fetchProduct(this.props.match.params.productId)
+        window.scrollTo(0, 0);
 
     }
 
@@ -80,7 +80,9 @@ class ProductShow extends React.Component {
                         <div className="right-show">
                             <p className="show-page-name">{this.props.product.name}</p>
                             <span className="showpage-buttons">
-                                <button className="buy-new-button">Buy New</button>
+                                <a href="https://github.com/jonsiu826?tab=repositories" target="_blank">
+                                    <button className="buy-new-button">Buy New</button>
+                                </a>
                                 <button className="buy-used-button">Buy Used</button>
                             </span>
                         </div>

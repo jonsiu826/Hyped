@@ -573,3 +573,52 @@ review10 = Review.create!(
   user_id: u3.id,
   product_id: kobe5_2.id
 )
+
+review11 = Review.create!(
+  description: "Super Comfy.",
+  rating: 5,
+  user_id: u2.id,
+  product_id: kobe5_7.id
+)
+
+review11 = Review.create!(
+  description: "Stylish and comfortable!",
+  rating: 5,
+  user_id: u4.id,
+  product_id: yeezy1.id
+)
+
+review12 = Review.create!(
+  description: "Decently comfortable, can't complain",
+  rating: 3,
+  user_id: u5.id,
+  product_id: yeezy2.id
+)
+
+review12 = Review.create!(
+  description: "Pretty pricey, but worth it.",
+  rating: 4,
+  user_id: u3.id,
+  product_id: yeezy3.id
+)
+
+review13 = Review.create!(
+  description: "Great design on these",
+  rating: 4,
+  user_id: u4.id,
+  product_id: yeezy4.id
+)
+
+review14 = Review.create!(
+  description: "Great design on these!",
+  rating: 4,
+  user_id: u1.id,
+  product_id: jordan1_3.id
+)
+
+review15 = Review.create!(
+  description: "Great design on these!",
+  rating: 4,
+  user_id: u1.id,
+  product_id: yeezy6.id
+)

@@ -14,6 +14,7 @@ class ProductIndex extends React.Component {
    
     componentDidMount(){
         this.props.fetchProducts();
+        window.scrollTo(0, 0);
     }
 
     render() {
@@ -38,18 +39,18 @@ class ProductIndex extends React.Component {
             {
                 name: "Zoom Kobe 5 Protro 'DeMar DeRozan' PE",
                 url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe_demar_PE.jpeg",
-                link: "/products/8"
+                link: "/products/9"
             },
             {
                 name: "Zoom Kobe 5 Protro 'P.J. Tucker' PE",
                 url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe_tucker_PE.jpeg",
-                link: "/products/12"
+                link: "/products/13"
 
             },
             {
                 name: "Zoom Kobe 5 Protro '5 Rings'",
                 url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/Kobe_5rings.jpeg",
-                link: "/products/9"
+                link: "/products/10"
             },
             {
                 name: "Air Jordan 1 Retro High OG 'Crimson Tint'",
