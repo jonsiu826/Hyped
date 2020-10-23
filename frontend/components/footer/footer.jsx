@@ -22,7 +22,9 @@ const Footer = () => {
                     <a className="linkedin-logo" href="https://www.linkedin.com/in/jonathansiu826/"><i className="fab fa-linkedin"></i></a>
                 </div>
                 {/* <div className="copyright-wrapper"> */}
+                    <p>Created by Jonathan Siu</p>
                     <span className="copyright"><i className="fas fa-copyright">2020 1661, Inc. All Rights Reserved</i></span>
+                    
                 {/* </div> */}
             </div> 
 

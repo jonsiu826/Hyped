@@ -4,7 +4,7 @@ import React from 'react';
 class EditReviewForm extends React.Component {
     constructor(props) {
         super(props)
-    // this.state = this.props.review;
+        this.state = 
     this.handleSubmit = this.handleSubmit.bind(this);
     }
 
@@ -22,6 +22,8 @@ handleSubmit(e) {
 }
 
     render() {
+        if (!this.props.reviewId) return null;
+    
         return (
             <div className="create-review-container">
                 <h1>Create a Review</h1>
@@ -31,23 +33,23 @@ handleSubmit(e) {
                     <h3>Rating</h3>
                     <h3 className="form-rating">Rating</h3>
                     <label> 1
-                                <input type="radio" className="form-rating-input" name="rating" checked={"1" === this.state.rating ? "checked" : ""}
+                            <input type="radio" className="form-rating-input" name="rating" checked={"1" === this.state.rating ? "checked" : ""}
                             onChange={this.handleChange("rating")} value="1" />
                     </label>
                     <label> 2
-                                <input type="radio" className="form-rating-input" name="rating" checked={"2" === this.state.rating ? "checked" : ""}
+                            <input type="radio" className="form-rating-input" name="rating" checked={"2" === this.state.rating ? "checked" : ""}
                             onChange={this.handleChange("rating")} value="2" />
                     </label>
                     <label> 3
-                                <input type="radio" className="form-rating-input" name="rating" checked={"3" === this.state.rating ? "checked" : ""}
+                            <input type="radio" className="form-rating-input" name="rating" checked={"3" === this.state.rating ? "checked" : ""}
                             onChange={this.handleChange("rating")} value="3" />
                     </label>
                     <label> 4
-                                <input type="radio" className="form-rating-input" name="rating" checked={"4" === this.state.rating ? "checked" : ""}
+                            <input type="radio" className="form-rating-input" name="rating" checked={"4" === this.state.rating ? "checked" : ""}
                             onChange={this.handleChange("rating")} value="4" />
                     </label>
                     <label> 5
-                                <input type="radio" className="form-rating-input" name="rating" checked={"5" === this.state.rating ? "checked" : ""}
+                            <input type="radio" className="form-rating-input" name="rating" checked={"5" === this.state.rating ? "checked" : ""}
                             onChange={this.handleChange("rating")} value="5" />
                     </label> 
                     <button onClick={this.handleSubmit}>Edit Review</button>

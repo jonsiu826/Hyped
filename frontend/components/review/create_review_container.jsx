@@ -10,7 +10,7 @@ const mapStateToProps = (state, ownProps) => {
             description: "",
             rating: ""
         },
-        formType: "Create Review",
+        
         currentUser: state.entities.users[state.session.id]
     }
 }

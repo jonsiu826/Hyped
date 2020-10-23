@@ -1,18 +1,20 @@
 import { connect } from 'react-redux';
 import EditReviewForm from '../review/edit_review_form';
 import { updateReview } from '../../actions/review_actions';
+import {withRouter} from 'react-router-dom';
 
-const mSTP = (state, ownProps) => {
+const mapStateToProps = (state, ownProps) => {
+    debugger
     return {
-        formType: 'Update Review',
+        reviews: this.props.reviews,
         currentUser: state.entities.users[state.session.id]
     }
 }
 
-const mDTP = (dispatch) => {
+const mapDispatchToProps = (dispatch) => {
     return {
         updateReview: review => dispatch(updateReview(review))
     }
 }
 
-export default connect(mSTP, mDTP)(EditReviewForm);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(EditReviewForm));

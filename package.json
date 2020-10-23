@@ -17,13 +17,17 @@
     "react-router-dom": "^5.2.0",
     "react-slick": "^0.27.11",
     "redux": "^4.0.5",
-    "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.2.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
   },
+
+  "devDependencies": {
+    "redux-logger": "^3.0.6"
+  },
+  
   "description": "This README would normally document whatever steps are necessary to get the application up and running.",
   "version": "1.0.0",
   "main": "index.js",

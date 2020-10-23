@@ -5,17 +5,22 @@ import CreateReviewContainer from '../review/create_review_container';
 import ReviewIndexContainer from '../review/review_index_container';
 import EditReviewContainer from '../review/edit_review_container';
 import ReviewIndex from '../review/review_index'
+import ReviewIndexItem from '../review/review_index_item'
 class ProductShow extends React.Component {
     constructor(props) {
         super(props)
-        this.state = this.props.product
-        // this.handleClick = this.handleClick.bind(this)
+        this.state = { reviewId: false }
+        this.handleReviewEdit = this.handleReviewEdit.bind(this)
     }
    
     componentDidMount(){
         // debugger
         this.props.fetchProduct(this.props.match.params.productId)
 
+    }
+
+    handleReviewEdit(reviewId) {
+        this.setState({ reviewId: reviewId })
     }
 
    
@@ -107,10 +112,11 @@ class ProductShow extends React.Component {
                         <div className="reviews"> 
                             {/* <div className="rev-container"> */}
                                 <p className="review-title">Reviews</p>
-                                <ReviewIndexContainer />
+                            <ReviewIndexContainer/>
                             {/* </div> */}
                         </div>
-                            {/* <EditReviewContainer/> */}
+                            {/* <EditReviewContainer reviewId={this.state.reviewId}/>
+                        <ReviewIndexItem handleReviewEdit={this.handleReviewEdit}/> */}
                     </div>
                 </section>
             )
