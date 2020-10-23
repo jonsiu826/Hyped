@@ -44,6 +44,10 @@ Through my thunk action creator and frontend route, I was able to collect the sp
 ![image](https://github.com/jonsiu826/fullstack_project/blob/main/app/assets/images/carousel1.png)
 ![image](https://github.com/jonsiu826/fullstack_project/blob/main/app/assets/images/carousel2.png)
 
+One simple feature I was able to discover was a slice within the container for my index. Although very simple, it completely changed the look of my entire index page. Within the seeding file, my products were all grouped together, and as a result, my index page had little to no flexibility in terms of displaying shoes. However, with this simple code, (along with creating new containers/index/indexitems) I was able to grab the specific shoes I wanted and redesign my index page accordingly. 
+![image](https://github.com/jonsiu826/fullstack_project/blob/main/app/assets/images/slice.png)
+
+
 
 
 Future Directions
