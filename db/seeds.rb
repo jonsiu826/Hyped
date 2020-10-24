@@ -90,7 +90,7 @@ jordan1_4 = Product.create!(
    name: "Air Jordan 1 Retro High OG 'Obsidian'", 
    brand: "Air Jordan", 
    release_date: "2019-08-31", 
-   colorway: "Sail/DarkMocha/Black", 
+   colorway: "Sail/Obsidian/University Blue", 
    technology: "Air", 
    category: "Lifestyle", 
    silhouette: "Air Jordan 1", 
@@ -166,7 +166,7 @@ kobe5_1 = Product.create!(
 
 kobe5_2 = Product.create!(
    name: "Zoom Kobe 5 Protro '5 Rings'", 
-   brand: "Air Jordan", 
+   brand: "Nike", 
    release_date: "2020-10-15", 
    colorway: "Concord/Midwest Gold", 
    technology: "Zoom Air", 
