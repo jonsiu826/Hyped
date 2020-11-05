@@ -1,3 +1,5 @@
+import ReactGA from 'react-ga';
+
 import Root from './components/root'
 import ReactDOM from 'react-dom';
 import configureStore from './store/store'
@@ -6,6 +8,11 @@ import { logout, login, signup } from './actions/session_actions'
 import {fetchProducts, fetchProduct} from './actions/product_actions'
 import {createReview, deleteReview, updateReview} from './actions/review_actions'
 
+function initializeReactGA() {
+    ReactGA.initialize('G-92TJ6CQ9LY');
+    ReactGA.pageview('/homepage');
+}
+initializeReactGA();
 
 document.addEventListener("DOMContentLoaded", () => {
 
