@@ -10,6 +10,7 @@ import {AuthRoute} from '../util/route_util';
 import Footer from './footer/footer'
 import ProductIndexContainer from './products/product_index_container'
 import ProductShowContainer from './products/product_show_container'
+import SearchContainer from './search/search_container'
 import {
     Route,
     Redirect,
@@ -30,6 +31,7 @@ const App = () => (
                 {/* <Route exact path="/" component={GreetingContainer} /> */}
         <Switch>
             <Route exact path="/products/:productId" component={ProductShowContainer}/>
+            <Route exact path='/search' component={SearchContainer} />
             <AuthRoute exact path="/login" component={LoginFormContainer} />
             <AuthRoute exact path="/signup" component={SignupFormContainer} />
             <Route exact path="/" component={ProductIndexContainer}/>

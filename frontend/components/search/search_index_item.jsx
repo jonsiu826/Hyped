@@ -1,19 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const SearchItemIndex = ({ product, search }) => {
-    if (search !== "" && (sneaker.name.toLowerCase().indexOf(search.toLowerCase()) === -1)) {
+const SearchIndexItem = ({ product, search }) => {
+    if (search !== "" && (product.name.toLowerCase().indexOf(search.toLowerCase()) === -1)) {
         return null;
     } 
     
     return (
-        <a className='sneakerLink' href={`#/sneakers/${product.id}`}> 
-            <div className='sneakerItem'>
-                <img src={product.photoUrl}/>
-                <span className='sneaker-item-brand'>{product.brand}</span>
-                <span className='sneakerLink'>{product.name}</span>
+            <div className="sneaker-container">
+                <li className="sneaker-indexitem">
+                        <div className="release-date">{product.release_date}</div>
+                  
+                    <Link className="sneaker-info" to={`/products/${product.id}`}>
+                        <img src={product.photo_url} className="product-image"/>
+                        <div className="sneaker-name">{product.name}</div>
+                     </Link>
+                </li>       
             </div>
-        </a>
-    )
+        )
 }
 
-export default SearchItemIndex
+export default SearchIndexItem

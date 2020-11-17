@@ -11,7 +11,7 @@ class SearchIndex extends React.Component {
     }
 
     componentDidMount() {
-        this.props.fetchSneakers()
+        this.props.fetchProducts()
         window.scrollTo(0,0)
     }
 
@@ -20,10 +20,14 @@ class SearchIndex extends React.Component {
     }
 
     render () {
+        debugger
         const { search } = this.state;
-        const { products } = this.props;
+        // const { products } = this.props;
         
-        if (!products) return null;
+        if (!this.props.products) return null;
+        const search_products = this.props.products.map((product, idx) => {
+            return <SearchIndexItem product={product} key={idx} search={search}/>
+        })
 
         return (
             <div className="outerSneakerdiv">
@@ -37,8 +41,8 @@ class SearchIndex extends React.Component {
                     </div>
                 </div>
                  
-                <div className='show-all'>
-                    {products.map(product => <SearchIndexItem key={product.id} product={product} search={search}/>)} 
+                <div className='search-ul'>
+                    {search_products}
                 </div>
             </div>
         )
