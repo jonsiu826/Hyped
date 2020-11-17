@@ -35,5 +35,5 @@ export const fetchProduct = (productId) => {
 }
 
 
-export const searchProduct = (query, page) => dispatch => ProductApiUtil.searchProduct(query, page)
-  .then( payload => dispatch(receiveSearch(payload)));
+// export const searchProduct = (query, page) => dispatch => ProductApiUtil.searchProduct(query, page)
+//   .then( payload => dispatch(receiveSearch(payload)));
