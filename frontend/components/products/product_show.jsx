@@ -4,8 +4,9 @@ import Carousel from 'react-elastic-carousel';
 import CreateReviewContainer from '../review/create_review_container';
 import ReviewIndexContainer from '../review/review_index_container';
 import EditReviewContainer from '../review/edit_review_container';
-import ReviewIndex from '../review/review_index'
-import ReviewIndexItem from '../review/review_index_item'
+import ReviewIndex from '../review/review_index';
+import ReviewIndexItem from '../review/review_index_item';
+
 class ProductShow extends React.Component {
     constructor(props) {
         super(props)

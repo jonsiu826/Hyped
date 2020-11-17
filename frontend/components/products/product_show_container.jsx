@@ -3,7 +3,6 @@ import ProductShow from './product_show';
 import { fetchProduct } from '../../actions/product_actions';
 
 const mapStateToProps = (state, ownProps) => {
-    // debugger
     return {
         product: state.entities.products[ownProps.match.params.productId],
         reviews: Object.values(state.entities.reviews)

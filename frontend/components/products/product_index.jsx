@@ -75,10 +75,10 @@ class ProductIndex extends React.Component {
         // })
 
         const breakPoints = [
-            {width: 400, itemsToShow: 1},
-            {width: 700, itemsToShow: 2},
-            {width: 900, itemsToShow: 3},
-            {width: 1100, itemsToShow: 4}
+            {width: 400, itemsToShow: 3},
+            {width: 700, itemsToShow: 4},
+            {width: 900, itemsToShow: 5},
+            {width: 1100, itemsToShow: 6}
         ];
     
 
@@ -97,7 +97,7 @@ class ProductIndex extends React.Component {
              
                 <h2 className="carousel-title"> Top Trending Sneakers</h2>
                 <div className="carousel-container">
-                    <Carousel className="carousel-bar"breakPoints={breakPoints}>
+                    <Carousel className="carousel-bar" breakPoints={breakPoints}>
                        {photos.map((photo , idx) => {
                            return(
                                <Link key={idx} to={photo.link}className="carousel-box">
