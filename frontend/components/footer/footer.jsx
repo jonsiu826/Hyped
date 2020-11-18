@@ -18,8 +18,8 @@ const Footer = () => {
         <div className="footer-container">
             <div className="footer-wrapper">
                 <div className="footer-links">
-                    <a className="github-logo" href="https://github.com/jonsiu826"><i className="fab fa-github"></i></a>
-                    <a className="linkedin-logo" href="https://www.linkedin.com/in/jonathansiu826/"><i className="fab fa-linkedin"></i></a>
+                    <a className="github-logo" href="https://github.com/jonsiu826" target="_blank"><i className="fab fa-github"></i></a>
+                    <a className="linkedin-logo" href="https://www.linkedin.com/in/jonathansiu826/" target="_blank"><i className="fab fa-linkedin"></i></a>
                 </div>
                 {/* <div className="copyright-wrapper"> */}
                     <p>Created by Jonathan Siu</p>
