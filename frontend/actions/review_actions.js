@@ -29,8 +29,8 @@ export const createReview = (review) => {
 
 export const updateReview = (review) => {
     return (dispatch) => {
-        return ReviewApiUtil.updateReview(review).then((payload) => {
-            dispatch(receiveReview(payload))
+        return ReviewApiUtil.updateReview(review).then((review) => {
+            dispatch(receiveReview(review))
         })
     }
 }

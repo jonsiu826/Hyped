@@ -6,6 +6,7 @@ import ReviewIndexContainer from '../review/review_index_container';
 import EditReviewContainer from '../review/edit_review_container';
 import ReviewIndex from '../review/review_index';
 import ReviewIndexItem from '../review/review_index_item';
+import EditReviewForm from '../review/edit_review_form'
 
 class ProductShow extends React.Component {
     constructor(props) {
@@ -118,6 +119,10 @@ class ProductShow extends React.Component {
                             <ReviewIndexContainer/>
                             {/* </div> */}
                         </div>
+                        {/* <div>
+                            <p>Edit Review</p>
+                            <EditReviewContainer/>
+                        </div> */}
                             {/* <EditReviewContainer reviewId={this.state.reviewId}/>
                         <ReviewIndexItem handleReviewEdit={this.handleReviewEdit}/> */}
                     </div>

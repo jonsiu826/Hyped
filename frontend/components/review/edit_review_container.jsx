@@ -6,7 +6,7 @@ import {withRouter} from 'react-router-dom';
 const mapStateToProps = (state, ownProps) => {
     debugger
     return {
-        reviews: this.props.reviews,
+        reviews: state.entities.reviews,
         currentUser: state.entities.users[state.session.id]
     }
 }
