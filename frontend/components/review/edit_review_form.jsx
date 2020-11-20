@@ -21,6 +21,7 @@ handleSubmit(e) {
     // let review = { description: this.state.description, rating: this.state.rating, user_id: this.props.currentUser.id, product_id: this.props.match.params.productId }
     let newReview = { id: this.state.id, description: this.state.description, rating: this.state.rating, user_id: this.state.user_id, product_id: this.state.product_id}
     this.props.updateReview(newReview);
+    this.props.closeModal();
     //  this.props.editComment({
     //             id: this.props.comment.id,
     //             body: this.state.body,
@@ -33,12 +34,12 @@ handleSubmit(e) {
         if (!this.props.review) return null;
     
         return (
-            <div className="create-review-container">
-                <h1>Edit Review</h1>
+            <div className="edit-review-container">
+                <h1 className="edit-review-title">Edit Review</h1>
                 <form>
                     <h3>Description</h3>
                     <textarea type="text" onChange={this.handleChange("description")} value={this.state.description} />
-                    <h3 className="form-rating">Rating</h3>
+                    <h3 className="edit-form-rating">Rating</h3>
                     <label> 1
                             <input type="radio" className="form-rating-input" name="rating" checked={"1" === this.state.rating ? "checked" : ""}
                             onChange={this.handleChange("rating")} value="1" />

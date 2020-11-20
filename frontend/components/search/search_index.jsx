@@ -31,13 +31,13 @@ class SearchIndex extends React.Component {
 
         return (
             <div className="outerSneakerdiv">
-                <span className="shop-all">Search Our Collection</span>
+                <span className="search-collection">Search Our Collection</span>
                 
                 <div className='search-container'>
                     <i className="fas fa-search fa-3x sneaker-search"></i>
-                    <div className='col-3'>
-                        <input type='text' className='search-input effect-2' placeholder="SEARCH PRODUCT" onChange={this.onChange}/>
-                        <span className="focus-border"></span>
+                    <div className='search-bar'>
+                        <input type='text' className='search-input' placeholder="TYPE TO SEARCHgit " onChange={this.onChange}/>
+                        {/* <span className="focus-border"></span> */}
                     </div>
                 </div>
                  

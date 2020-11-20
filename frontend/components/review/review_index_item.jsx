@@ -41,7 +41,8 @@ class ReviewIndexItem extends React.Component{
                     <li className="single-review-rating">Rating: {this.props.review.rating}/5</li>
                 </ul>
                     <div className="review-delete">{deleteButton}</div>
-                    <EditReviewForm review={this.props.review} updateReview={this.props.updateReview} currentUser={this.props.currentUser} user={this.props.user}/>
+                    <button className="review-button" onClick={() => this.props.openModal('edit_review')}>Edit Review</button>
+                    <EditReviewForm closeModal={this.props.closeModal} review={this.props.review} updateReview={this.props.updateReview} currentUser={this.props.currentUser} user={this.props.user}/>
             </div>
         )
     }
