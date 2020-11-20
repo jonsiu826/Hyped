@@ -36,7 +36,7 @@ class SearchIndex extends React.Component {
                 <div className='search-container'>
                     <i className="fas fa-search fa-3x sneaker-search"></i>
                     <div className='search-bar'>
-                        <input type='text' className='search-input' placeholder="TYPE TO SEARCHgit " onChange={this.onChange}/>
+                        <input type='text' className='search-input' placeholder="TYPE TO SEARCH" onChange={this.onChange}/>
                         {/* <span className="focus-border"></span> */}
                     </div>
                 </div>
