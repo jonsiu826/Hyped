@@ -17,6 +17,14 @@ const removeReview = reviewId => {
     }
 }
 
+export const fetchReview = (reviewId) => {
+    return (dispatch) => {
+        return ReviewApiUtil.fetchReview(productId).then((payload) => {
+            dispatch(receiveProduct(payload))
+        })
+    }
+}
+
 export const createReview = (review) => {
     // debugger
     return (dispatch) => {

@@ -6,8 +6,9 @@ class EditReviewFormIndex extends React.Component {
         super(props)
     }
 
+ 
     render() {
-        debugger
+        
         let reviews = this.props.reviews.map((review, idx) => {
             return <EditReviewFormIndexItem openModal={this.props.openModal} closeModal={this.props.closeModal} review={review} key={idx} users={this.props.users} updateReview = {this.props.updateReview} currentUser={this.props.currentUser}/>
         })

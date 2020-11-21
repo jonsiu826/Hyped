@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import EditReviewFormIndex from './edit_review_form_index';
-import { updateReview } from '../../actions/review_actions';
+import { updateReview, fetchReview } from '../../actions/review_actions';
 import {withRouter} from 'react-router-dom';
 import { openModal, closeModal } from '../../actions/modal_actions';
 
@@ -16,6 +16,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
+        fetchReview: reviewId => dispatch(fetchReview(reviewId)),
         updateReview: review => dispatch(updateReview(review)),
         openModal: modal => {
             return dispatch(openModal(modal))

@@ -10,6 +10,8 @@ class EditReviewFormIndexItem extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
+    
+
 handleChange(type) {
     return (e) => {
         this.setState({ [type]: e.currentTarget.value })
