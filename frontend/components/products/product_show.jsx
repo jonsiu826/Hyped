@@ -6,7 +6,7 @@ import ReviewIndexContainer from '../review/review_index_container';
 import EditReviewContainer from '../review/edit_review_container';
 import ReviewIndex from '../review/review_index';
 import ReviewIndexItem from '../review/review_index_item';
-import EditReviewForm from '../review/edit_review_form'
+import EditReviewForm from '../review/edit_review_form_index_item'
 
 class ProductShow extends React.Component {
     constructor(props) {

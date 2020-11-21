@@ -1,9 +1,10 @@
 import React from 'react';
 
 
-class EditReviewForm extends React.Component {
+class EditReviewFormIndexItem extends React.Component {
     constructor(props) {
         super(props)
+        debugger
         // this.state = {rating: false, edit:false}
         this.state = this.props.review
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -67,4 +68,4 @@ handleSubmit(e) {
     }
 }
 
-export default EditReviewForm;
+export default EditReviewFormIndexItem;

@@ -1,5 +1,5 @@
 import React from 'react';
-import EditReviewForm from "../review/edit_review_form"
+import EditReviewForm from "./edit_review_form_index_item"
 
 class ReviewIndexItem extends React.Component{
     constructor(props){
@@ -42,7 +42,7 @@ class ReviewIndexItem extends React.Component{
                 </ul>
                     <div className="review-delete">{deleteButton}</div>
                     <button className="review-button" onClick={() => this.props.openModal('edit_review')}>Edit Review</button>
-                    <EditReviewForm closeModal={this.props.closeModal} review={this.props.review} updateReview={this.props.updateReview} currentUser={this.props.currentUser} user={this.props.user}/>
+                    {/* <EditReviewForm closeModal={this.props.closeModal} review={this.props.review} updateReview={this.props.updateReview} currentUser={this.props.currentUser} user={this.props.user}/> */}
             </div>
         )
     }
