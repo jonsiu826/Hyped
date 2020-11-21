@@ -29,7 +29,7 @@
 .reviews{
     width: 100px;
     height: 260px;
-    overflow: scroll;
+    overflow: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,8 +105,13 @@ textarea{
 
 .right-pane-review{
     display: flex;
-    padding-right:80px;
+    // padding-right:80px;
     flex-direction: column;
+    padding: 15px;
+}
+
+.review-buttons{
+    padding: 15px;
 }
 
 .review-delete{
@@ -122,4 +127,8 @@ textarea{
 .single-review-container{
     display: flex;
     flex-direction: row;
+}
+
+.no-review-message{
+    padding-bottom: 60px;
 }

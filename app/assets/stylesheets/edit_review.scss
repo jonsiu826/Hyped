@@ -1,3 +1,55 @@
 // .edit-review-title{
 //     font-size: 100px;
 // }
+.edit-review-container{
+//   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.603);
+
+}
+
+.edit-review-wrapper{
+  width: 350px;
+  height: 250px;
+  padding: 1em;
+  border-radius:8px;
+  box-shadow: var(--shadow-l);
+  background-color: white;
+//   flex-direction: column;
+}
+
+.edit-form-textarea{
+    width: 308px;
+}
+
+.edit-review-title{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    // padding-bottom: 30px;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.edit-description-title{
+      font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;  
+    
+}
+
+.edit-form-rating{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+}
+
+.edit-submit{
+  border: none;
+//   outline: none;
+  border-radius: 4px;
+  width: 45%;
+  padding: 5px;
+  background-color: lightgray;
+}

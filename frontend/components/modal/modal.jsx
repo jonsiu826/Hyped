@@ -26,15 +26,29 @@ function Modal({ modal, closeModal }) {
         default:
             return null;
     }
-    return (
-        <div className="modal-background" onClick={closeModal}>
-            <div className="modal-child" onClick={e => e.stopPropagation()}>
-                <div className="modal-content">
-                    {component} 
+    debugger
+    if (component.type.WrappedComponent.name === "Greeting"){
+        return (
+            <div className="modal-background" onClick={closeModal}>
+                <div className="modal-child" onClick={e => e.stopPropagation()}>
+                    <div className="modal-content">
+                        {component} 
+                    </div>
                 </div>
             </div>
-        </div>
-    );
+        );
+
+    } else {
+         return (
+            <div className="modal-background1" onClick={closeModal}>
+                <div className="modal-child1" onClick={e => e.stopPropagation()}>
+                    <div className="modal-content1">
+                        {component} 
+                    </div>
+                </div>
+            </div>
+        )
+    }
 }
 
 const mapStateToProps = state => {

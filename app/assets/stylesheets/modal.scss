@@ -11,13 +11,13 @@
 
 }
 
-.modal-child {
-  // position: absolute;
-  // top: 60%;
-  // left: 94%;
-  // transform: translate(-50%, -50%);
-  // height: 100%;
-}
+// .modal-child {
+//   // position: absolute;
+//   // top: 60%;
+//   // left: 94%;
+//   // transform: translate(-50%, -50%);
+//   // height: 100%;
+// }
 
 
 
@@ -99,4 +99,21 @@
 .logingreeting,
 .signupgreeting{
   text-decoration: underline;
+}
+
+.modal-background1 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+.modal-child1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

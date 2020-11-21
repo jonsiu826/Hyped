@@ -38,33 +38,35 @@ handleSubmit(e) {
     
         return (
             <div className="edit-review-container">
-                <h1 className="edit-review-title">Edit Review</h1>
-                <form>
-                    <h3>Description</h3>
-                    <textarea type="text" onChange={this.handleChange("description")} value={this.state.description} />
-                    <h3 className="edit-form-rating">Rating</h3>
-                    <label> 1
-                            <input type="radio" className="form-rating-input" name="rating" checked={"1" === this.state.rating ? "checked" : ""}
-                            onChange={this.handleChange("rating")} value="1" />
-                    </label>
-                    <label> 2
-                            <input type="radio" className="form-rating-input" name="rating" checked={"2" === this.state.rating ? "checked" : ""}
-                            onChange={this.handleChange("rating")} value="2" />
-                    </label>
-                    <label> 3
-                            <input type="radio" className="form-rating-input" name="rating" checked={"3" === this.state.rating ? "checked" : ""}
-                            onChange={this.handleChange("rating")} value="3" />
-                    </label>
-                    <label> 4
-                            <input type="radio" className="form-rating-input" name="rating" checked={"4" === this.state.rating ? "checked" : ""}
-                            onChange={this.handleChange("rating")} value="4" />
-                    </label>
-                    <label> 5
-                            <input type="radio" className="form-rating-input" name="rating" checked={"5" === this.state.rating ? "checked" : ""}
-                            onChange={this.handleChange("rating")} value="5" />
-                    </label> 
-                    <button onClick={this.handleSubmit}>Edit Review</button>
-                </form>
+                <div className="edit-review-wrapper">
+                    <form>
+                        <h1 className="edit-review-title">Edit Review</h1>
+                        <h3 className="edit-description-title">Description</h3>
+                        <textarea className="edit-form-textarea" type="text" onChange={this.handleChange("description")} value={this.state.description} />
+                        <h3 className="edit-form-rating">Rating</h3>
+                        <label> 1
+                                <input type="radio" className="form-rating-input" name="rating" checked={"1" === this.state.rating ? "checked" : ""}
+                                onChange={this.handleChange("rating")} value="1" />
+                        </label>
+                        <label> 2
+                                <input type="radio" className="form-rating-input" name="rating" checked={"2" === this.state.rating ? "checked" : ""}
+                                onChange={this.handleChange("rating")} value="2" />
+                        </label>
+                        <label> 3
+                                <input type="radio" className="form-rating-input" name="rating" checked={"3" === this.state.rating ? "checked" : ""}
+                                onChange={this.handleChange("rating")} value="3" />
+                        </label>
+                        <label> 4
+                                <input type="radio" className="form-rating-input" name="rating" checked={"4" === this.state.rating ? "checked" : ""}
+                                onChange={this.handleChange("rating")} value="4" />
+                        </label>
+                        <label> 5
+                                <input type="radio" className="form-rating-input" name="rating" checked={"5" === this.state.rating ? "checked" : ""}
+                                onChange={this.handleChange("rating")} value="5" />
+                        </label> 
+                        <button className="edit-submit" onClick={this.handleSubmit}>Submit</button>
+                    </form>
+                </div>
             </div>
         )
     }
