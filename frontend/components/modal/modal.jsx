@@ -1,11 +1,10 @@
 import React from 'react';
 import { closeModal } from '../../actions/modal_actions';
 import { connect } from 'react-redux';
+import { Link } from "react-router-dom";
 import LoginFormContainer from '../sessions/login_form_container';
 import SignupFormContainer from '../sessions/signup_form_container';
 import GreetingContainer from '../greeting/greeting_container';
-import EditReviewForm from "../review/edit_review_form_index_item"
-import CreateReviewForm from "../review/review_index_container"
 import EditReviewContainer from "../review/edit_review_container"
 
 function Modal({ modal, closeModal }) {
@@ -26,13 +25,25 @@ function Modal({ modal, closeModal }) {
         default:
             return null;
     }
-    debugger
+    // debugger
     if (component.type.WrappedComponent.name === "Greeting"){
         return (
             <div className="modal-background" onClick={closeModal}>
                 <div className="modal-child" onClick={e => e.stopPropagation()}>
                     <div className="modal-content">
-                        {component} 
+                        <div>
+                            <div className="modal-link" onClick={closeModal}>
+                                Collections
+                            </div>
+                         </div>
+                        <div>
+                            <Link to="/sneakers" className="modal-link" onClick={closeModal}>
+                                Shop All
+                            </Link>
+                        </div> 
+                        <div>
+                            {component} 
+                        </div>
                     </div>
                 </div>
             </div>
