@@ -11,7 +11,7 @@
 }
 
 .edit-review-wrapper{
-  width: 350px;
+  width: 356px;
   height: 250px;
   padding: 1em;
   border-radius:8px;
@@ -25,24 +25,27 @@
 }
 
 .edit-review-title{
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
     // padding-bottom: 30px;
     padding-top: 20px;
     justify-content: center;
+    padding-left: 110px;
 }
 
 .edit-description-title{
       font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Oswald', sans-serif;
     padding-top: 20px;  
+     padding-bottom: 5px;
     
 }
 
 .edit-form-rating{
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Oswald', sans-serif;
     padding-top: 20px;
+    padding-bottom: 5px;
 }
 
 .edit-submit{
@@ -52,4 +55,9 @@
   width: 45%;
   padding: 5px;
   background-color: lightgray;
+  margin-left: 37px;
+}
+
+.review-button{
+    width: 102px;
 }

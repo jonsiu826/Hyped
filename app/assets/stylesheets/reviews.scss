@@ -28,7 +28,7 @@
 
 .reviews{
     width: 100px;
-    height: 260px;
+    height: 311px;
     overflow: auto;
     display: flex;
     flex-direction: column;
@@ -47,18 +47,31 @@
 }
 
 textarea{
-  width: 350px;
-  height: 70px;
+  max-width: 350px;
+  min-width: 350px;
+  max-height: 70px;
+  min-height: 70px;
 }
 
 .review-title{
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Oswald', sans-serif;
     // padding-top: 30px;
 }
 
 .single-review-desc{
     font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.single-review-username{
+     font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.single-review-rating{
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .signin-review{
@@ -91,8 +104,9 @@ textarea{
 
 .form-title{
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+     font-family: 'Oswald', sans-serif;
     padding-bottom: 10px;
+    padding-left: 125px;
 }
 .form-desc-input{
     padding-bottom: 15px;
@@ -100,6 +114,18 @@ textarea{
 
 .form-rating-input{
     padding-bottom: 15px;
+}
+
+.form-desc{
+    font-family: 'Oswald', sans-serif;
+     padding-top: 20px;
+      padding-bottom: 5px;
+}
+
+.form-rating{
+    font-family: 'Oswald', sans-serif;
+     padding-top: 20px;
+      padding-bottom: 5px;
 }
 
 

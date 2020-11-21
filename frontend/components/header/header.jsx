@@ -19,9 +19,9 @@ class Header extends React.Component{
                     <Link to="/">
                         <span className="header-discover">Discover</span>
                     </Link>
-                    <li>
+                    <Link to="/sneakers">
                         <span className="header-shopall">Shop All</span>
-                    </li>
+                    </Link>
                     <Link to="/search">
                         <span className="header-search"><i className="fas fa-search"></i></span>
                     </Link>

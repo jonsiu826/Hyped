@@ -11,6 +11,8 @@ import Footer from './footer/footer'
 import ProductIndexContainer from './products/product_index_container'
 import ProductShowContainer from './products/product_show_container'
 import SearchContainer from './search/search_container'
+import SneakersContainer from './products/all_sneakers_container'
+
 import {
     Route,
     Redirect,
@@ -32,6 +34,7 @@ const App = () => (
         <Switch>
             <Route exact path="/products/:productId" component={ProductShowContainer}/>
             <Route exact path='/search' component={SearchContainer} />
+             <Route exact path='/sneakers' component={SneakersContainer} />
             <AuthRoute exact path="/login" component={LoginFormContainer} />
             <AuthRoute exact path="/signup" component={SignupFormContainer} />
             <Route exact path="/" component={ProductIndexContainer}/>
