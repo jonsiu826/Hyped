@@ -83,11 +83,11 @@ class YeezyIndex extends React.Component {
 
         return (
             <div>
-                <div className="kobe-logo-container">
-                    <img className="kobe-image" src={Yeezy1} />
-                    {/* <h1 className="kobe-text">Travis Scott X Air Jordan 1</h1> */}
-                    {/* <button className="kobe-button">Shop Kobes</button> */}
-                </div>
+                <Link to="/collection/yeezy">
+                    <div className="kobe-logo-container">
+                        <img className="kobe-image" src={Yeezy1} />
+                    </div>
+                </Link>
                 <h1 className="product-header">Yeezy Collection</h1>
                 <ul className="product-ul">
                     {products}

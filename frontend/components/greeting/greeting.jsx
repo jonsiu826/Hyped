@@ -39,6 +39,11 @@ class Greeting extends React.Component {
                                 Shop All
                             </Link>
                         </div> 
+                        <div>
+                            <Link to="/search" className="modal-link" onClick={this.props.closeModal}>
+                                Search
+                            </Link>
+                        </div> 
                     <div className="logout-form">
                         <div className="logout-session">
                             <h1 className="logout-message">{this.props.currentUser.username} </h1>
