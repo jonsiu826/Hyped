@@ -6,11 +6,11 @@ import { openModal, closeModal } from '../../actions/modal_actions';
 
 const mapStateToProps = (state, ownProps) => {
     debugger 
-    // const product = ownProps.match.params.productId
-    const reviews = Object.values(state.entities.reviews)
+    const currentUser = state.entities.users[state.session.id].id
+    const reviews = Object.values(state.entities.reviews).filter(review => review.user_id === currentUser)
     return {
         reviews,
-        currentUser: state.entities.users[state.session.id]
+        currentUser
     }
 }
 

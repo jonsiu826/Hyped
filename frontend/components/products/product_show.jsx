@@ -114,10 +114,12 @@ class ProductShow extends React.Component {
                             <CreateReviewContainer />
                         </div>
                         <div className="reviews"> 
-                            {/* <div className="rev-container"> */}
+                            <div className="review-title-container">
                                 <p className="review-title">Reviews</p>
-                            <ReviewIndexContainer/>
-                            {/* </div> */}
+                            </div>
+                            <div className="rev-container">
+                                <ReviewIndexContainer/>
+                            </div>
                         </div>
                         {/* <div>
                             <p>Edit Review</p>

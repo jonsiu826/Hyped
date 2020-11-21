@@ -42,17 +42,6 @@ class ProductIndex extends React.Component {
                 link: "/products/9"
             },
             {
-                name: "Zoom Kobe 5 Protro 'P.J. Tucker' PE",
-                url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe_tucker_PE.jpeg",
-                link: "/products/13"
-
-            },
-            {
-                name: "Zoom Kobe 5 Protro '5 Rings'",
-                url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/Kobe_5rings.jpeg",
-                link: "/products/10"
-            },
-            {
                 name: "Air Jordan 1 Retro High OG 'Crimson Tint'",
                 url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/Jordan1_crimsontint.jpeg",
                 link: "/products/6"
@@ -61,7 +50,17 @@ class ProductIndex extends React.Component {
                 name: "Air Jordan 1 Mid 'Pine Green'",
                 url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan1_green.jpeg",
                 link: "/products/2"
-            }
+            },
+            {
+                name: "Zoom Kobe 5 Protro 'P.J. Tucker' PE",
+                url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe_tucker_PE.jpeg",
+                link: "/products/13"
+            },
+             {
+                name: "Zoom Kobe 5 Protro '5 Rings'",
+                url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/Kobe_5rings.jpeg",
+                link: "/products/10"
+            },
          
         ]
 
@@ -75,10 +74,10 @@ class ProductIndex extends React.Component {
         // })
 
         const breakPoints = [
-            {width: 400, itemsToShow: 3},
-            {width: 700, itemsToShow: 4},
-            {width: 900, itemsToShow: 5},
-            {width: 1100, itemsToShow: 6}
+            {width: 400, itemsToShow: 2},
+            {width: 700, itemsToShow: 3},
+            {width: 900, itemsToShow: 4},
+            {width: 1100, itemsToShow: 5}
         ];
     
 
