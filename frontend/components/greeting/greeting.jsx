@@ -28,11 +28,24 @@ class Greeting extends React.Component {
         let welcome
         if (this.props.currentUser) {
             welcome = (
-                <div className="logout-form">
-                    <div className="logout-session">
-                        <h1 className="logout-message">{this.props.currentUser.username} </h1>
-                        <button className="logout-button" onClick={this.props.logout}>LOG OUT</button>
+                <div>
+                    <div>
+                        <div className="modal-link" onClick={() => this.props.openModal("collection")}>
+                            Collections
+                        </div>
                     </div>
+                        <div>
+                            <Link to="/sneakers" className="modal-link" onClick={this.props.closeModal}>
+                                Shop All
+                            </Link>
+                        </div> 
+                    <div className="logout-form">
+                        <div className="logout-session">
+                            <h1 className="logout-message">{this.props.currentUser.username} </h1>
+                            <button className="logout-button" onClick={this.props.logout}>LOG OUT</button>
+                        </div>
+                    </div>
+
                 </div>
             )
         }

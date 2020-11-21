@@ -1,11 +1,12 @@
 import React from 'react';
-import { closeModal } from '../../actions/modal_actions';
+import { closeModal, openModal } from '../../actions/modal_actions';
 import { connect } from 'react-redux';
 import { Link } from "react-router-dom";
 import LoginFormContainer from '../sessions/login_form_container';
 import SignupFormContainer from '../sessions/signup_form_container';
 import GreetingContainer from '../greeting/greeting_container';
-import EditReviewContainer from "../review/edit_review_container"
+import EditReviewContainer from "../review/edit_review_container";
+import CollectionContainer from "../collection/collection_container";
 
 function Modal({ modal, closeModal }) {
     if (!modal) {
@@ -16,31 +17,31 @@ function Modal({ modal, closeModal }) {
         case 'login_signup':
             component = <GreetingContainer />;
             break;
-        // case 'signup':
-        //     component = <SignupFormContainer />;
-        //     break;
+        case 'collection':
+            component = <CollectionContainer />;
+            break;
         case 'edit_review':
             component = <EditReviewContainer />;
             break;
         default:
             return null;
     }
-    // debugger
+    debugger
     if (component.type.WrappedComponent.name === "Greeting"){
         return (
             <div className="modal-background" onClick={closeModal}>
                 <div className="modal-child" onClick={e => e.stopPropagation()}>
                     <div className="modal-content">
-                        <div>
-                            <div className="modal-link" onClick={closeModal}>
+                        {/* <div>
+                            <button className="modal-link" onClick={closeModal}>
                                 Collections
-                            </div>
+                            </button>
                          </div>
                         <div>
                             <Link to="/sneakers" className="modal-link" onClick={closeModal}>
                                 Shop All
                             </Link>
-                        </div> 
+                        </div>  */}
                         <div>
                             {component} 
                         </div>
@@ -49,6 +50,18 @@ function Modal({ modal, closeModal }) {
             </div>
         );
 
+    } else if (component.type.WrappedComponent.name === "CollectionIndex"){
+         return (
+            <div className="modal-background" onClick={closeModal}>
+                <div className="modal-child" onClick={e => e.stopPropagation()}>
+                    <div className="modal-content">
+                        <div>
+                            {component} 
+                        </div>
+                    </div>
+                </div>
+            </div>
+         )
     } else {
          return (
             <div className="modal-background1" onClick={closeModal}>

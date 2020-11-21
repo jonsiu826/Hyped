@@ -20,7 +20,7 @@ handleChange(type) {
 
 handleSubmit(e) {
     e.preventDefault();
-    debugger
+    // debugger
     // let review = { description: this.state.description, rating: this.state.rating, user_id: this.props.currentUser.id, product_id: this.props.match.params.productId }
     let newReview = { id: this.state.id, description: this.state.description, rating: this.state.rating, user_id: this.state.user_id, product_id: this.state.product_id}
     this.props.updateReview(newReview);
