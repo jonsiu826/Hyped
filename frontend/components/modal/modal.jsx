@@ -26,7 +26,7 @@ function Modal({ modal, closeModal }) {
         default:
             return null;
     }
-    debugger
+    
     if (component.type.WrappedComponent.name === "Greeting"){
         return (
             <div className="modal-background" onClick={closeModal}>

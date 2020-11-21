@@ -1,0 +1,41 @@
+.kobe-collection-container{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.collection-left-panel{
+    width: 30%;
+    padding: 3% 0px 0px 9%;
+
+}
+
+.kobe-collection-image{
+    width: 650px;
+    height: 350px;
+    padding: 50px 0px 50px 0px;
+    margin-right: 132px;
+}
+
+.kobe-title{
+    font-size: 30px;
+    // justify-content: center;
+    padding: 20% 0px 5% 30%;
+}
+
+.kobe-desc{
+    font-size: 15px;
+    color: gray
+}
+
+.jordan-collection-image{
+     width: 535px;
+    height: 350px;
+    padding: 50px 0px 50px 0px;
+    margin-right: 125px;
+}
+
+.yeezy-title{
+    font-size: 30px;
+    padding: 22% 0px 5% 42%;
+}
