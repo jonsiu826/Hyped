@@ -2,9 +2,39 @@
     background-color: white;
     padding: 20px;
     text-align: center;
+    font-family: 'Oswald', sans-serif;
 }
 
 .order-title{
     font-size: 40px;
-    
+    padding: 10px;
+}
+
+.order-message{
+    color: gray;
+    padding-top: 10px;
+}
+
+.order-number{
+    color: gray;
+    padding: 10px;
+}
+
+.order-desc{
+    color: gray;
+     padding: 10px;
+}
+
+.order-button{
+      border: none;
+  border-radius: 4px;
+  width: 45%;
+  padding: 5px;
+  background-color: lightgray;
+  margin-left: 37px;
+}
+
+.order-button:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
