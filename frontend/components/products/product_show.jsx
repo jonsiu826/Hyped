@@ -78,9 +78,11 @@ class ProductShow extends React.Component {
                     <div className="left-right-show">
                         <div className="show-page-shoe-container">
                             <img src={this.props.product.photo_url} className="product-show-image" />
+                            <p className="left-product-name"> {this.props.product.brand}/{this.props.product.silhouette}/{this.props.product.name}</p>
                         </div>
                         <div className="right-show">
                             <p className="show-page-name">{this.props.product.name}</p>
+                            <p className="sku">SKU: 321410870</p>
                             <span className="showpage-buttons">
                                 
                                 <button className="buy-new-button" onClick={() => this.props.openModal('order')}>Buy New</button>
@@ -125,12 +127,6 @@ class ProductShow extends React.Component {
                             </div>
 
                         </div>
-                        {/* <div>
-                            <p>Edit Review</p>
-                            <EditReviewContainer/>
-                        </div> */}
-                            {/* <EditReviewContainer reviewId={this.state.reviewId}/>
-                        <ReviewIndexItem handleReviewEdit={this.handleReviewEdit}/> */}
                     </div>
                 </section>
             )

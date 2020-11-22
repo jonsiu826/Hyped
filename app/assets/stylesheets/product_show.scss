@@ -54,9 +54,14 @@
     font-size: 30px;
     justify-content: center;
     width: 80%;
-    padding-top:30%;
+    padding-top:10%;
     padding-left: 10%;
-    padding-bottom: 47%;
+    padding-bottom: 38%;
+}
+
+.sku{
+    font-size: 12px;
+    color: gray;
 }
 
 .description-container{
@@ -179,6 +184,13 @@
     font-size: 20px;
     color: gray;
     // font-family: GT Se;
+}
+
+.left-product-name{
+    font-size: 12px;
+    color: gray;
+    text-align: center;
+    padding-top: 80px;
 }
 
 
