@@ -11,7 +11,26 @@ class Greeting extends React.Component {
 
         const sessionLinks = (
             <div className="greeting-wrapper">
-                <nav className="login-signup">
+                 <div>
+                    <Link to="/" className="modal-link" onClick={this.props.closeModal}>
+                            Discover
+                        </Link>
+                    </div> 
+                    <div className="modal-link-collection" onClick={() => this.props.openModal("collection")}>
+                        Collections
+                    </div>
+                   
+                    <div>
+                        <Link to="/sneakers" className="modal-link" onClick={this.props.closeModal}>
+                            Shop All
+                        </Link>
+                    </div> 
+                    <div>
+                        <Link to="/search" className="modal-link" onClick={this.props.closeModal}>
+                            Search
+                        </Link>
+                    </div> 
+                <nav className="modal-link">
                     <div>
                         {/* <button onClick={() => this.props.openModal('login')}>Login</button> */}
                         <Link className="logingreeting" to="/login" onClick={this.props.closeModal}>Login </Link>
@@ -47,7 +66,7 @@ class Greeting extends React.Component {
                         <Link to="/search" className="modal-link" onClick={this.props.closeModal}>
                             Search
                         </Link>
-                        </div> 
+                    </div> 
                     <div className="logout-form">
                         <div className="logout-session">
                             <h1 className="logout-message">{this.props.currentUser.username} </h1>

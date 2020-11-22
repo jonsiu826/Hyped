@@ -78,17 +78,17 @@
   border-bottom: 1px solid lightgray;
   padding: 14px 0px 14px 20px;
 }
-.greeting-wrapper{
-  border-bottom: 1px solid lightgray;
-  padding: 16px 0px 16px 16px;
+// .greeting-wrapper{
+//   border-bottom: 1px solid lightgray;
+//   padding: 16px 0px 16px 16px;
 
-}
+// }
 .logingreeting{
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 2px;
     border-right: 1px solid gray;
-    padding: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 0px;
     color: black;
     flex-direction: row;
     display: flex;
@@ -121,6 +121,7 @@
   left: 0;
   background: rgba(0, 0, 0, 0.7);
   z-index: 10;
+  //  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
 }
 
 .modal-child-order {
@@ -128,6 +129,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+   box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -146,6 +148,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+   box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
 }
 
 .modal-link {
