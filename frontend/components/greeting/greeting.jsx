@@ -29,20 +29,24 @@ class Greeting extends React.Component {
         if (this.props.currentUser) {
             welcome = (
                 <div>
-                    <div>
-                        <div className="modal-link" onClick={() => this.props.openModal("collection")}>
-                            Collections
-                        </div>
+                     <div>
+                        <Link to="/" className="modal-link" onClick={this.props.closeModal}>
+                            Discover
+                        </Link>
+                    </div> 
+                    <div className="modal-link-collection" onClick={() => this.props.openModal("collection")}>
+                        Collections
                     </div>
-                        <div>
-                            <Link to="/sneakers" className="modal-link" onClick={this.props.closeModal}>
-                                Shop All
-                            </Link>
-                        </div> 
-                        <div>
-                            <Link to="/search" className="modal-link" onClick={this.props.closeModal}>
-                                Search
-                            </Link>
+                   
+                    <div>
+                        <Link to="/sneakers" className="modal-link" onClick={this.props.closeModal}>
+                            Shop All
+                        </Link>
+                    </div> 
+                    <div>
+                        <Link to="/search" className="modal-link" onClick={this.props.closeModal}>
+                            Search
+                        </Link>
                         </div> 
                     <div className="logout-form">
                         <div className="logout-session">

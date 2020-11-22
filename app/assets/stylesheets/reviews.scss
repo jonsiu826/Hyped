@@ -38,7 +38,7 @@
     padding-bottom: 10px;
     // padding-left: 50px;
     // padding-right: 50px;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 450px;
     min-width: 450px;
     line-height: 1.5;
@@ -153,6 +153,7 @@ textarea{
 .single-review-container{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .no-review-message{

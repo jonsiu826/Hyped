@@ -7,6 +7,7 @@ import SignupFormContainer from '../sessions/signup_form_container';
 import GreetingContainer from '../greeting/greeting_container';
 import EditReviewContainer from "../review/edit_review_container";
 import CollectionContainer from "../collection/collection_container";
+import OrderContainer from "../order/order_container"
 
 function Modal({ modal, closeModal }) {
     if (!modal) {
@@ -23,10 +24,13 @@ function Modal({ modal, closeModal }) {
         case 'edit_review':
             component = <EditReviewContainer />;
             break;
+        case 'order':
+            component = <OrderContainer />;
+            break;
         default:
             return null;
     }
-    
+    // debugger
     if (component.type.WrappedComponent.name === "Greeting"){
         return (
             <div className="modal-background" onClick={closeModal}>
@@ -62,8 +66,18 @@ function Modal({ modal, closeModal }) {
                 </div>
             </div>
          )
-    } else {
+    } else if (component.type.WrappedComponent.name === "Order"){
          return (
+            <div className="modal-background-order" onClick={closeModal}>
+                <div className="modal-child-order" onClick={e => e.stopPropagation()}>
+                    <div className="modal-content-order">
+                        {component} 
+                    </div>
+                </div>
+            </div>
+        )
+    } else {
+        return (
             <div className="modal-background1" onClick={closeModal}>
                 <div className="modal-child1" onClick={e => e.stopPropagation()}>
                     <div className="modal-content1">

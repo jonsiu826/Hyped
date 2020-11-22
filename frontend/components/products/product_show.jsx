@@ -82,10 +82,11 @@ class ProductShow extends React.Component {
                         <div className="right-show">
                             <p className="show-page-name">{this.props.product.name}</p>
                             <span className="showpage-buttons">
+                                
+                                <button className="buy-new-button" onClick={() => this.props.openModal('order')}>Buy New</button>
                                 <a href="https://github.com/jonsiu826?tab=repositories" target="_blank">
-                                    <button className="buy-new-button">Buy New</button>
+                                    <button className="buy-used-button">Buy Used</button>
                                 </a>
-                                <button className="buy-used-button">Buy Used</button>
                             </span>
                         </div>
                     </div>
@@ -113,13 +114,16 @@ class ProductShow extends React.Component {
                         <div className="review-form">
                             <CreateReviewContainer />
                         </div>
-                        <div className="reviews"> 
-                            <div className="review-title-container">
-                                <p className="review-title">Reviews</p>
+                        <div className="right-review-panel">
+                            <div className="reviews"> 
+                                <div className="review-title-container">
+                                    <p className="review-title">Reviews</p>
+                                </div>
+                                <div className="rev-container">
+                                    <ReviewIndexContainer/>
+                                </div>
                             </div>
-                            <div className="rev-container">
-                                <ReviewIndexContainer/>
-                            </div>
+
                         </div>
                         {/* <div>
                             <p>Edit Review</p>

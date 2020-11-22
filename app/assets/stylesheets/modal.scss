@@ -113,6 +113,23 @@
 .signupgreeting{
   text-decoration: underline;
 }
+.modal-background-order {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+.modal-child-order {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 .modal-background1 {
   position: fixed;
@@ -142,4 +159,27 @@
     text-decoration: none;
     color: #000;
     font-size: 15px;
+}
+
+.modal-link-collection {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    padding: 8px 24px;
+    border-bottom: 1px solid rgb(222, 222, 222);
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+
+.modal-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.modal-link-collection:hover{
+  cursor: pointer;
+  text-decoration: underline;
 }
