@@ -9,11 +9,34 @@ import JordanIndexContainer from './jordan/jordan_index_container';
 class ProductIndex extends React.Component {
     constructor(props) {
         super(props)
-        // this.handleClick = this.handleClick.bind(this)
+        this.switchImage = this.switchImage.bind(this);
+        this.state = {
+            currentImage: 0,
+            images: [
+            "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpic1.png",
+            "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpic2.png",
+            "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpic3png.png",
+            "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpic4.png",
+            "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpic5.png"
+            ]
+        };
     }
    
+    switchImage() {
+        if (this.state.currentImage < this.state.images.length - 1) {
+        this.setState({
+            currentImage: this.state.currentImage + 1
+        });
+        } else {
+        this.setState({
+            currentImage: 0
+        });
+        }
+        return this.currentImage;
+    }
     componentDidMount(){
         this.props.fetchProducts();
+        setInterval(this.switchImage, 3000);
         window.scrollTo(0, 0);
     }
 
@@ -64,14 +87,6 @@ class ProductIndex extends React.Component {
          
         ]
 
-        // const photo = photos.map((photo, idx) => {
-        //     return (
-        //     <div key={idx}> 
-        //         <img className="shoe-photo" src={photo.url} />
-        //         {/* <p>{photo.name}</p> */}
-        //     </div>
-        //     )
-        // })
 
         const breakPoints = [
             {width: 400, itemsToShow: 2},
@@ -84,10 +99,12 @@ class ProductIndex extends React.Component {
 
         return (
             <div>
-                <div className="kobe-logo-container">
-                    <img className="kobe-image" src={Kobe1} />
-                    <h1 className="kobe-text">LEGACY IS FOREVER</h1>
-                    {/* <button className="kobe-button">Shop Kobes</button> */}
+               
+                <div className="slideshow-container">
+                    <img className="kobe-image"
+                    src={this.state.images[this.state.currentImage]}
+                    alt="cleaning images"
+                    />
                 </div>
                 <h1 className="product-header">View Our Collection</h1>
                 <ul className="product-ul">
