@@ -38,7 +38,7 @@
     padding-bottom: 10px;
     // padding-left: 50px;
     // padding-right: 50px;
-    justify-content: space-between;
+    // justify-content: space-between;
     max-width: 450px;
     min-width: 450px;
     line-height: 1.5;
@@ -105,7 +105,7 @@ textarea{
 .form-title{
     font-size: 20px;
      font-family: 'Oswald', sans-serif;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     padding-left: 125px;
 }
 .form-desc-input{
@@ -118,14 +118,19 @@ textarea{
 
 .form-desc{
     font-family: 'Oswald', sans-serif;
-     padding-top: 20px;
-      padding-bottom: 5px;
+    padding-top: 15px;
+    padding-bottom: 5px;
 }
 
 .form-rating{
     font-family: 'Oswald', sans-serif;
-     padding-top: 20px;
+     padding-top: 17px;
       padding-bottom: 5px;
+}
+
+.form-button:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 
@@ -147,6 +152,7 @@ textarea{
 
 .review-title-container{
     padding-top: 52px;
+    
     // position: fixed;
 }
 
@@ -157,5 +163,23 @@ textarea{
 }
 
 .no-review-message{
-    padding-bottom: 60px;
+    padding-top: 35px;
+}
+
+.form-button{
+    margin-top: 3px;
+    border: none;
+    border-radius: 4px;
+    width: 45%;
+    padding: 3px;
+    background-color: lightgray;
+}
+
+.review-button{
+    margin-top: 3px;
+    border: none;
+    border-radius: 4px;
+    width: 45%;
+    padding: 3px;
+    background-color: lightgray;
 }

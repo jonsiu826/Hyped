@@ -66,10 +66,10 @@ class ProductShow extends React.Component {
         ]
 
         const breakPoints = [
-            { width: 100, itemsToShow: 2 },
-            { width: 200, itemsToShow: 3 },
-            { width: 300, itemsToShow: 4 },
-            { width: 400, itemsToShow: 5 }
+            { width: 100, itemsToShow: 1 },
+            { width: 200, itemsToShow: 2 },
+            { width: 300, itemsToShow: 3 },
+            { width: 400, itemsToShow: 4 }
         ];
         return (
             !showProduct ? <div></div> : (
