@@ -14,10 +14,10 @@ class ProductIndex extends React.Component {
             currentImage: 0,
             images: [
             "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpic1.png",
-            "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpic2.png",
-            "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpic3png.png",
-            "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpic4.png",
-            "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpic5.png"
+            "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpicture2.png",
+            "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpicture3.png",
+            "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpicture4.png",
+            "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpicture5.png"
             ]
         };
     }
