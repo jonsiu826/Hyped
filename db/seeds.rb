@@ -194,7 +194,7 @@ kobe5_4 = Product.create!(
    name: "Zoom Kobe 5 Protro 'EYBL'", 
    brand: "Nike", 
    release_date: "2020-08-29", 
-   colorway: "ForestGreen/MetallicRedBronze/SpeedYellow/ForestGreen", 
+   colorway: "ForestGreen/MetallicRedBronze/SpeedYellow", 
    technology: " Zoom Air", 
    category: "Basketball", 
    silhouette: "Zoom Kobe 5", 
@@ -260,7 +260,7 @@ lebron_1 = Product.create!(
    name: "LeBron 9 P.S. Elite 'South Beach'", 
    brand: "Nike", 
    release_date: "2012-06-02", 
-   colorway: "Wolf Grey/Mint Candy-New Green-Pink Flash", 
+   colorway: "Wolf Grey/Mint Green-Pink Flash", 
    technology: "Air", 
    category: "Basketball", 
    silhouette: "LeBron 9", 
@@ -299,13 +299,65 @@ lebron_4 = Product.create!(
    name: "LeBron 8 'Pre-Heat'", 
    brand: "Nike", 
    release_date: "2010-10-16", 
-   colorway: "Retro/Black-Pink Flsh-Flmnt Grn", 
+   colorway: "Multi-Color/University Red-White", 
    technology: "Air", 
    category: "Basketball", 
    silhouette: "Air Max Lebron 8", 
    main_color: "Teal", 
    designer:"Jason Petrie",
    description: "Reflecting LeBron James’ time in Miami, the Nike LeBron 8 ‘Pre-Heat’ is finished in a distinctive South Beach-inspired color palette. Filament Green covers the upper, featuring a combination of leather and Flywire-infused TPU panels, contrasted by hits of black on the eyestay, tongue, Swoosh and midsole. Vibrant pops of Pink Flash stand out on the tongue, eyelets and LeBron James’ signature on the heel. The shoe’s Max Air 360 unit is reinforced underfoot by a translucent rubber outsole."
+)
+
+lebron_5 = Product.create!(
+   name: "LeBron 12 EXT 'Prism'", 
+   brand: "Nike", 
+   release_date: "2015-07-18", 
+   colorway: "Retro/Black-Pink Flsh-Flmnt Grn", 
+   technology: "Air", 
+   category: "Basketball", 
+   silhouette: "Lebron 12", 
+   main_color: "White", 
+   designer:"Jason Petrie",
+   description: "Streetball legend John Strickland gets a commemorative exclusive to celebrate his famous saying “Finish Your Breakfast,” which refers to the act of ‘schooling’ your defender and scoring off the dribble. The LeBron 12 EXT 'Prism' features a Hyperfuse upper dressed in a multicolor pixel theme with Hyperposite details on the collar and side panels. The sneaker also sports “Finish Your Breakfast” lettering on the heel tab, a pixelated Swoosh, and an icy translucent outsole."
+)
+
+lebron_6 = Product.create!(
+   name: "LeBron 15 'Fruity Pebbles'", 
+   brand: "Nike", 
+   release_date: "2018-03-30", 
+   colorway: "Multi-Color/White", 
+   technology: "Air", 
+   category: "Basketball", 
+   silhouette: "Lebron 15", 
+   main_color: "White", 
+   designer:"Jason Petrie",
+   description: "Inspired by LeBron James’ favorite breakfast cereal, the LeBron 15 ‘Fruity Pebbles’ were debuted on-foot by James during a February 2018 home game. It features a bright multi-colored BattleKnit upper with white detailing on the tongue, heel collar, laces and pull tab. Other details a white midsole, a clear full-length Zoom Air unit, and an ice-blue translucent outsole, with signature LeBron branding on the insoles. It released to the public in March 2018."
+)
+
+lebron_7 = Product.create!(
+   name: "LeBron 11 EXT Suede QS 'Game Royal'", 
+   brand: "Nike", 
+   release_date: "2014-04-10", 
+   colorway: "Game Royal/Game Royal-Black", 
+   technology: "Lunarlon", 
+   category: "Basketball", 
+   silhouette: "Lebron 11", 
+   main_color: "Blue", 
+   designer:"Jason Petrie",
+   description: "The Nike LeBron 11 EXT Suede QS is defined by the tonal Game Royal finish across its sculpted hairy suede upper. Contrasting black appears on the shoe’s leather lining as well as the rubber outsole that offers multi-direction traction. Inside, a drop-in sockliner with Zoom Air works in tandem with a Lunarlon midsole to deliver lightweight cushioning."
+)
+
+lebron_8 = Product.create!(
+   name: "LeBron 16 'Four Horsemen'", 
+   brand: "Nike", 
+   release_date: "2019-05-22", 
+   colorway: "Black/White-Black", 
+   technology: "Air", 
+   category: "Basketball", 
+   silhouette: "Lebron 16", 
+   main_color: "Black", 
+   designer:"Jason Petrie",
+   description: "The Nike LeBron 16 'Four Horsemen' honors the core members of LeBron James' business team, which includes LeBron plus Maverick Carter, Rich Paul and Randy Mims. The sneaker released in May 2019 with Battleknit 2.0 construction, premium leather tongue and heel panels, and an oversized 'Four Horsemen' graphic on the tongue. It's also equipped with Flywire cables, a heel tab loop and an external heel counter. Completing the style is Air Max and Zoom Air cushioning and a rubber outsole."
 )
 
 
@@ -501,6 +553,18 @@ lebron_3.photo.attach(io: file27, filename: "img_#{lebron_3.id}.jpg")
 
 file28 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/lebron_preheat.jpeg")
 lebron_4.photo.attach(io: file28, filename: "img_#{lebron_4.id}.jpg")
+
+file29 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/lebron_prism.jpeg")
+lebron_5.photo.attach(io: file29, filename: "img_#{lebron_5.id}.jpg")
+
+file30 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/lebron_fruity_pebbles.jpeg")
+lebron_6.photo.attach(io: file30, filename: "img_#{lebron_6.id}.jpg")
+
+file31 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/lebron_game_royal.png")
+lebron_7.photo.attach(io: file31, filename: "img_#{lebron_7.id}.jpg")
+
+file32 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/lebron_fourhorsemen.jpeg")
+lebron_8.photo.attach(io: file32, filename: "img_#{lebron_8.id}.jpg")
 
 
 

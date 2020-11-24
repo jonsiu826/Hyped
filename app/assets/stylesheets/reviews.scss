@@ -75,9 +75,10 @@ textarea{
 }
 
 .signin-review{
-    display: flex;
+      display: flex;
     border: 1px solid lightgray;
-    padding-top: 100px;
+    border-right: none;
+    padding-top: 151px;
     padding-left: 170px;
     padding-right: 100px;
     height: 170px;
