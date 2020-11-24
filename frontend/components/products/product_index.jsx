@@ -49,13 +49,13 @@ class ProductIndex extends React.Component {
             {
                 name: "Yeezy 700 V3 'Wave Runner'",
                 url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/yeezy_waverunner.jpeg",
-                link: "/products/25"
+                link: "/products/29"
 
             },
             {
                 name: "Yeezy 350 V2 'Israfil'",
                 url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/yeezy_israfil.jpeg",
-                link: "/products/26"
+                link: "/products/30"
 
             },
           

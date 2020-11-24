@@ -16,11 +16,11 @@ class Greeting extends React.Component {
                             Discover
                         </Link>
                     </div> 
-                    <div className="collection-link-container">
-                        <div className="modal-link-collection" onClick={() => this.props.openModal("collection")}>
+                    <div className="collection-link-container" onClick={() => this.props.openModal("collection")}>
+                        <div className="modal-link-collection" >
                             Collections
                         </div>
-                        <div>
+                        <div className="arrow-modal">
                             <i class="fas fa-angle-right"></i>
                         </div>
                     </div>

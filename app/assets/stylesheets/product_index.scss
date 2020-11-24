@@ -6,7 +6,7 @@
 
 .kobe-image{
     width: 100%;
-    height: 80%
+    height: 800px;
 }
 
 .kobe-text{
@@ -37,11 +37,7 @@
 // }
 
 .sneaker-container{
-  outline: 1px solid black;
-  margin-top: 1px;
-  margin-left: 1px;
-  width: 315px;
-  height: 315px;
+ text-decoration: none;
 }
 
 .sneaker-info{
@@ -55,39 +51,50 @@
 }
 
 .sneaker-indexitem{
-  display: flex;
-  flex-flow: wrap row;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  margin: 0px 10%;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  font-size: 11px;
-  letter-spacing: 1px;
-  padding-top: 10%;
+display: flex;
+    /* flex-flow: wrap row; */
+    justify-content: space-around;
+    text-align: center;
+    /* position: relative; */
+    /* margin: 0px 10%; */
+    font-family: sans-serif;
+    text-transform: uppercase;
+    flex-direction: column;
+    font-size: 11px;
+    padding: 3rem;
+    letter-spacing: 1px;
+    /* padding-top: 10%; */
+    width: 200px;
+    border: 1px solid black;
+    height: 230px;
 }
 
 .release-date{
-    padding-top: 10px;
+   padding-top: 10px;
+    /* text-decoration: none; */
+    color: black;
     font-size: 15px;
 }
 
 .product-image{
-  // width: 90%;
-  padding-top: 20%;
-      width: 195px;
-    height: 110px;
+width: 195px;
+    /* height: 110px; */
+    /* padding-left: 8px; */
+    /* padding-top: 29px; */
+    margin-left: 8px;
+    margin-top: 42px;
 }
 
 .sneaker-name{
-    padding-top: 10%;
-    // padding-left: 15%;
+       padding-top: 10%;
     font-family: serif;
-    justify-content: center;
+    /* justify-content: center; */
     width: 80%;
     text-decoration: none;
     color: black;
+    margin-left: 13px;
+    font-size: 14px;
+  
 }
 
 .product-ul{

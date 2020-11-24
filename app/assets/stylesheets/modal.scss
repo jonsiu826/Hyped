@@ -171,10 +171,23 @@
     letter-spacing: 1px;
     text-transform: capitalize;
     padding: 8px 24px;
-    border-bottom: 1px solid rgb(222, 222, 222);
+    // border-bottom: 1px solid rgb(222, 222, 222);
     text-decoration: none;
     color: #000;
     font-size: 15px;
+}
+
+.collection-link-container{
+      display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dedede;
+}
+
+.arrow-modal{
+      margin-top: 28px;
+    margin-right: 10px;
+    color: lightgray;
+
 }
 
 .modal-link:hover {
@@ -182,7 +195,7 @@
   text-decoration: underline;
 }
 
-.modal-link-collection:hover{
+.collection-link-container:hover{
   cursor: pointer;
   text-decoration: underline;
 }

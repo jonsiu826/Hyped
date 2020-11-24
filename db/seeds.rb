@@ -279,7 +279,7 @@ lebron_2 = Product.create!(
    silhouette: "LeBron 17", 
    main_color: "Multi-Color", 
    designer:"Jason Petrie",
-   description: "Released in June 2012, the Nike LeBron 9 P.S. Elite 'South Beach' features a Wolf Grey synthetic upper with Miami Vice-inspired pastel green and pink accents, a black carbon fiber overlay, and a translucent outsole."
+   description: "The LeBron 17 combines first-of-its-kind Max Air in the heel with two Zoom Air pods in the forefoot for comfort and responsiveness. The LeBron 17 also features an innovative, incredibly lightweight knitposite upper for ultimate movement and flexibility."
 )
 
 lebron_3 = Product.create!(
@@ -292,7 +292,7 @@ lebron_3 = Product.create!(
    silhouette: "LeBron 18", 
    main_color: "Orange", 
    designer:"Jason Petrie",
-   description: ""
+   description: "The Nike LeBron 18 is customised for the King's high-powered style of play, featuring a lightweight KnitPosite 2.0 upper, combining elements from some of his favourite models (15 to 17) as well as an Air Max unit in the heel and a full-length Zoom Air Bag — the biggest airbag Nike has ever put in a basketball sneaker."
 )
 
 lebron_4 = Product.create!(
@@ -358,6 +358,110 @@ lebron_8 = Product.create!(
    main_color: "Black", 
    designer:"Jason Petrie",
    description: "The Nike LeBron 16 'Four Horsemen' honors the core members of LeBron James' business team, which includes LeBron plus Maverick Carter, Rich Paul and Randy Mims. The sneaker released in May 2019 with Battleknit 2.0 construction, premium leather tongue and heel panels, and an oversized 'Four Horsemen' graphic on the tongue. It's also equipped with Flywire cables, a heel tab loop and an external heel counter. Completing the style is Air Max and Zoom Air cushioning and a rubber outsole."
+)
+
+fog_1 = Product.create!(
+   name: "Air Fear of God 1 'Triple Black'", 
+   brand: "Nike", 
+   release_date: "2020-04-25", 
+   colorway: "Black/Black", 
+   technology: "Air", 
+   category: "Basketball", 
+   silhouette: "Air Fear of God 1", 
+   main_color: "Black", 
+   designer:"Jerry Lorenzo",
+   description: "The Air Fear of God 1 'Triple Black' showcases a stealthy monochromatic finish on Jerry Lorenzo’s street-ready basketball shoe. The upper is constructed from black ballistic mesh, reinforced with a suede toe cap and a Huarache Light-inspired TPU frame that delivers containment at the heel and midfoot. A matching black midsole reveals a double-stack Zoom unit, supplemented by internal full-length Zoom Air cushioning."
+)
+
+fog_2 = Product.create!(
+   name: "Air Fear of God 1 'The Question'", 
+   brand: "Nike", 
+   release_date: "2020-04-25", 
+   colorway: "Multi Color/Off Noir/String/Oatmeal", 
+   technology: "Air", 
+   category: "Basketball", 
+   silhouette: "Air Fear of God 1", 
+   main_color: "Black", 
+   designer:"Jerry Lorenzo",
+   description: "Launching in February 2020, the Air Fear of God 1 'The Question' continues Jerry Lorenzo’s partnership with Nike. The designer’s stylish take on the performance basketball shoe is treated to neutral color scheme, highlighted by a black textile upper with a contrasting white toe box. The Huarache Light-inspired TPU cage is rendered in a light grey hue, while the midsole is finished in Oatmeal, complete with a visible Air window that reveals a game-changing double-stack Zoom unit."
+)
+
+fog_3 = Product.create!(
+   name: "Air Fear of God 1 'Oatmeal'", 
+   brand: "Nike", 
+   release_date: "2019-11-02", 
+   colorway: "Multi-Color/String/Oatmeal/Pale Ivory", 
+   technology: "Air", 
+   category: "Basketball", 
+   silhouette: "Air Fear of God 1", 
+   main_color: "Grey", 
+   designer:"Jerry Lorenzo",
+   description: "Made available November 2019, the Air Fear Of God 1 'Oatmeal' was created by designer Jerry Lorenzo and Nike, updating the shoe with different earth tone hues. The shoe comes equipped with a knit high-top bootie encased in a TPU cage that pulls double duty as an eyestay anchor, stabilizing the foot with its multi-angled configuration. The translucent outsole wall peaks at the midfoot and heel for supplementary support, while double stacked Zoom Air offers premium cushioning."
+)
+
+fog_4 = Product.create!(
+   name: "Air Fear of God 1 'The Atmosphere'", 
+   brand: "Nike", 
+   release_date: "2019-07-21", 
+   colorway: "Amarillo/White-Amarillo", 
+   technology: "Air", 
+   category: "Basketball", 
+   silhouette: "Air Fear of God 1", 
+   main_color: "Yellow", 
+   designer:"Jerry Lorenzo",
+   description: "Style visionary Jerry Lorenzo and Nike teamed up to continue the Nike x Air Fear Of God line with this 'The Atmosphere' Fear of God 1 in July 2019 that was an exclusive SNKRS drop at ComplexCon in Chicago. The shoe's high-cut bootie upper is crafted from bold yellow mesh, reinforced with a TPU cage that allows for personalized lace reconfiguration. A tonal zipper appears on the heel to allow easier on and off, set above raised 'Fear of God' lettering. As in previous releases, this edition includes an icy, double-stacked Zoom Air unit and a concentric circle tread pattern."
+)
+
+fog_5 = Product.create!(
+   name: "Air Fear of God 1 'Sail'", 
+   brand: "Nike", 
+   release_date: "2019-06-08", 
+   colorway: "Sail/Black", 
+   technology: "Air", 
+   category: "Basketball", 
+   silhouette: "Air Fear of God 1", 
+   main_color: "White", 
+   designer:"Jerry Lorenzo",
+   description: "A collaboration between Nike and fashion designer Jerry Lorenzo, the Nike Air Fear Of God 1 merges performance attributes and luxury street style. This 'Sail' version—debuted in June 2019—utilizes a mesh and suede upper with an internal heel tab. A TPU cage supports the laces, which reconfigure for a variety of looks. The matching, futuristic midsole features sidewall text for a technical look and visible double stacked Zoom Air cushioning. Concentric circle outsole tread nods to the brand's court heritage."
+)
+
+fog_6 = Product.create!(
+   name: "Air Fear of God 1 'Frosted Spruce'", 
+   brand: "Nike", 
+   release_date: "2019-06-01", 
+   colorway: "Frosted Spruce", 
+   technology: "Air", 
+   category: "Basketball", 
+   silhouette: "Air Fear of God 1", 
+   main_color: "Green", 
+   designer:"Jerry Lorenzo",
+   description: "The Nike Air Fear Of God 1 'Frosted Spruce' continues the procession of ultra-modern basketball footwear which began in 2018 with the first Air Fear Of God sneaker. The silhouette was created in partnership with the details-obsessed Jerry Lorenzo, originator of the Fear Of God label. This bright rendition from June 2019 features a mesh upper, a heel cage inspired by the Huarache Light and a zipper closure at the back. The shoe is supported by double-stacked Nike Zoom Air cushioning."
+)
+
+fog_7 = Product.create!(
+   name: "Air Fear of God 1 'Orange Pulse'", 
+   brand: "Nike", 
+   release_date: "2019-06-01", 
+   colorway: "Orange Pulse", 
+   technology: "Air", 
+   category: "Basketball", 
+   silhouette: "Air Fear of God 1", 
+   main_color: "Orange", 
+   designer:"Jerry Lorenzo",
+   description: "In 2018, details-obsessed designer and originator of the Fear Of God label, Jerry Lorenzo, teamed up with Nike to produce the Nike Air Fear Of God sneaker. The June 2019 Nike Air Fear Of God 1 'Orange Pulse' shoe is doused in an ultra-bright Orange Pulse hue, with a mesh upper and a supportive heel cage inspired by the Huarache Light. The shoe includes broad, rope-style laces, as well as a zipper at the rear for easier on and off. Below, the design sits atop double-stacked Nike Zoom Air cushioning."
+)
+
+fog_8 = Product.create!(
+   name: "Air Fear of God 1 'Black'", 
+   brand: "Nike", 
+   release_date: "2018-12-15", 
+   colorway: "Black/Grey", 
+   technology: "Air", 
+   category: "Basketball", 
+   silhouette: "Air Fear of God 1", 
+   main_color: "Black", 
+   designer:"Jerry Lorenzo",
+   description: "The Air Fear of God 1 ‘Black’ is one of the inaugural colorways of the performance basketball shoe made in collaboration between Nike and Jerry Lorenzo’s Fear of God. The fashion-forward silhouette uses a brand new last made expressly for the specific model, topped with a minimalist black leather upper with a TPU cage inspired by the Huarache Light. The tooling takes the form of a contrasting white cup sole with a visible double-stack Zoom heel unit."
 )
 
 
@@ -566,6 +670,29 @@ lebron_7.photo.attach(io: file31, filename: "img_#{lebron_7.id}.jpg")
 file32 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/lebron_fourhorsemen.jpeg")
 lebron_8.photo.attach(io: file32, filename: "img_#{lebron_8.id}.jpg")
 
+file33 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/fog_black.png")
+fog_1.photo.attach(io: file33, filename: "img_#{fog_1.id}.jpg")
+
+file34 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/fog_question.png")
+fog_2.photo.attach(io: file34, filename: "img_#{fog_2.id}.jpg")
+
+file35 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/fog_oatmeal.png")
+fog_3.photo.attach(io: file35, filename: "img_#{fog_3.id}.jpg")
+
+file36 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/fog_yellow.png")
+fog_4.photo.attach(io: file36, filename: "img_#{fog_4.id}.jpg")
+
+file37 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/fog_white.png")
+fog_5.photo.attach(io: file37, filename: "img_#{fog_5.id}.jpg")
+
+file38 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/fog_green.png")
+fog_6.photo.attach(io: file38, filename: "img_#{fog_6.id}.jpg")
+
+file39 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/fog_orange.png")
+fog_7.photo.attach(io: file39, filename: "img_#{fog_7.id}.jpg")
+
+file40 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/fog_black_white.png")
+fog_8.photo.attach(io: file40, filename: "img_#{fog_8.id}.jpg")
 
 
 review1 = Review.create!(
