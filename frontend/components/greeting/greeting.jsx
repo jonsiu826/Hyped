@@ -46,6 +46,13 @@ class Greeting extends React.Component {
                         <Link className="signupgreeting" to="/signup" onClick={this.props.closeModal}>SignUp </Link>
                     </div>
                 </nav>
+                   <div>
+                        <div className="greeting-logo-links">
+                                <a className="github-logo" href="https://github.com/jonsiu826" target="_blank"><i className="fab fa-github"></i></a>
+                                <a className="linkedin-logo" href="https://www.linkedin.com/in/jonathansiu826/" target="_blank"><i className="fab fa-linkedin"></i></a>
+                                <a className="angellist-logo" href="https://angel.co/jonathan-siu-2" target="_blank"><i className="fab fa-angellist"></i></a>
+                        </div>
+                    </div> 
             </div>
         );
 
@@ -53,36 +60,45 @@ class Greeting extends React.Component {
         if (this.props.currentUser) {
             welcome = (
                 <div>
-                     <div>
-                        <Link to="/" className="modal-link" onClick={this.props.closeModal}>
-                            Discover
-                        </Link>
-                    </div> 
-                     <div className="collection-link-container" onClick={() => this.props.openModal("collection")}>
-                        <div className="modal-link-collection" >
-                            Collections
+                    <div>
+                        <div>
+                            <Link to="/" className="modal-link" onClick={this.props.closeModal}>
+                                Discover
+                            </Link>
+                        </div> 
+                        <div className="collection-link-container" onClick={() => this.props.openModal("collection")}>
+                            <div className="modal-link-collection" >
+                                Collections
+                            </div>
+                            <div className="arrow-modal">
+                                <i class="fas fa-angle-right"></i>
+                            </div>
                         </div>
-                        <div className="arrow-modal">
-                            <i class="fas fa-angle-right"></i>
+                        <div>
+                            <Link to="/sneakers" className="modal-link" onClick={this.props.closeModal}>
+                                Shop All
+                            </Link>
+                        </div> 
+                        <div>
+                            <Link to="/search" className="modal-link" onClick={this.props.closeModal}>
+                                Search
+                            </Link>
+                        </div> 
+                        
+                        <div className="logout-form">
+                            <div className="logout-session">
+                                <h1 className="logout-message">{this.props.currentUser.username} </h1>
+                                <button className="logout-button" onClick={this.props.logout}>LOG OUT</button>
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <Link to="/sneakers" className="modal-link" onClick={this.props.closeModal}>
-                            Shop All
-                        </Link>
-                    </div> 
-                    <div>
-                        <Link to="/search" className="modal-link" onClick={this.props.closeModal}>
-                            Search
-                        </Link>
-                    </div> 
-                    
-                    <div className="logout-form">
-                        <div className="logout-session">
-                            <h1 className="logout-message">{this.props.currentUser.username} </h1>
-                            <button className="logout-button" onClick={this.props.logout}>LOG OUT</button>
+                      <div>
+                        <div className="greeting-logo-links">
+                                <a className="github-logo" href="https://github.com/jonsiu826" target="_blank"><i className="fab fa-github"></i></a>
+                                <a className="linkedin-logo" href="https://www.linkedin.com/in/jonathansiu826/" target="_blank"><i className="fab fa-linkedin"></i></a>
+                                <a className="angellist-logo" href="https://angel.co/jonathan-siu-2" target="_blank"><i className="fab fa-angellist"></i></a>
                         </div>
-                    </div>
+                    </div> 
 
                 </div>
             )

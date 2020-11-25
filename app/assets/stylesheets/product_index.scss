@@ -70,10 +70,12 @@ display: flex;
     letter-spacing: 1px;
     /* padding-top: 10%; */
     width: 200px;
-    border: 1px solid black;
+    border: 1px solid lightgray;
     height: 230px;
 }
-
+.sneaker-indexitem:hover{
+  outline: 3px solid lightgray
+}
 .release-date{
    padding-top: 10px;
     /* text-decoration: none; */
@@ -94,7 +96,7 @@ width: 165px;
        padding-top: 10%;
     font-family: serif;
     /* justify-content: center; */
-    width: 80%;
+    width: 90%;
     text-decoration: none;
     color: black;
     margin-left: 13px;
@@ -106,7 +108,8 @@ width: 165px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 5%;
+    // padding-bottom: 5%;
+    padding: 0px 60px 5% 60px;
 }
 
 .product-header{
