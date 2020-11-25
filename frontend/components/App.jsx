@@ -17,7 +17,7 @@ import JordanContainer from './collection/jordan1/jordan1_container';
 import YeezyCollectionContainer from './collection/yeezy/yeezy_collection_container';
 import FogContainer from './collection/fear_of_god/fog_container';
 import LebronContainer from './collection/lebron/lebron_container'
-
+import Jordan4Container from './collection/jordan4/jordan4_container';
 
 
 import {
@@ -42,6 +42,7 @@ const App = () => (
             <Route exact path="/products/:productId" component={ProductShowContainer}/>
             <Route exact path="/collection/kobe" component={KobeContainer}/>
             <Route exact path="/collection/air-jordan-1" component={JordanContainer}/>
+            <Route exact path="/collection/air-jordan-4" component={Jordan4Container}/>
             <Route exact path="/collection/yeezy" component={YeezyCollectionContainer}/>
             <Route exact path="/collection/lebron" component={LebronContainer}/>
             <Route exact path="/collection/fear-of-god" component={FogContainer}/>

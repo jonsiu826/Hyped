@@ -19,7 +19,7 @@ class CollectionIndex extends React.Component {
                 </div>                       
                 <div>
                     <Link to="/collection/air-jordan-1" className="modal-link" onClick={this.props.closeModal}>
-                        Air Jordan  
+                        Air Jordan 1
                     </Link>
                 </div> 
                  <div>
@@ -35,6 +35,11 @@ class CollectionIndex extends React.Component {
                 <div>
                     <Link to="/collection/lebron" className="modal-link" onClick={this.props.closeModal}>
                         Lebron James
+                    </Link>
+                </div> 
+                 <div>
+                    <Link to="/collection/air-jordan-4" className="modal-link" onClick={this.props.closeModal}>
+                        Air Jordan 4
                     </Link>
                 </div> 
             </div>
