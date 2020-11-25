@@ -9,9 +9,20 @@ class Order extends React.Component {
 
 
     render() {
-         
-        return (
-            <div className="order-container">
+        debugger
+        if (this.props.currentUser === undefined){
+            return (
+                <div className="order-container">
+                    <div className="order-top-panel">
+                        <h1 className="order-title">THANK YOU FOR VISITING HYPED</h1>
+                        <p className="login-order-desc"> Unfortunately, we cannot process your order because you are not logged in. Please log in and retry to place your order again. We thank you for understanding.</p>
+                    </div>
+                    <Link to="/login" className="login-order-button"onClick={this.props.closeModal}>Login</Link>
+            </div>
+            )
+        } else {
+            return (
+               <div className="order-container">
                 <div className="order-top-panel">
                     <h1 className="order-title">THANK YOU FOR SHOPPING AT HYPED</h1>
                     <p className="order-message">Hang tight, {this.props.currentUser.username}!</p>
@@ -20,7 +31,7 @@ class Order extends React.Component {
                 </div>
                 <div className="order-bottom-panel">
                     <div className="order-summary-container">
-                        <p className="order-summary-title">Order Summary</p>
+                        <p className="order-summary-title">Billing Summary</p>
                         <p className="order-summary-content">Username: {this.props.currentUser.username}</p>
                         <p className="order-summary-content">Payment Info: VISA - XXXXXXXXXX1234</p>
                         <p className="order-summary-content">Shipping Address: 1234 HypeBeast Lane</p>
@@ -33,6 +44,9 @@ class Order extends React.Component {
 
             </div>
             )
+
+        }
+         
     }
 }
 export default Order;
