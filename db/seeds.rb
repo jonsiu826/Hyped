@@ -151,6 +151,214 @@ jordan1_8 = Product.create!(
    description: "The Air Jordan 1 Retro High OG 'Shattered Backboard 3.0' revisits a coveted colorway inspired by a Michael Jordan backboard-breaking dunk that took place during a 1985 Nike exhibition game. The shoe's colorway of black, Pale Vanilla and Starfish matches the colors of the jersey MJ sported that day. Released in October 2019, this third edition of the sneaker features a crinkled, glossy patent leather upper that alludes to the hoop's broken glass, a fitting tribute to an early iconic moment."
 )
 
+jordan1_9 = Product.create!(
+   name: "Dior x Air Jordan 1 High",
+   brand: "Air Jordan", 
+   release_date: "2020-06-25", 
+   colorway: "Wolf Grey/Sail/Photon Dust/White", 
+   technology: "Air", 
+   category: "Lifestyle", 
+   silhouette: "Air Jordan 1", 
+   main_color: "Grey", 
+   designer:"Peter Moore",
+   description: "Bridging the gap between street-ready sportswear and luxury fashion, the Dior x Air Jordan 1 High is drawn from a larger collaboration that spans footwear, apparel and accessories. Designer Kim Jones’ take on the iconic sneaker makes use of a white and grey upper constructed from Italian leather with hand-painted edges. Dual branding hits take the form of a Dior woven tongue tag, a Nike Swoosh in Dior Oblique jacquard, and icy outsoles revealing a Dior and Dior Wings logo on each shoe."
+)
+
+jordan1_10 = Product.create!(
+   name: "Air Jordan 1 Retro High OG 'Bred Toe'",
+   brand: "Air Jordan", 
+   release_date: "2018-02-24", 
+   colorway: "Gym Red/Summit White-Black", 
+   technology: "Air", 
+   category: "Lifestyle", 
+   silhouette: "Air Jordan 1", 
+   main_color: "Red", 
+   designer:"Peter Moore",
+   description: "Arriving in stores in February 2018, the Air Jordan 1 Retro High OG ‘Bred Toe’ is a new spin on a classic design. The Chicago Bulls-inspired colorway combines elements of the ‘Bred’ and ‘Black Toe’ editions of the Air Jordan 1, executed on a premium leather build. The high-top features a black Swoosh on the white quarter panel, along with contrasting pops of red on the toe box, heel, collar, and outsole. The shoe stays true to its OG 1985 roots with Nike Air branding on the tongue tag and sockliner."
+)
+
+jordan1_11 = Product.create!(
+   name: "Off-White x Air Jordan 1 Retro High OG 'UNC'",
+   brand: "Air Jordan", 
+   release_date: "2018-05-23", 
+   colorway: "White/Dark Powder Blue-Cone", 
+   technology: "Air", 
+   category: "Lifestyle", 
+   silhouette: "Air Jordan 1", 
+   main_color: "Blue", 
+   designer:"Peter Moore",
+   description: "Inspired by Michael Jordan’s alma mater, the Off-White x Air Jordan 1 Retro High OG ‘UNC’ carries a classic two-tone composition, filtered through Virgil Abloh’s unique design prism. The process involves taking a white leather base with dark powder blue overlays and adding embellishments that convey an expressive, handmade quality. They include detached Wings, a floating Swoosh, and lines of text on the medial-side quarter panel delineating the taxonomy of the shoe."
+)
+
+jordan1_12 = Product.create!(
+   name: "Travis Scott x Air Jordan 1 Low 'Mocha",
+   brand: "Air Jordan", 
+   release_date: "2019-07-19", 
+   colorway: "Black/Dark Mocha-University Red-Sail", 
+   technology: "Air", 
+   category: "Lifestyle", 
+   silhouette: "Air Jordan 1", 
+   main_color: "Brown", 
+   designer:"Peter Moore",
+   description: "Travis Scott and Jordan Brand collaborate on an Air Jordan 1 Low, taking similar design cues from the high-top version. An oversized backward facing Swoosh is featured prominently on the lateral side of the shoe, while a regular Swoosh graces the medial side. Black and Dark Mocha nubuck dominate the upper, with a few pops of University Red adding a nice contrast. Travis Scott details are subtly placed on the shoe, with the ‘Cactus Jack’ logo appearing on the tongue, medial side panel and sockliner. The back heel tabs feature intricately stitched logos, with the Air Jordan Wings on the right shoe and Scott’s crudely drawn face on the left shoe."
+)
+
+jordan1_13 = Product.create!(
+   name: "Air Jordan 1 Retro High OG 'Banned' 2016",
+   brand: "Air Jordan", 
+   release_date: "2016-09-02", 
+   colorway: "Black/Varsity Red-White", 
+   technology: "Air", 
+   category: "Lifestyle", 
+   silhouette: "Air Jordan 1", 
+   main_color: "Black", 
+   designer:"Peter Moore",
+   description: "Banned by the NBA in 1985, Michael Jordan was charged $5,000 per game for wearing the Air Jordan 1 ‘Black/Red' because they didn’t include the color white which was part of the Chicago Bulls’ official team colors. Used as a marketing tactic, Nike crafted the ‘Banned’ campaign around the sneakers to launch and promote the Air Jordan line. The sneaker was retroed in 1994, 2011, 2013 and 2016. The 2011 pair featured an ‘X’ on the heel paying homage to the 'Banned' nickname."
+)
+
+jordan1_14 = Product.create!(
+   name: "Air Jordan 1 Retro High OG 'Royal' 2017",
+   brand: "Air Jordan", 
+   release_date: "2017-04-01", 
+   colorway: "Black/Royal-White", 
+   technology: "Air", 
+   category: "Lifestyle", 
+   silhouette: "Air Jordan 1", 
+   main_color: "Black", 
+   designer:"Peter Moore",
+   description: "In 1985 sports photographer, Chuck Kohn, photographed Michael Jordan wearing the Air Jordan 1 Royals. This photo turned Nike poster was the first time anyone saw Michael wearing the Air Jordan 1 sneakers. Ever. Known to be his favorite colorway, Jordan chose the Royals to be the first Air Jordan 1 available for purchase. They were also the only color-way out of the Top 3 Air Jordan 1 Retro colorways (‘Banned’ and ‘Chicago’) that he never wore on the court. Since 1985, the Royals have been released in 2001, 2013, and 2017."
+)
+
+jordan1_15 = Product.create!(
+   name: "Air Jordan 1 Retro High OG 'Shadow' 2018",
+   brand: "Air Jordan", 
+   release_date: "2018-04-14", 
+   colorway: "Black/White-Medium Grey", 
+   technology: "Air", 
+   category: "Lifestyle", 
+   silhouette: "Air Jordan 1", 
+   main_color: "Black", 
+   designer:"Peter Moore",
+   description: "This Nike Air Jordan 1 Retro High OG 'Shadow' 2018 is a retro re-release of an original 1985 colorway. The shoe features a black and medium grey leather upper with a white midsole and black outsole. It also features OG Nike Air branding on the tongue and the Wings logo on the ankle collar. It was last retroed in 2013, and a low-top version dropped in 2015."
+)
+
+jordan1_16 = Product.create!(
+   name: "Union LA x Air Jordan 1 Retro High NRG 'Black Toe'",
+   brand: "Air Jordan", 
+   release_date: "2018-11-17", 
+   colorway: "White/Black/Varsity Red/Wolf Grey", 
+   technology: "Air", 
+   category: "Lifestyle", 
+   silhouette: "Air Jordan 1", 
+   main_color: "Black", 
+   designer:"Peter Moore",
+   description: "The Union LA x Air Jordan 1 Retro High NRG 'Black Toe' sees the venerable Los Angeles retailer take inspiration from thrifting and DIY culture to create a new take on the sneaker that started it all. In addition to a pre-yellowed midsole for a vintage aesthetic, a mismatched collar is attached to the rest of the upper with zigzag stitching that gives the impression of a makeshift design."
+)
+
+jordan4_1 = Product.create!(
+   name: "Air Jordan 4 Retro OG 'Fire Red' 2020",
+   brand: "Air Jordan", 
+   release_date: "2020-11-28", 
+   colorway: "White/Black/Tech Grey/Fire Red", 
+   technology: "Air", 
+   category: "Lifestyle", 
+   silhouette: "Air Jordan 4", 
+   main_color: "White", 
+   designer:"Tinker Hatfield",
+   description: "The 2020 edition of the Air Jordan 4 Retro OG ‘Fire Red’ brings back the classic colorway first released in 1989, complete with the iconic Nike Air logo emblazoned on the heel. The rest of the build is recreated faithfully, highlighted by a white leather upper with Fire Red detailing on the molded eyelets and outsole. Other original details include a visible Air sole unit and tongue patch with a Jumpman logo and Flight script graphic."
+)
+
+jordan4_2 = Product.create!(
+   name: "Air Jordan 4 Retro OG 'Bred' 2019",
+   brand: "Air Jordan", 
+   release_date: "2019-05-04", 
+   colorway: "Black/Cement Grey-Summit White-Fire Red", 
+   technology: "Air", 
+   category: "Lifestyle", 
+   silhouette: "Air Jordan 4", 
+   main_color: "Black", 
+   designer:"Tinker Hatfield",
+   description: "The 2019 edition of the Air Jordan 4 ‘Bred’ celebrates the 30th anniversary of the classic silhouette, appearing in the same colorway that Michael Jordan wore when he sank ‘The Shot’ during the first round of the 1989 NBA playoffs. It’s rendered in a build that’s faithful to the original, complete with a black nubuck upper, visible Air Sole cushioning underfoot and Nike Air branding on the heel."
+)
+
+jordan4_3 = Product.create!(
+   name: "Air Jordan 4 Retro 'Black Cat' 2020",
+   brand: "Air Jordan", 
+   release_date: "2020-01-22", 
+   colorway: "Black/Light Graphite", 
+   technology: "Air", 
+   category: "Lifestyle", 
+   silhouette: "Air Jordan 4", 
+   main_color: "Black", 
+   designer:"Tinker Hatfield",
+   description: "The 2020 edition of the Air Jordan 4 Retro 'Black Cat' brings back the all-black colorway of the classic silhouette, one that draws inspiration from one of Michael Jordan’s various nicknames. Like the original 2006 release, this pair makes use of a monochromatic black suede upper with a matching black midsole. Jumpman branding on the woven tongue tag is rendered in Light Graphite, representing the sneaker’s only contrasting design element."
+)
+
+jordan4_4 = Product.create!(
+   name: "Union LA x Air Jordan 4 Retro 'Off Noir'",
+   brand: "Air Jordan", 
+   release_date: "2020-08-29", 
+   colorway: "Off Noir/Brigade Blue/Dark Smoke Grey/Light Fusion Red", 
+   technology: "Air", 
+   category: "Lifestyle", 
+   silhouette: "Air Jordan 4", 
+   main_color: "Blue", 
+   designer:"Tinker Hatfield",
+   description: "The Union LA x Air Jordan 4 Retro ‘Off Noir’ represents the follow-up effort to the duo’s highly coveted Air Jordan 1 collaboration from 2018. The updated design features a black suede upper with matching black mesh on the toe box and blue mesh around the collar. The semi-translucent structural wings are attached to molded red eyelets, matching the woven Air Jordan tag atop the padded tongue and Nike Air branding on the heel. The TPU wings are filled in, reminiscent of an original Tinker Hatfield sketch of the AJ4, while the AIR JORDAN tag usually found on the inside of the tongue conveys a unique look, like someone folded the tongue over to expose the inside tag. Finally, a 'UN/LA' tag on the side panel shows the Union heritage and a yellowed midsole conveys a vintage aesthetic."
+)
+
+jordan4_5 = Product.create!(
+   name: "Travis Scott x Air Jordan 4 Retro 'Cactus Jack'",
+   brand: "Air Jordan", 
+   release_date: "2018-06-09", 
+   colorway: "University Blue/Varsity Red-Black", 
+   technology: "Air", 
+   category: "Lifestyle", 
+   silhouette: "Air Jordan 4", 
+   main_color: "Blue", 
+   designer:"Tinker Hatfield",
+   description: "Music artist Travis Scott hails from Houston, where the Oilers used to take the field in red, white and blue uniforms. The Travis Scott x Air Jordan 4 Retro 'Cactus Jack' colorway pays tribute to the city’s bygone football team with a Durabuck leather upper dressed in University Blue and a Varsity Red insole. The black lace cage and a heel panel feature a light blue speckle pattern. Cactus Jack branding appears on the left heel in Varsity Red, with a matching Jumpman logo on the right."
+)
+
+jordan4_6 = Product.create!(
+   name: "Air Jordan 4 Retro OG 'White Cement' 2016",
+   brand: "Air Jordan", 
+   release_date: "2016-02-13", 
+   colorway: "White/Fire Red-Tech Grey-Black", 
+   technology: "Air", 
+   category: "Lifestyle", 
+   silhouette: "Air Jordan 4", 
+   main_color: "White", 
+   designer:"Tinker Hatfield",
+   description: "The Air Jordan 4 Retro OG 'Cement’ 2016 was one of the original four colorways released in 1989. The sneaker features the original White, Fire Red, Black, and Tech Grey colorway, with the speckled Cement Grey accents that give the sneaker its nickname. Released during the 2016 NBA All-Star weekend in Toronto, the sneaker was also retro’d in 1999 and 2012. The 1999 and 2016 retros are the only models that feature the ‘Nike Air’ branding on the heel, just like the 1989 OG sneakers."
+)
+
+jordan4_7 = Product.create!(
+   name: "KAWS x Air Jordan 4 Retro 'Cool Grey'",
+   brand: "Air Jordan", 
+   release_date: "2017-03-31", 
+   colorway: "Cool Grey/White", 
+   technology: "Air", 
+   category: "Lifestyle", 
+   silhouette: "Air Jordan 4", 
+   main_color: "Grey", 
+   designer:"Tinker Hatfield",
+   description: "The KAWS x Air Jordan 4 Retro is a collaboration between the Jordan Brand and Brooklyn-based street artist KAWS, a.k.a. Brian Donnelly. The design removes the silhouette’s traditional plastic accents and dresses the entire upper and midsole in a premium grey suede upper. The sneaker also features KAWS’ ‘XX’ branding on the heel tab. The shoes were released alongside a small capsule collection that included a coaches jacket, hoodie, t-shirt, and hat in March of 2017. The hype was so intense for this release that the in-store raffle at Patta in London was read the riot act by the police and sneakerheads hacked into Donnelly’s website for a chance at the drop."
+)
+
+jordan4_8 = Product.create!(
+   name: "Air Jordan 4 Retro SE 'Sashiko'",
+   brand: "Air Jordan", 
+   release_date: "2020-12-05", 
+   colorway: "Deep Ocean/Sail/Cement Grey/Fire Red", 
+   technology: "Air", 
+   category: "Lifestyle", 
+   silhouette: "Air Jordan 4", 
+   main_color: "Black", 
+   designer:"Tinker Hatfield",
+   description: "The Air Jordan 4 Retro SE ‘Sashiko’ gives the iconic silhouette a textile makeover that replaces traditional leather construction. The paneled upper is treated to varying abstract prints for a patchwork-like effect, complete with decorative embroidery that gives the nod to Japanese Sashiko stitching — a traditional technique originally used to reinforce or repair garments for long-lasting wear. A two-tone palette of Deep Ocean and Sail is disrupted by Fire Red accents atop the tongue and within the visible Air sole unit."
+)
+
 kobe5_1 = Product.create!(
    name: "Zoom Kobe 5 Protro 'DeMar DeRozan' PE", 
    brand: "Nike", 
@@ -254,6 +462,110 @@ kobe5_8 = Product.create!(
    main_color: "Gold", 
    designer:"Eric Avar",
    description: "Released in Nike’s Prelude Pack in January 2014, the Nike Zoom Kobe 5 'Prelude' celebrates Kobe Bryant’s impact on popular culture with a pop art-inspired colorway. The multicolor upper features Flywire technology for a locked-down fit, while the gold Swoosh serves as a tribute to the championship ring Bryant won while wearing the Kobe 5. It also comes with purple speckling on the black midsole and a glow-in-the-dark outsole underfoot."
+)
+
+kobe5_9 = Product.create!(
+   name: "Undefeated x Kobe 4 Protro 'Fir'", 
+   brand: "Nike", 
+   release_date: "2019-08-24", 
+   colorway: "Fir/Multi-Color", 
+   technology: "Air", 
+   category: "Basketball", 
+   silhouette: "Zoom Kobe 4", 
+   main_color: "Green", 
+   designer:"Eric Avar",
+   description: "The Undefeated x Kobe 4 Protro 'Giannis Antetokounmpo' gives a popular low-top silhouette first seen in 2008 an updated look and a colorway dominated with a solid green upper, a nod to Giannis' Milwaukee Bucks. Released in August 2019 on Mamba Day, this edition showcases Kobe's sheath logo on one tongue and the Undefeated logo on the other. The sneaker's patent leather upper displays the Swoosh in black, while Kobe's numbers, 8 and 24, appear on alternating heels. A white midsole and multi-colored outsole provide contrast."
+)
+
+kobe5_10 = Product.create!(
+   name: "Undefeated x Kobe 4 Protro 'Team Orange'", 
+   brand: "Nike", 
+   release_date: "2019-08-24", 
+   colorway: "Team Orange/Purple/White", 
+   technology: "Lunarlon", 
+   category: "Basketball", 
+   silhouette: "Zoom Kobe 4", 
+   main_color: "Red", 
+   designer:"Eric Avar",
+   description: "Released in August 2019 as one of four colorways, the Undefeated x Kobe 4 Protro 'Devin Booker' is presented in orange with purple accents, a nod to Booker's Phoenix Suns. The low-top sneaker features branding for both Kobe Bryant and Undefeated on the tongues as well as the sockliner. A patent leather upper blends well with the Flywire panels, and both of Kobe's jersey numbers, 8 and 24, can be seen on the back heel of the shoe."
+)
+
+kobe5_11 = Product.create!(
+   name: "Zoom Kobe 5 Protro 'Bruce Lee'", 
+   brand: "Nike", 
+   release_date: "2020-11-24", 
+   colorway: "Del Sol/ Metallic Silver/Comet Red/Black", 
+   technology: "Zoom Air", 
+   category: "Basketball", 
+   silhouette: "Zoom Kobe 5", 
+   main_color: "Yellow", 
+   designer:"Eric Avar",
+   description: "The Nike Zoom Kobe 5 Protro ‘Bruce Lee’ brings back a beloved 2010 colorway inspired by the martial artist whose style and mindset informed Kobe Bryant’s play on the hardwood. The yellow and black design — complete with red scratch marks on the lateral forefoot — give the nod to Bruce Lee’s jumpsuit from his iconic film ‘Enter the Dragon.’ In terms of performance, the lightweight build utilizes Nike’s Flywire technology throughout the upper, supported by a foam midsole housing a large-volume Zoom Air unit in the forefoot."
+)
+
+kobe5_12 = Product.create!(
+   name: "Zoom Kobe 5 Protro 'Alternate Bruce Lee'", 
+   brand: "Nike", 
+   release_date: "2020-11-24", 
+   colorway: "White/Black/Comet Red/White", 
+   technology: "Zoom Air", 
+   category: "Basketball", 
+   silhouette: "Zoom Kobe 5", 
+   main_color: "White", 
+   designer:"Eric Avar",
+   description: "The Nike Zoom Kobe 5 Protro ‘Alternate Bruce Lee’ pays homage to the iconic martial artist with a design that takes its cues from the 2010 colorway inspired by Lee’s jumpsuit from ‘Enter the Dragon.’ The black and white color scheme adds yellow accents in a nod to the original, along with the distinctive red scratch marks on the lateral forefoot. While the original Zoom Kobe 5 featured Zoom Air cushioning in the forefoot and heel, this pair utilizes a large-volume Zoom Air unit only in the forefoot."
+)
+
+kobe5_13 = Product.create!(
+   name: "Zoom Kobe 5 Protro '5x Champ'", 
+   brand: "Nike", 
+   release_date: "2020-08-24", 
+   colorway: "Court Purple/Black/University Gold", 
+   technology: "Air", 
+   category: "Basketball", 
+   silhouette: "Zoom Kobe 5", 
+   main_color: "Purple", 
+   designer:"Eric Avar",
+   description: "Launching as part of a special commemorative collection honoring the memory of Kobe Bryant, the Nike Zoom Kobe 5 Protro ‘5x Champ’ features a design inspired by the championship jackets gifted to the Mamba following his second and third NBA titles. The glossy patent leather upper is dressed in purple and black with contrasting gold accents. The Lakers’ signature purple and gold hues are repeated on the LA-themed custom sockliner."
+)
+
+kobe5_14 = Product.create!(
+   name: "Undefeated x Zoom Kobe 5 Protro 'What If Pack - Unlucky 13'", 
+   brand: "Nike", 
+   release_date: "2020-08-27", 
+   colorway: "White/Metallic Gold/Rapid Teal", 
+   technology: "Zoom Air", 
+   category: "Basketball", 
+   silhouette: "Zoom Kobe 5", 
+   main_color: "White", 
+   designer:"Eric Avar",
+   description: "Made in collaboration with the LA-based retailer, the Undefeated x Nike Zoom Kobe 5 Protro ‘Unlucky 13’ is taken from the two-piece ‘What If Pack,’ inspired by the circumstances surrounding Kobe Bryant’s selection and subsequent trade in the 1996 NBA draft. This pair features a white and teal color scheme that gives the nod to the Charlotte Hornets, the team that drafted Bryant with the 13th overall pick. Metallic gold Swooshes celebrate the Black Mamba's five championships."
+)
+
+kobe5_15 = Product.create!(
+   name: "Undefeated x Zoom Kobe 5 Protro 'What If Pack - Dirty Dozen'", 
+   brand: "Nike", 
+   release_date: "2020-08-27", 
+   colorway: "Multi-Color/Metallic Gold/Multi-Color", 
+   technology: "Zoom Air", 
+   category: "Basketball", 
+   silhouette: "Zoom Kobe 5", 
+   main_color: "Multi-Color", 
+   designer:"Eric Avar",
+   description: "Made in collaboration with the LA-based retailer, the Undefeated x Nike Zoom Kobe 5 Protro ‘Dirty Dozen’ is drawn from the two-piece ‘What If Pack,’ inspired by the 1996 NBA Draft in which a 17-year-old Kobe Bryant was selected by the Charlotte Hornets with the 13th overall pick. The shoe’s multi-hued design features colors taken from the twelve teams that passed up on the Black Mamba, while metallic gold accents give the nod to the athlete’s championship pedigree."
+)
+
+kobe5_16 = Product.create!(
+   name: "Zoom Kobe 5 Protro 'Chaos' 2020", 
+   brand: "Nike", 
+   release_date: "2020-01-03", 
+   colorway: "Purple/Cyber-White-Black", 
+   technology: "Zoom Air", 
+   category: "Basketball", 
+   silhouette: "Zoom Kobe 5", 
+   main_color: "Multi-Color", 
+   designer:"Eric Avar",
+   description: "Celebrating its 10th anniversary, the Nike Zoom Kobe 5 Protro returns in January 2020 with inspiration taken from DC Comics supervillain, the Joker. This 'Chaos' edition evokes the character's iconic suit in a multi-color, mixed-material upper flaunting lizard skin textures, flecked laces and a protective toe cap while neon branding recalls his green hair. The sneaker carries a splattered midsole and color-pop rubber outsole."
 )
 
 lebron_1 = Product.create!(
@@ -670,29 +982,101 @@ lebron_7.photo.attach(io: file31, filename: "img_#{lebron_7.id}.jpg")
 file32 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/lebron_fourhorsemen.jpeg")
 lebron_8.photo.attach(io: file32, filename: "img_#{lebron_8.id}.jpg")
 
-file33 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/fog_black.png")
+file33 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/fog_black.jpeg")
 fog_1.photo.attach(io: file33, filename: "img_#{fog_1.id}.jpg")
 
-file34 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/fog_question.png")
+file34 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/fog_question.jpeg")
 fog_2.photo.attach(io: file34, filename: "img_#{fog_2.id}.jpg")
 
-file35 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/fog_oatmeal.png")
+file35 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/fog_oatmeal.jpeg")
 fog_3.photo.attach(io: file35, filename: "img_#{fog_3.id}.jpg")
 
-file36 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/fog_yellow.png")
+file36 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/fog_yellow.jpeg")
 fog_4.photo.attach(io: file36, filename: "img_#{fog_4.id}.jpg")
 
-file37 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/fog_white.png")
+file37 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/fog_white.jpeg")
 fog_5.photo.attach(io: file37, filename: "img_#{fog_5.id}.jpg")
 
-file38 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/fog_green.png")
+file38 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/fog_green.jpeg")
 fog_6.photo.attach(io: file38, filename: "img_#{fog_6.id}.jpg")
 
-file39 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/fog_orange.png")
+file39 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/fog_orange.jpeg")
 fog_7.photo.attach(io: file39, filename: "img_#{fog_7.id}.jpg")
 
-file40 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/fog_black_white.png")
+file40 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/fog_black_white.jpeg")
 fog_8.photo.attach(io: file40, filename: "img_#{fog_8.id}.jpg")
+
+file41 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan4_firered.jpeg")
+jordan4_1.photo.attach(io: file41, filename: "img_#{jordan4_1.id}.jpg")
+
+file42 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan4_bred.jpeg")
+jordan4_2.photo.attach(io: file42, filename: "img_#{jordan4_2.id}.jpg")
+
+file43 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan4_blackcat.jpeg")
+jordan4_3.photo.attach(io: file43, filename: "img_#{jordan4_3.id}.jpg")
+
+file44 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan4_union.jpeg")
+jordan4_4.photo.attach(io: file44, filename: "img_#{jordan4_4.id}.jpg")
+
+file45 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan4_catcus.jpeg")
+jordan4_5.photo.attach(io: file45, filename: "img_#{jordan4_5.id}.jpg")
+
+file46 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan4_whitecement.jpeg")
+jordan4_6.photo.attach(io: file46, filename: "img_#{jordan4_6.id}.jpg")
+
+file47 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan4_coolgrey.jpeg")
+jordan4_7.photo.attach(io: file47, filename: "img_#{jordan4_7.id}.jpg")
+
+file48 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan4_sashiko.png")
+jordan4_8.photo.attach(io: file48, filename: "img_#{jordan4_8.id}.jpg")
+
+file49 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan1_dior.jpeg")
+jordan1_9.photo.attach(io: file49, filename: "img_#{jordan1_9.id}.jpg")
+
+file50 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan1_bredtoe.jpeg")
+jordan1_10.photo.attach(io: file50, filename: "img_#{jordan1_10.id}.jpg")
+
+file51 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan1_unc.jpeg")
+jordan1_11.photo.attach(io: file51, filename: "img_#{jordan1_11.id}.jpg")
+
+file52 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan1_travislow.jpeg")
+jordan1_12.photo.attach(io: file52, filename: "img_#{jordan1_12.id}.jpg")
+
+file53 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan1_banned.jpeg")
+jordan1_13.photo.attach(io: file53, filename: "img_#{jordan1_13.id}.jpg")
+
+file54 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan1_royal.jpeg")
+jordan1_14.photo.attach(io: file54, filename: "img_#{jordan1_14.id}.jpg")
+
+file55 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan1_shadow.jpeg")
+jordan1_15.photo.attach(io: file55, filename: "img_#{jordan1_15.id}.jpg")
+
+file56 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan1_union.jpeg")
+jordan1_16.photo.attach(io: file56, filename: "img_#{jordan1_16.id}.jpg")
+
+file57 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe4_undefeatedgreen.jpeg")
+kobe5_9.photo.attach(io: file57, filename: "img_#{kobe5_9.id}.jpg")
+
+file58 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe4_orange.jpeg")
+kobe5_10.photo.attach(io: file58, filename: "img_#{kobe5_10.id}.jpg")
+
+file59 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe5_bruceleeyellow.jpeg")
+kobe5_11.photo.attach(io: file59, filename: "img_#{kobe5_11.id}.jpg")
+
+file60 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe5_bruceleewhite.jpeg")
+kobe5_12.photo.attach(io: file60, filename: "img_#{kobe5_12.id}.jpg")
+
+file61 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe5_champ.jpeg")
+kobe5_13.photo.attach(io: file61, filename: "img_#{kobe5_13.id}.jpg")
+
+file62 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe5_undefeated.jpeg")
+kobe5_14.photo.attach(io: file62, filename: "img_#{kobe5_14.id}.jpg")
+
+file63 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe5_undefeatedcolor.jpeg")
+kobe5_15.photo.attach(io: file63, filename: "img_#{kobe5_15.id}.jpg")
+
+file64 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe5_chaos.jpeg")
+kobe5_16.photo.attach(io: file64, filename: "img_#{kobe5_16.id}.jpg")
 
 
 review1 = Review.create!(
