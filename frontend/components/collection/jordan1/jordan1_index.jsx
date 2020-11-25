@@ -24,7 +24,7 @@ class Jordan1Index extends React.Component {
 
         return (
             <div>
-                <div className="kobe-collection-container">
+                <div className="collection-container">
                     <div className="collection-left-panel">
                         <h1 className="kobe-title">Air Jordan 1</h1>
                         <p className="kobe-desc"> Originally released in 1985, the Air Jordan 1 is rightfully billed as the sneaker that started it all. When Michael Jordan stepped onto the hardwood in the original Black/Red colorway, the shoe immediately earned a legion of fans while kick-starting the history of flight.</p>

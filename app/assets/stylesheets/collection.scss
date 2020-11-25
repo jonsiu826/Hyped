@@ -1,4 +1,4 @@
-.kobe-collection-container{
+.collection-container{
     padding-top: 100px;
     display: flex;
     justify-content: space-around;
@@ -7,7 +7,6 @@
 .collection-left-panel{
     width: 30%;
     padding: 3% 0px 0px 9%;
-
 }
 
 .kobe-collection-image{
@@ -15,6 +14,67 @@
     height: 350px;
     padding: 50px 0px 50px 0px;
     margin-right: 132px;
+}
+
+.fog-collection-container{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.fog-indexitem{
+display: flex;
+    /* flex-flow: wrap row; */
+    justify-content: space-around;
+    text-align: center;
+    /* position: relative; */
+    /* margin: 0px 10%; */
+    font-family: sans-serif;
+    text-transform: uppercase;
+    flex-direction: column;
+    font-size: 11px;
+    padding: 3rem;
+    letter-spacing: 1px;
+    /* padding-top: 10%; */
+    width: 200px;
+    border: 1px solid black;
+    height: 230px;
+}
+
+.fog-release-date{
+     padding-top: 10px;
+    /* text-decoration: none; */
+    color: black;
+    font-size: 15px;
+}
+
+.fog-image{
+    width: 165px;
+    /* height: 110px; */
+    /* padding-left: 8px; */
+    /* padding-top: 29px; */
+    margin-left: 8px;
+    margin-top: 42px;
+}
+
+.fog-name{
+    // padding-top: 10%;
+    font-family: serif;
+    /* justify-content: center; */
+    width: 80%;
+    text-decoration: none;
+    color: black;
+    margin-left: 13px;
+    font-size: 14px;
+}
+
+.fog-sneaker-info{
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  margin-top: -1px;
+  margin-left: -1px;
+  font-size: 15px;
+  text-decoration: none;
 }
 
 .kobe-title{

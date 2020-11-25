@@ -14,7 +14,9 @@ import SearchContainer from './search/search_container';
 import SneakersContainer from './products/all_sneakers_container';
 import KobeContainer from './collection/kobe/kobe_container';
 import JordanContainer from './collection/jordan1/jordan1_container';
-import YeezyCollectionContainer from './collection/yeezy/yeezy_collection_container'
+import YeezyCollectionContainer from './collection/yeezy/yeezy_collection_container';
+import FogContainer from './collection/fear_of_god/fog_container';
+import LebronContainer from './collection/lebron/lebron_container'
 
 
 
@@ -40,7 +42,9 @@ const App = () => (
             <Route exact path="/products/:productId" component={ProductShowContainer}/>
             <Route exact path="/collection/kobe" component={KobeContainer}/>
             <Route exact path="/collection/air-jordan-1" component={JordanContainer}/>
-               <Route exact path="/collection/yeezy" component={YeezyCollectionContainer}/>
+            <Route exact path="/collection/yeezy" component={YeezyCollectionContainer}/>
+            <Route exact path="/collection/lebron" component={LebronContainer}/>
+            <Route exact path="/collection/fear-of-god" component={FogContainer}/>
             <Route exact path='/search' component={SearchContainer} />
              <Route exact path='/sneakers' component={SneakersContainer} />
             <AuthRoute exact path="/login" component={LoginFormContainer} />

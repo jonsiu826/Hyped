@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import YeezyCollectionIndexItem from './yeezy_collection_index_item';
+import FogIndexItem from './fog_index_item';
 
-class YeezyCollectionIndex extends React.Component {
+class FogIndex extends React.Component {
     constructor(props) {
         super(props)
         // this.handleClick = this.handleClick.bind(this)
@@ -15,22 +15,17 @@ class YeezyCollectionIndex extends React.Component {
 
     render() {
         const products = this.props.products.map((product, idx) => {
-            return <YeezyCollectionIndexItem product={product} key={idx}/>
+            return <FogIndexItem product={product} key={idx}/>
         })
-
-       
-    
-
-
         return (
             <div>
                 <div className="collection-container">
                     <div className="collection-left-panel">
-                        <h1 className="yeezy-title">Yeezy</h1>
-                        <p className="kobe-desc"> Since the first Nike Air Max 180 in 2005, Kanye has set unparalleled standards for progressive sneaker design. Partnering with the Three Stripes, the adidas Yeezy Boost line has influenced streetwear, high-fashion and sports. Spanning back fourteen years, GOAT looks back on designs inspired by Kanye West.</p>
+                        <h1 className="kobe-title">Fear of God</h1>
+                        <p className="kobe-desc"> In six years, Fear of God has gone from an emerging Los Angeles label specializing in tees and hoodies to one of the biggest names in fashion. With sneakers created alongside Vans and Nike, Fear of God continues to evolve its elevated streetwear.</p>
                     </div>
                     <div>
-                        <img className="jordan-collection-image" src={YeezyCollection} />
+                        <img className="jordan-collection-image" src={FogCollection} />
                     </div>
                 </div>
                 {/* <h1 className="product-header">View Our Collection</h1> */}
@@ -41,4 +36,4 @@ class YeezyCollectionIndex extends React.Component {
         )
     }
 }
-export default YeezyCollectionIndex;
+export default FogIndex;

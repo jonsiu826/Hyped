@@ -58,10 +58,14 @@ class Greeting extends React.Component {
                             Discover
                         </Link>
                     </div> 
-                    <div className="modal-link-collection" onClick={() => this.props.openModal("collection")}>
-                        Collections
+                     <div className="collection-link-container" onClick={() => this.props.openModal("collection")}>
+                        <div className="modal-link-collection" >
+                            Collections
+                        </div>
+                        <div className="arrow-modal">
+                            <i class="fas fa-angle-right"></i>
+                        </div>
                     </div>
-                   
                     <div>
                         <Link to="/sneakers" className="modal-link" onClick={this.props.closeModal}>
                             Shop All
@@ -72,6 +76,7 @@ class Greeting extends React.Component {
                             Search
                         </Link>
                     </div> 
+                    
                     <div className="logout-form">
                         <div className="logout-session">
                             <h1 className="logout-message">{this.props.currentUser.username} </h1>

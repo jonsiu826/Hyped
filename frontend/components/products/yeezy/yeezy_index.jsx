@@ -85,7 +85,7 @@ class YeezyIndex extends React.Component {
             <div>
                 <Link to="/collection/yeezy">
                     <div className="kobe-logo-container">
-                        <img className="kobe-image" src={Yeezy1} />
+                        <img className="yeezy-index-image" src={Yeezy1} />
                     </div>
                 </Link>
                 <h1 className="product-header">Yeezy Collection</h1>

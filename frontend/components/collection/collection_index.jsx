@@ -27,6 +27,16 @@ class CollectionIndex extends React.Component {
                         Yeezy
                     </Link>
                 </div> 
+                   <div>
+                    <Link to="/collection/fear-of-god" className="modal-link" onClick={this.props.closeModal}>
+                        Fear Of God
+                    </Link>
+                </div> 
+                <div>
+                    <Link to="/collection/lebron" className="modal-link" onClick={this.props.closeModal}>
+                        Lebron James
+                    </Link>
+                </div> 
             </div>
             )
     }

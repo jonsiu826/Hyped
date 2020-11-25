@@ -1,10 +1,10 @@
 import { connect } from 'react-redux'
-import YeezyCollectionIndex from './yeezy_collection_index';
+import FogIndex from './fog_index';
 import {fetchProducts} from '../../../actions/product_actions';
 
 const mapStateToProps = (state) => {
     return {
-        products: Object.values(state.entities.products).slice(32,40)
+        products: Object.values(state.entities.products).slice(24,32)
     }
 }
 
@@ -14,4 +14,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(YeezyCollectionIndex)
+export default connect(mapStateToProps, mapDispatchToProps)(FogIndex)
