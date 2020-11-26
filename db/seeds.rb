@@ -881,6 +881,214 @@ yeezy8 = Product.create!(
    description: "The adidas Yeezy Boost 350 V2 ‘Carbon’ features a breathable Primeknit upper in a neutral black and grey finish. The sneaker’s lateral side features a streak of black via the post-dyed monofilament side stripe, separating a light grey weave up top with mostly black construction on the lower half. No-tie bungee laces deliver a secure fit. The sneaker rides on a full-length Boost midsole, surrounded by a yellow-tinged rubber cage."
 )
 
+yeezy9 = Product.create!(
+   name: "Yeezy Boost 350 V2 'Beluga'", 
+   brand: "Adidas", 
+   release_date: "2016-09-24", 
+   colorway: "Steel Grey/Beluga/Solar Red", 
+   technology: "Boost", 
+   category: "Lifestyle", 
+   silhouette: "Yeezy 350", 
+   main_color: "Grey", 
+   designer:"Kanye West",
+   description: "Unveiled at the Yeezy Season 3 presentation at Madison Square Garden, the Yeezy Boost 350 V2 ‘Beluga’ dropped on September 24, 2016. The evolved Yeezy Boost 350 V2 silhouette features a two-tone grey Primeknit and a solar red stripe with SPLY-350 branding on the lateral side. On the medial side, the suede midfoot panel has been removed and the pull tab replaced with a new elastic fit."
+)
+
+yeezy10 = Product.create!(
+   name: "Yeezy Boost 350 'Pirate Black' 2015", 
+   brand: "Adidas", 
+   release_date: "2015-08-22", 
+   colorway: "Pirate Black", 
+   technology: "Boost", 
+   category: "Lifestyle", 
+   silhouette: "Yeezy 350 350", 
+   main_color: "Black", 
+   designer:"Kanye West",
+   description: "Released on August 22nd, 2015, the Yeezy Boost 350 ‘Pirate Black’ features a pirate black/dark gray Primeknit upper with branded suede patches on the medial sides, patterned dark grey rope laces, red accented heel tabs, and a black Boost outsole."
+)
+
+yeezy11 = Product.create!(
+   name: "Yeezy Slides 'Desert Sand'", 
+   brand: "Adidas", 
+   release_date: "2019-12-06", 
+   colorway: "Desert Sand/Desert Sand/Desert Sand", 
+   technology: "EVA", 
+   category: "Lifestyle", 
+   silhouette: "Yeezy Slides", 
+   main_color: "Tan", 
+   designer:"Kanye West",
+   description: "The Yeezy Slide 'Desert Sand' offers Kanye West’s take on a casual sandal, good for postgame relaxation or weekend lounging. A subtle tan finish complements the minimalist build, made with lightweight and durable EVA foam. Exterior branding is limited to adidas’ three-stripe logo debossed on the soft footbed. The outsole is crafted with strategically placed horizontal grooves for superior comfort and traction."
+)
+
+yeezy12 = Product.create!(
+   name: "Yeezy Boost 350 V2 GID 'Glow'", 
+   brand: "Adidas", 
+   release_date: "2019-05-24", 
+   colorway: "Glow/Glow/Glow", 
+   technology: "Boost", 
+   category: "Lifestyle", 
+   silhouette: "Yeezy 350 350", 
+   main_color: "Green", 
+   designer:"Kanye West",
+   description: "Regarded as a cultural phenomenon, the adidas Yeezy Boost 350 silhouette generated a cult following when it was initially released in 2015. This ‘Glow’ makeover—released in May 2019—equips the Primeknit upper with a high-visibility treatment and a translucent stripe to the lateral profile. Integrated lacing and a coordinating heel pull provide easy on/off. Underfoot, the signature full-length Boost midsole looks to the future with a bright glow in the dark finish."
+)
+
+yeezy13 = Product.create!(
+   name: "Yeezy Boost 350 V2 'Red'", 
+   brand: "Adidas", 
+   release_date: "2016-11-23", 
+   colorway: "Core Black/Red/Core Black", 
+   technology: "Boost", 
+   category: "Lifestyle", 
+   silhouette: "Yeezy 350", 
+   main_color: "Black", 
+   designer:"Kanye West",
+   description: "Released on November 23, 2016, in a three-pack alongside the ‘Green’ and ‘Copper’ colorways, the Yeezy Boost 350 V2 ‘Red’ combines a black Primeknit upper with a Red stripe, SPLY 350 branding, and a translucent black midsole housing full-length Boost."
+)
+
+yeezy14 = Product.create!(
+   name: "Yeezy Boost 350 'Oxford Tan'", 
+   brand: "Adidas", 
+   release_date: "2015-12-29", 
+   colorway: "Light Stone/Oxford Tan/Light Stone", 
+   technology: "Boost", 
+   category: "Lifestyle", 
+   silhouette: "Yeezy 350", 
+   main_color: "Tan", 
+   designer:"Kanye West",
+   description: "The adidas Yeezy Boost 350 ‘Oxford Tan’ features an oxford/light stone Primeknit upper with tonal oxford laces, suede patches on the medial sides, and a tan Boost outsole. First worn by Kanye at the August 2015 MTV VMAs, the fourth colorway of the Yeezy 350 was released at select adidas Originals Retail stores on December 29th, 2015."
+)
+
+yeezy15 = Product.create!(
+   name: "Yeezy Boost 350 'Turtle Dove'", 
+   brand: "Adidas", 
+   release_date: "2015-06-27", 
+   colorway: "Turtle Dove/Blue Gray/Core White", 
+   technology: "Boost", 
+   category: "Lifestyle", 
+   silhouette: "Yeezy 350", 
+   main_color: "Grey", 
+   designer:"Kanye West",
+   description: "First seen on Kanye and his models at the Yeezy Season 1 fashion show in February 2015, the Yeezy Boost 350 ‘Turtle Dove’ was the second shoe released in the adidas Yeezy collection after the Yeezy Boost 750 ‘OG.’ Dropped on June 27, 2015, the ‘Turtle Dove’ sold out instantly online and was eventually anointed 2015’s Shoe of the Year at the Footwear News 29th Annual Achievement Awards."
+)
+
+yeezy16 = Product.create!(
+   name: "Yeezy Boost 350 V2 'Cream White / Triple White'", 
+   brand: "Adidas", 
+   release_date: "2017-04-29", 
+   colorway: "Cream White/Cream White/Core White", 
+   technology: "Boost", 
+   category: "Lifestyle", 
+   silhouette: "Yeezy 350", 
+   main_color: "White", 
+   designer:"Kanye West",
+   description: "First released on April 29, 2017, the Yeezy Boost 350 V2 ‘Cream White’ combines a cream Primeknit upper with tonal cream SPLY 350 branding, and a translucent white midsole housing full-length Boost. Released again in October 2018, this retro helped fulfill Kanye West’s oft-repeated ‘YEEZYs for everyone’ Twitter mantra, as adidas organized the biggest drop in Yeezy history by promising pre-sale to anyone who signed up on the website. Similar to the first release, the ‘Triple White’ 2018 model features a Primeknit upper, a Boost midsole and custom adidas and Yeezy co-branding on the insole."
+)
+
+chuck1 = Product.create!(
+   name: "Ambush x Chuck Taylor All Star Duck Boot High 'Blithe'", 
+   brand: "Converse", 
+   release_date: "2020-11-24", 
+   colorway: "Blithe/Blithe/Blithe", 
+   technology: "Canvas", 
+   category: "Boot", 
+   silhouette: "Chuck Taylor All Star", 
+   main_color: "Blue", 
+   designer:"Marquis Mills",
+   description: ""
+)
+
+chuck2 = Product.create!(
+   name: "Off-White x Chuck 70 'White'", 
+   brand: "Converse", 
+   release_date: "2018-10-08", 
+   colorway: "White/Black", 
+   technology: "Canvas", 
+   category: "Lifestyle", 
+   silhouette: "Chuck 70", 
+   main_color: "White", 
+   designer:"Marquis Mills",
+   description: "With the Off-White x Chuck 70 ‘White,’ Virgil Abloh places an emphasis on accessibility and wearability. Consequently, the iconic silhouette is dressed in conventional cotton canvas and finished in a versatile crisp white shade. Virgil even keeps the shoe’s signature and rubber license plate, though the latter is flipped upside down. Additional flourishes include the Off-White’s trademark diagonal stripes on the midsole, printed text on the medial side and a bright orange outsole."
+)
+
+chuck3 = Product.create!(
+   name: "Off-White x Chuck 70 'The Ten'", 
+   brand: "Converse", 
+   release_date: "2018-10-08", 
+   colorway: "Clear/White-White", 
+   technology: "Canvas", 
+   category: "Lifestyle", 
+   silhouette: "Chuck Taylor All Star", 
+   main_color: "White", 
+   designer:"Marquis Mills",
+   description: "The final pair of Virgil Abloh's 'The Ten' collection, the Off-White x Chuck Taylor All-Star 70 was released in May 2017 as part of the 'GHOSTING' pack. Featuring a translucent white upper and an ice-blue gradient on the sole, the shoe features bold lettering along its silhouette: 'LEFT' and 'RIGHT' on the toecaps, “VULCANIZED” over the midsole, “SHOELACES” on each lace, with Off-White's stamp on each side-panel. A red zip-tie hooked through the laces completes the look."
+)
+
+chuck4 = Product.create!(
+   name: "Tyler, The Creator x Foot Locker x Chuck 70 'Artist Series'", 
+   brand: "Converse", 
+   release_date: "2018-11-26", 
+   colorway: "Cream/Multicolor", 
+   technology: "Canvas", 
+   category: "Lifestyle", 
+   silhouette: "Chuck 70", 
+   main_color: "Cream", 
+   designer:"Marquis Mills",
+   description: "Tyler, the Creator teamed up with Foot Locker on the ‘Artist Series’ edition of the Converse Chuck 70, featuring an Off-White canvas upper printed with original artwork from Wyatt Navarro. The heightened foxing that’s a signature design element of the silhouette is adorned with contrasting stripes in blue and orange. A gum rubber outsole delivers traction underfoot."
+)
+
+chuck5 = Product.create!(
+   name: "Comme des Garçons x Chuck Taylor All Star Hi 'Play'", 
+   brand: "Converse", 
+   release_date: "2015-05-14", 
+   colorway: "Black/White", 
+   technology: "Canvas", 
+   category: "Lifestyle", 
+   silhouette: "Chuck Taylor All Star", 
+   main_color: "Black", 
+   designer:"Marquis Mills",
+   description: "This Comme Des Garçons x Chuck Taylor All Star High 'Play' features a black canvas upper with a red peekaboo heart designed by New York graphic artist Filip Pagowski on the side panels. It also comes with a white contrast stripe on the heel, and an Off-White toe cap, and vulcanized rubber midsole. Released in June 2017, the sneaker also dropped in an Off-White colorway."
+)
+
+chuck6 = Product.create!(
+   name: "Comme des Garçons x Chuck Taylor All Star Hi 'Milk'", 
+   brand: "Converse", 
+   release_date: "2015-05-14", 
+   colorway: "Milk", 
+   technology: "Canvas", 
+   category: "Lifestyle", 
+   silhouette: "Chuck Taylor All Star", 
+   main_color: "White", 
+   designer:"Marquis Mills",
+   description: "This Comme des Garçons x Chuck Taylor All Star Hi features an Off-White canvas upper, red CDG heart logo on the side panels, black contrast stripe on the heel, white toe cap, and a vulcanized rubber midsole. Released in June 2017, the sneaker also dropped in a black colorway."
+)
+
+chuck7 = Product.create!(
+   name: "Comme des Garçons PLAY x Chuck 70 High 'Bright Blue'", 
+   brand: "Converse", 
+   release_date: "2020-04-02", 
+   colorway: "Blue", 
+   technology: "Canvas", 
+   category: "Lifestyle", 
+   silhouette: "Chuck 70", 
+   main_color: "Blue", 
+   designer:"Marquis Mills",
+   description: "The Comme des Garçons PLAY x Converse Chuck 70 High ‘Bright Blue’ places the spotlight on the Japanese fashion label’s signature heart logo, finished in High Risk Red and positioned on the sneaker’s lateral side panel for maximum visibility. Additional details include shiny chrome eyelets, a white textile heel strip and winged stitch detailing atop the tongue. The high-top rests on an elevated rubber midsole finished in Off-White Egret."
+)
+
+chuck8 = Product.create!(
+   name: "Comme des Garçons Play x Chuck 70 Hi Top 'Multi Heart'", 
+   brand: "Converse", 
+   release_date: "2019-03-15", 
+   colorway: "White", 
+   technology: "Canvas", 
+   category: "Lifestyle", 
+   silhouette: "Chuck 70", 
+   main_color: "White", 
+   designer:"Marquis Mills",
+   description: "With a look that comes out of the Converse Chuck Taylors of the ’70s, the Comme des Garcons Play x Chuck 70 High Top 'Multi Heart' has a high top upper made with premium touches and collab branding. The canvas upper comes in an off white, with shiny metal eyelets, double stitching, and Comme des Garcons heart icons on the sidewall. Below, a vulcanized rubber midsole and rubber outsole finish off the vintage vibe."
+)
+
 
 
 file1 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan1_chicago.jpeg")
@@ -1072,12 +1280,59 @@ kobe5_13.photo.attach(io: file61, filename: "img_#{kobe5_13.id}.jpg")
 file62 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe5_undefeated.jpeg")
 kobe5_14.photo.attach(io: file62, filename: "img_#{kobe5_14.id}.jpg")
 
-file63 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe5_undefeatedcolor.jpeg")
-kobe5_15.photo.attach(io: file63, filename: "img_#{kobe5_15.id}.jpg")
+file63 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/yeezy_beluga.jpeg")
+yeezy9.photo.attach(io: file63, filename: "img_#{yeezy9.id}.jpg")
 
-file64 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe5_chaos.jpeg")
-kobe5_16.photo.attach(io: file64, filename: "img_#{kobe5_16.id}.jpg")
+file64 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/yeezy_black.jpeg")
+yeezy10.photo.attach(io: file64, filename: "img_#{yeezy10.id}.jpg")
 
+file65 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/yeezy_desert.jpeg")
+yeezy11.photo.attach(io: file65, filename: "img_#{yeezy11.id}.jpg")
+
+file66 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/yeezy_glow.jpeg")
+yeezy12.photo.attach(io: file66, filename: "img_#{yeezy12.id}.jpg")
+
+file67 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/yeezy_red.jpeg")
+yeezy13.photo.attach(io: file67, filename: "img_#{yeezy13.id}.jpg")
+
+file68 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/yeezy_tan.jpeg")
+yeezy14.photo.attach(io: file68, filename: "img_#{kobe5_14.id}.jpg")
+
+file69 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/yeezy_turtle.jpeg")
+yeezy15.photo.attach(io: file69, filename: "img_#{yeezy15.id}.jpg")
+
+file70 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/yeezy_white.jpeg")
+yeezy16.photo.attach(io: file70, filename: "img_#{yeezy16.id}.jpg")
+
+file71 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe5_undefeatedcolor.jpeg")
+kobe5_15.photo.attach(io: file71, filename: "img_#{kobe5_15.id}.jpg")
+
+file72 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe5_chaos.jpeg")
+kobe5_16.photo.attach(io: file72, filename: "img_#{kobe5_16.id}.jpg")
+
+file73 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/chuck_boot.png")
+chuck1.photo.attach(io: file73, filename: "img_#{chuck1.id}.jpg")
+
+file74 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/chuck_offwhite.jpeg")
+chuck2.photo.attach(io: file74, filename: "img_#{chuck2.id}.jpg")
+
+file75 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/chuck_ten.jpeg")
+chuck3.photo.attach(io: file75, filename: "img_#{chuck3.id}.jpg")
+
+file76 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/chuck_tyler.jpeg")
+chuck4.photo.attach(io: file76, filename: "img_#{chuck4.id}.jpg")
+
+file77 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/comme_black.jpeg")
+chuck5.photo.attach(io: file77, filename: "img_#{chuck5.id}.jpg")
+
+file78 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/comme_blue.jpeg")
+chuck6.photo.attach(io: file78, filename: "img_#{chuck6.id}.jpg")
+
+file79 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/comme_multiwhite.jpeg")
+chuck7.photo.attach(io: file79, filename: "img_#{chuck7.id}.jpg")
+
+file80 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/comme_white.jpeg")
+chuck8.photo.attach(io: file80, filename: "img_#{chuck8.id}.jpg")
 
 review1 = Review.create!(
   description: "Upper leather was butter. These shoes gave me a +5 to my midrange.",
