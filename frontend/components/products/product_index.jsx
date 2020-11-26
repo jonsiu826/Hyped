@@ -13,16 +13,34 @@ class ProductIndex extends React.Component {
         this.state = {
             currentImage: 0,
             images: [
-            "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpic1.png",
-            "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpicture2.png",
-            "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpicture3.png",
-            "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpicture4.png",
-            "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpicture5.png"
+                {   
+                    link:"/collection/air-jordan-1",
+                    img:"https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpic1.png"
+                },
+                {
+                    link:"/collection/fear-of-god",
+                    img:"https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpicture2.png"
+                },
+                {
+                    link:"/products/77",
+                    img:"https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpicture3.png"
+
+                },
+                {
+                    link:"/collection/air-jordan-4",
+                    img:"https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpicture4.png"
+                },
+                {
+                    link:"/collection/air-jordan-4",
+                    img:"https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpicture5.png"
+                }
+            
             ]
-        };
+        }
     }
    
     switchImage() {
+        // debugger
         if (this.state.currentImage < this.state.images.length - 1) {
         this.setState({
             currentImage: this.state.currentImage + 1
@@ -101,10 +119,12 @@ class ProductIndex extends React.Component {
             <div>
                
                 <div className="slideshow-container">
-                    <img className="kobe-image"
-                    src={this.state.images[this.state.currentImage]}
-                    alt="cleaning images"
-                    />
+                    <Link to={this.state.images[this.state.currentImage].link}>
+                        <img className="kobe-image"
+                        src={this.state.images[this.state.currentImage].img}
+                        alt="cleaning images"
+                        />
+                    </Link>
                 </div>
                 <h1 className="product-header">View Our Collection</h1>
                 <ul className="product-ul">
