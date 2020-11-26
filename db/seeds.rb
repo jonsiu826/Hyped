@@ -1089,6 +1089,122 @@ chuck8 = Product.create!(
    description: "With a look that comes out of the Converse Chuck Taylors of the ’70s, the Comme des Garcons Play x Chuck 70 High Top 'Multi Heart' has a high top upper made with premium touches and collab branding. The canvas upper comes in an off white, with shiny metal eyelets, double stitching, and Comme des Garcons heart icons on the sidewall. Below, a vulcanized rubber midsole and rubber outsole finish off the vintage vibe."
 )
 
+offwhite1 = Product.create!(
+   name: "Off-White x Air Presto 'Black'", 
+   brand: "Nike", 
+   release_date: "2018-07-27", 
+   colorway: "Black/White/Cone", 
+   technology: "Air", 
+   category: "Lifestyle", 
+   silhouette: "Air Presto", 
+   main_color: "White", 
+   designer:"Tobie Hatfield",
+   description: "This monochromatic take on the Air Presto is the second time Virgil Abloh and Nike collaborated on this iconic silhouette. The July 2018 iteration came a few mere months after it’s two-tone predecessor made it’s debut as part of Abloh and Nike’s ‘The Ten’ Collection. This pair showcases an all-black finish, accented with unique touches including a plastic zip tie, white Swoosh with conspicuous zig-zag stitching, and lines of text on the medial quarter panel that allude to the shoe’s Beaverton origins."
+)
+
+offwhite2 = Product.create!(
+   name: "Off-White x Air VaporMax 'Part 2'", 
+   brand: "Nike", 
+   release_date: "2018-03-30", 
+   colorway: "Black/Orange", 
+   technology: "Air", 
+   category: "Running", 
+   silhouette: "Air VaporMax", 
+   main_color: "Black", 
+   designer:"Andreas Harlow",
+   description: "Virgil Abloh teamed up with Nike to release an all-black Air VaporMax in March 2018, a spiritual successor to Abloh's VaporMax design from ‘The Ten' collection. The Off-White x Air VaporMax ‘Part 2’ features a black Flyknit upper with matching laces and a Swoosh logo accented by a red zip tie. Abloh's signature 'Off-White™ for NIKE' lettering on the medial side and a translucent VaporMax unit complete the look."
+)
+
+offwhite3 = Product.create!(
+   name: "Off-White x Air Max 90 'Black'", 
+   brand: "Nike", 
+   release_date: "2018-03-30", 
+   colorway: "Black/Cone/White", 
+   technology: "Air", 
+   category: "Lifestyle", 
+   silhouette: "Air Max 90", 
+   main_color: "Black", 
+   designer:"Tinker Hatfield",
+   description: "The Off-White x Air Max 90 ‘Black’ offers a unique blend of materials on the upper, which combines a ripstop base with nubuck overlays and a suede mudguard. The all-black finish is contrasted by a white Swoosh with zigzag stitching, a small orange tab on the quarter panel and orange stitching on the exposed-foam tongue. Virgil Abloh’s signature text block makes an appearance on the shoe’s medial side."
+)
+
+offwhite4 = Product.create!(
+   name: "Off-White x Air Force 1 Low '07 'MCA'", 
+   brand: "Nike", 
+   release_date: "2019-07-20", 
+   colorway: "University Blue/White-University Red-Metallic Silver", 
+   technology: "Air", 
+   category: "Lifestyle", 
+   silhouette: "Air Force 1", 
+   main_color: "Blue", 
+   designer:"Tinker Hatfield",
+   description: "In celebration of his exhibit premiering at the Museum of Contemporary Art in Chicago in June 2019, Virgil Abloh teamed up with Nike once again to produce a Nike Air Force 1. The Off-White x Air Force 1 Low '07 'MCA' shoe features a University Blue leather upper and a Metallic Silver Swoosh with prominent stitching and a signature red tab. For a full circle-feel, the shoe reprises key design details from previous Off-White offerings, including the iconic zip tie and quoted branding."
+)
+
+offwhite5 = Product.create!(
+   name: "Off-White x Air Force 1 Low 'Black'", 
+   brand: "Nike", 
+   release_date: "2018-12-19", 
+   colorway: "Black/White-Cone-Black", 
+   technology: "Air", 
+   category: "Lifestyle", 
+   silhouette: "Air Force 1", 
+   main_color: "Black", 
+   designer:"Bruce Kilgore",
+   description: "Virgil Abloh presents a relatively straightforward take on Bruce Kilgore’s design with this Off-White x Air Force 1 Low. That isn’t to suggest there aren’t unique details on the reconstructed build: in addition to a mix of ripstop and suede, the upper features taped seams and a white Swoosh attached via zigzag stitching. Exposed foam and misplaced tags appear on the tongue, while ‘LOGO’ inscribed on the heel tab delivers a final meta flourish."
+)
+
+offwhite6 = Product.create!(
+   name: "Off-White x Wmns Air Jordan 4 SP 'Sail'", 
+   brand: "Nike", 
+   release_date: "2020-07-25", 
+   colorway: "Sail/Muslin/White/Black", 
+   technology: "Air", 
+   category: "Lifestyle", 
+   silhouette: "Air Jordan 4", 
+   main_color: "Tan", 
+   designer:"Tinker Hatfield",
+   description: "Made in collaboration with Virgil Abloh’s luxury streetwear brand, the Off-White x women’s Air Jordan 4 SP ‘Sail’ delivers a subdued take on the classic silhouette. The deconstructed leather build is rendered in a monochromatic Off-White finish, complete with semi-translucent TPU detailing on the molded eyelets, structural ‘wings’ and Nike Air-branded heel panel. Abloh’s signature flourishes include a tonal zip tie and ‘AIR’ printed above the visible Air sole unit."
+)
+
+offwhite7 = Product.create!(
+   name: "Off-White x Air Rubber Dunk 'Green Strike'", 
+   brand: "Nike", 
+   release_date: "2020-10-01", 
+   colorway: "Black/White/Green Strike", 
+   technology: "Air", 
+   category: "Lifestyle", 
+   silhouette: "Air Rubber Dunk", 
+   main_color: "Black", 
+   designer:"Virgil Abloh",
+   description: "Made in collaboration with Virgil Abloh’s luxury streetwear brand, the Off-White x Nike Air Rubber Dunk ‘Green Strike’ delivers a reconstructed take on the classic silhouette, one that incorporates the layered upper of the P-6000 runner. The sneaker’s mostly black palette is disrupted by vibrant green accents, including an outlined Swoosh, ‘Nike Off’ branding on the tongue tag and self-referential ‘Shoelaces’ text. The eye-catching hue is repeated on the sneaker’s tooling, where it frames a visible Air sole unit."
+)
+
+offwhite8 = Product.create!(
+   name: "Off-White x Air Jordan 1 Retro High OG 'Chicago'", 
+   brand: "Nike", 
+   release_date: "2020-10-01", 
+   colorway: "White/Black-Varsity Red-Black", 
+   technology: "Air", 
+   category: "Lifestyle", 
+   silhouette: "Air Jordan 1", 
+   main_color: "Red", 
+   designer:"Peter Moore",
+   description: "Created by designer Virgil Abloh, the Air Jordan 1 x Off-White comes in the classic Chicago colorway. Some of the sneakers' half-finished features include a Swoosh connected to the shoe with visible blue stitching, 'Air' printed on the midsole, and an Off-White zip tie on the collar. The box comes deconstructed as it's been turned inside-out with the inside consisting of a black base and gold Jumpman logo, while the outside is plain cardboard with the words 'Jumpman' printed on it. Virgil's Off-White collection included remixed iterations of the Air VaporMax, Air Presto, Air Max 90, Blazer, Air Max 97, Hyperdunk 2017, Air Force 1, Zoom Fly, and Chuck Taylor."
+)
+
+offwhite9 = Product.create!(
+   name: "Off-White x Air Jordan 1 Retro High OG 'White' 2018", 
+   brand: "Nike", 
+   release_date: "2018-03-03", 
+   colorway: "White/White", 
+   technology: "Air", 
+   category: "Lifestyle", 
+   silhouette: "Air Jordan 1", 
+   main_color: "White", 
+   designer:"Peter Moore",
+   description: "Inspired by Air Jordan 1 colorways, the Off-White x Air Jordan 1 Retro High OG 'White' 2018 is a reimagination of its 'Chicago'-themed predecessor. Designed by Virgil Abloh, the model features an all-white premium leather and mesh upper with deconstructed Swoosh branding and blue detailing, and Wings logos on the ankles. It is accented by black “AIR” lettering on the midsole, black 'Off-White™ for NIKE' text on the side panels, and orange tabs."
+)
 
 
 file1 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/jordan1_chicago.jpeg")
@@ -1333,6 +1449,33 @@ chuck7.photo.attach(io: file79, filename: "img_#{chuck7.id}.jpg")
 
 file80 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/comme_white.jpeg")
 chuck8.photo.attach(io: file80, filename: "img_#{chuck8.id}.jpg")
+
+file81 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/offwhite_presto.jpeg")
+offwhite1.photo.attach(io: file81, filename: "img_#{offwhite1.id}.jpg")
+
+file82 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/offwhite_vapor.jpeg")
+offwhite2.photo.attach(io: file82, filename: "img_#{offwhite2.id}.jpg")
+
+file83 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/offwhite_90black.jpeg")
+offwhite3.photo.attach(io: file83, filename: "img_#{offwhite3.id}.jpg")
+
+file84 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/offwhite_afblue.jpeg")
+offwhite4.photo.attach(io: file84, filename: "img_#{offwhite4.id}.jpg")
+
+file85 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/offwhite_afblack.jpeg")
+offwhite5.photo.attach(io: file85, filename: "img_#{offwhite5.id}.jpg")
+
+file86 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/offwhite4_white.jpeg")
+offwhite6.photo.attach(io: file86, filename: "img_#{offwhite6.id}.jpg")
+
+file87 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/offwhite_green.jpeg")
+offwhite7.photo.attach(io: file87, filename: "img_#{offwhite7.id}.jpg")
+
+file88 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/offwhite_chicago.jpeg")
+offwhite8.photo.attach(io: file88, filename: "img_#{offwhite8.id}.jpg")
+
+file89 = open("https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/offwhite_jwhite.jpeg")
+offwhite9.photo.attach(io: file89, filename: "img_#{offwhite9.id}.jpg")
 
 review1 = Review.create!(
   description: "Upper leather was butter. These shoes gave me a +5 to my midrange.",

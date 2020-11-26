@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import Jordan4Index from './jordan4_index';
+import OffWhiteIndex from './offwhite_index';
 import {fetchProducts} from '../../../actions/product_actions';
 
 const mapStateToProps = (state) => {
@@ -14,4 +14,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Jordan4Index)
+export default connect(mapStateToProps, mapDispatchToProps)(OffWhiteIndex)

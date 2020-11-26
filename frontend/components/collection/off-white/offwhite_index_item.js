@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-class Jordan1IndexItem extends React.Component{
+class OffWhiteIndexItem extends React.Component{
     constructor(props){
         super(props)
     }
     render(){
         debugger
-        if (this.props.product.silhouette === "Air Jordan 1"){
+        if (this.props.product.name.split(" ").includes("Off-White")){
             return (
                 <div className="sneaker-container">
                     <li className="sneaker-indexitem">
@@ -20,8 +20,8 @@ class Jordan1IndexItem extends React.Component{
                     </li>       
                 </div>
             )
-        } else {
-            return (
+        } else{
+            return(
                 <div></div>
             )
         }
@@ -29,4 +29,4 @@ class Jordan1IndexItem extends React.Component{
 }
 
 
-export default Jordan1IndexItem;
+export default OffWhiteIndexItem;

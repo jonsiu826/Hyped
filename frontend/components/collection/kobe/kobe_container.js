@@ -4,7 +4,7 @@ import {fetchProducts} from '../../../actions/product_actions';
 
 const mapStateToProps = (state) => {
     return {
-        products: Object.values(state.entities.products).slice(8,16)
+        products: Object.values(state.entities.products)
     }
 }
 

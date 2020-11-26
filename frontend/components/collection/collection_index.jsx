@@ -42,6 +42,11 @@ class CollectionIndex extends React.Component {
                         Air Jordan 4
                     </Link>
                 </div> 
+                  <div>
+                    <Link to="/collection/off-white" className="modal-link" onClick={this.props.closeModal}>
+                        Off-White
+                    </Link>
+                </div> 
             </div>
             )
     }
