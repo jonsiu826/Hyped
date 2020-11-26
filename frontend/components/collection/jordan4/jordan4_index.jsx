@@ -30,7 +30,7 @@ class Jordan4Index extends React.Component {
                         <p className="kobe-desc">The Jordan Retro 4 is the shoe that Michael Jordan wore when he drained ‘the shot’ during the 1989 NBA playoffs. The sneaker would cement its legacy in the Spike Lee film ‘Do the Right Thing,’ a moment in history that signaled the growing cultural currency of the Air Jordan franchise.</p>
                     </div>
                     <div>
-                        <img className="jordan-collection-image" src={Jordan4Collection} />
+                        <img className="jordan4-collection-image" src={Jordan4Collection} />
                     </div>
                 </div>
                 {/* <h1 className="product-header">View Our Collection</h1> */}

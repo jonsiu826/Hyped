@@ -6,7 +6,7 @@ class FogIndexItem extends React.Component{
         super(props)
     }
     render(){
-        debugger
+        
          if (this.props.product.silhouette === "Air Fear of God 1"){
              return (
                  <div className="sneaker-container">

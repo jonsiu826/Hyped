@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import FogIndexItem from './fog_index_item';
+import ConverseIndexItem from './converse_index_item';
 
-class FogIndex extends React.Component {
+class ConverseIndex extends React.Component {
     constructor(props) {
         super(props)
         // this.handleClick = this.handleClick.bind(this)
@@ -15,20 +15,21 @@ class FogIndex extends React.Component {
 
     render() {
         const products = this.props.products.map((product, idx) => {
-            return <FogIndexItem product={product} key={idx}/>
+            return <ConverseIndexItem product={product} key={idx}/>
         })
+    
         return (
             <div>
                 <div className="collection-container">
                     <div className="collection-left-panel">
-                        <h1 className="kobe-title">Fear of God</h1>
-                        <p className="kobe-desc"> In six years, Fear of God has gone from an emerging Los Angeles label specializing in tees and hoodies to one of the biggest names in fashion. With sneakers created alongside Vans and Nike, Fear of God continues to evolve its elevated streetwear.</p>
+                        <h1 className="kobe-title">Converse</h1>
+                        <p className="kobe-desc">From on-court staple to street style and counterculture icon, Converse pioneered the high-top sneaker. First appearing in 1917 the Converse All-Star basketball shoe rose to fame on the feet of basketball player Chuck Taylor, who added the telltale All-Star patch.</p>
                     </div>
                     <div>
-                        <img className="fog-collection-image" src={FogCollection} />
+                        <img className="converse-collection-image" src={ConverseCollection} />
                     </div>
                 </div>
-                {/* <h1 className="product-header">View Our Collection</h1> */}
+            
                 <ul className="product-ul">
                     {products}
                 </ul>
@@ -36,4 +37,4 @@ class FogIndex extends React.Component {
         )
     }
 }
-export default FogIndex;
+export default ConverseIndex;

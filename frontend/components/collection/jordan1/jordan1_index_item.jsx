@@ -6,7 +6,6 @@ class Jordan1IndexItem extends React.Component{
         super(props)
     }
     render(){
-        debugger
         if (this.props.product.silhouette === "Air Jordan 1"){
             return (
                 <div className="sneaker-container">
