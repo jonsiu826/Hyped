@@ -37,7 +37,6 @@ class Greeting extends React.Component {
                     </div> 
                 <nav className="modal-link">
                     <div>
-                        {/* <button onClick={() => this.props.openModal('login')}>Login</button> */}
                         <Link className="logingreeting" to="/login" onClick={this.props.closeModal}>Login </Link>
 
                     </div>
@@ -71,7 +70,7 @@ class Greeting extends React.Component {
                                 Collections
                             </div>
                             <div className="arrow-modal">
-                                <i class="fas fa-angle-right"></i>
+                                <i className="fas fa-angle-right"></i>
                             </div>
                         </div>
                         <div>

@@ -20,6 +20,7 @@
 .angellist-logo{
     font-size: 100px;
     color: white;
+    margin-left: 7px;
 }
 
 .linkedin-logo{
@@ -40,5 +41,8 @@
     padding-top: 25px;
     background-color: black;
     justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: -webkit-fill-available;
 }
 

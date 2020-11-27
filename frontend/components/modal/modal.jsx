@@ -31,18 +31,16 @@ function Modal({ modal, closeModal }) {
             return null;
     }
     debugger
-    if (component.type.WrappedComponent.name === "Greeting"){
+    if (component.type.WrappedComponent.name === "EditReviewFormIndex") {
         return (
-            <div className="modal-background" onClick={closeModal}>
-                <div className="modal-child" onClick={e => e.stopPropagation()}>
-                    <div className="modal-content">
-                        <div>
-                            {component} 
-                        </div>
+            <div className="modal-background1" onClick={closeModal}>
+                <div className="modal-child1" onClick={e => e.stopPropagation()}>
+                    <div className="modal-content1">
+                        {component} 
                     </div>
                 </div>
             </div>
-        );
+        )    
 
     } else if (component.type.WrappedComponent.name === "CollectionIndex"){
          return (
@@ -66,16 +64,19 @@ function Modal({ modal, closeModal }) {
                 </div>
             </div>
         )
-    } else if (component.type.WrappedComponent.name === "EditReviewFormIndex") {
+    } else {
         return (
-            <div className="modal-background1" onClick={closeModal}>
-                <div className="modal-child1" onClick={e => e.stopPropagation()}>
-                    <div className="modal-content1">
-                        {component} 
+            <div className="modal-background" onClick={closeModal}>
+                <div className="modal-child" onClick={e => e.stopPropagation()}>
+                    <div className="modal-content">
+                        <div>
+                            {component} 
+                        </div>
                     </div>
                 </div>
             </div>
-        )
+        );
+    
     }
 }
 
