@@ -6,7 +6,7 @@
 
 .footer-links{
     display: flex;
-    padding-top: 25px;
+    padding: 25px 25px 10px 25px;
     
     
 }
@@ -44,5 +44,6 @@
     position: absolute;
     bottom: 0;
     width: -webkit-fill-available;
+    padding-bottom: 15px;
 }
 
