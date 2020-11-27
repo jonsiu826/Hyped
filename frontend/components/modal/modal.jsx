@@ -30,22 +30,12 @@ function Modal({ modal, closeModal }) {
         default:
             return null;
     }
-    // debugger
+    debugger
     if (component.type.WrappedComponent.name === "Greeting"){
         return (
             <div className="modal-background" onClick={closeModal}>
                 <div className="modal-child" onClick={e => e.stopPropagation()}>
                     <div className="modal-content">
-                        {/* <div>
-                            <button className="modal-link" onClick={closeModal}>
-                                Collections
-                            </button>
-                         </div>
-                        <div>
-                            <Link to="/sneakers" className="modal-link" onClick={closeModal}>
-                                Shop All
-                            </Link>
-                        </div>  */}
                         <div>
                             {component} 
                         </div>
@@ -76,7 +66,7 @@ function Modal({ modal, closeModal }) {
                 </div>
             </div>
         )
-    } else {
+    } else if (component.type.WrappedComponent.name === "EditReviewFormIndex") {
         return (
             <div className="modal-background1" onClick={closeModal}>
                 <div className="modal-child1" onClick={e => e.stopPropagation()}>
