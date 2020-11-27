@@ -402,7 +402,7 @@ kobe5_4 = Product.create!(
    name: "Zoom Kobe 5 Protro 'EYBL'", 
    brand: "Nike", 
    release_date: "2020-08-29", 
-   colorway: "ForestGreen/MetallicRedBronze/SpeedYellow", 
+   colorway: "ForestGreen/MetallicRed/Yellow", 
    technology: " Zoom Air", 
    category: "Basketball", 
    silhouette: "Zoom Kobe 5", 
@@ -1594,4 +1594,244 @@ review15 = Review.create!(
   rating: 4,
   user_id: u1.id,
   product_id: yeezy6.id
+)
+
+review16 = Review.create!(
+  description: "Great design on these!",
+  rating: 5,
+  user_id: u3.id,
+  product_id: jordan4_1.id
+)
+
+review17 = Review.create!(
+  description: "Good design on these!",
+  rating: 4,
+  user_id: u3.id,
+  product_id: jordan4_5.id
+)
+
+review18 = Review.create!(
+  description: "Great shoes!",
+  rating: 4,
+  user_id: u5.id,
+  product_id: jordan4_6.id
+)
+
+review19 = Review.create!(
+  description: "Great shoes!",
+  rating: 4,
+  user_id: u5.id,
+  product_id: offwhite6.id
+)
+
+review19 = Review.create!(
+  description: "Great shoes!",
+  rating: 4,
+  user_id: u6.id,
+  product_id: offwhite2.id
+)
+
+review19 = Review.create!(
+  description: "Stylish shoes!",
+  rating: 4,
+  user_id: u4.id,
+  product_id: offwhite1.id
+)
+
+review20 = Review.create!(
+  description: "I need two pairs of these shoes!",
+  rating: 5,
+  user_id: u4.id,
+  product_id: chuck5.id
+)
+
+review21 = Review.create!(
+  description: "Wear these everyday!",
+  rating: 4,
+  user_id: u3.id,
+  product_id: chuck4.id
+)
+
+
+review22 = Review.create!(
+  description: "Wear these everyday!",
+  rating: 4,
+  user_id: u3.id,
+  product_id: yeezy16.id
+)
+
+review23 = Review.create!(
+  description: "I love these, I wear these everyday!",
+  rating: 4,
+  user_id: u2.id,
+  product_id: yeezy14.id
+)
+
+review24 = Review.create!(
+  description: "I love these, I wear these everyday!",
+  rating: 4,
+  user_id: u2.id,
+  product_id: jordan1_11.id
+)
+
+review25 = Review.create!(
+  description: "My favorite shoes!",
+  rating: 5,
+  user_id: u3.id,
+  product_id: jordan1_12.id
+)
+
+review26 = Review.create!(
+  description: "My favorite shoes!",
+  rating: 5,
+  user_id: u4.id,
+  product_id: jordan1_14.id
+)
+
+review27 = Review.create!(
+  description: "These were cool",
+  rating: 3,
+  user_id: u4.id,
+  product_id: jordan1_9.id
+)
+
+
+review28 = Review.create!(
+  description: "These were cool",
+  rating: 5,
+  user_id: u4.id,
+  product_id: fog_3.id
+)
+
+review29 = Review.create!(
+  description: "These were nice",
+  rating: 5,
+  user_id: u5.id,
+  product_id: fog_2.id
+)
+
+review30 = Review.create!(
+  description: "Highly recommend!",
+  rating: 5,
+  user_id: u5.id,
+  product_id: kobe5_13.id
+)
+
+review30 = Review.create!(
+  description: "Highly recommend these!",
+  rating: 5,
+  user_id: u6.id,
+  product_id: kobe5_12.id
+)
+
+review30 = Review.create!(
+  description: "Highly recommend these!",
+  rating: 5,
+  user_id: u6.id,
+  product_id: kobe5_12.id
+)
+
+review31 = Review.create!(
+  description: "Love these!",
+  rating: 5,
+  user_id: u6.id,
+  product_id: kobe5_4.id
+)
+
+review32 = Review.create!(
+  description: "Highly recommend these!",
+  rating: 5,
+  user_id: u6.id,
+  product_id: kobe5_1.id
+)
+
+review33 = Review.create!(
+  description: "Great shoes to hoop in!",
+  rating: 5,
+  user_id: u1.id,
+  product_id: kobe5_2.id
+)
+
+review34 = Review.create!(
+  description: "Cushion is A1",
+  rating: 4,
+  user_id: u1.id,
+  product_id: kobe5_3.id
+)
+
+review35 = Review.create!(
+  description: "Cushion is pretty good",
+  rating: 4,
+  user_id: u4.id,
+  product_id: kobe5_5.id
+)
+
+review35 = Review.create!(
+  description: "Traction could be better",
+  rating: 3,
+  user_id: u4.id,
+  product_id: kobe5_6.id
+)
+
+review35 = Review.create!(
+  description: "These are some classics",
+  rating: 5,
+  user_id: u5.id,
+  product_id: kobe5_8.id
+)
+
+review36 = Review.create!(
+  description: "These are some great colors",
+  rating: 5,
+  user_id: u4.id,
+  product_id: jordan1_2.id
+)
+
+review37 = Review.create!(
+  description: "Great shoes",
+  rating: 5,
+  user_id: u4.id,
+  product_id: jordan1_4.id
+)
+
+review37 = Review.create!(
+  description: "Awesome shoes",
+  rating: 5,
+  user_id: u5.id,
+  product_id: jordan1_3.id
+)
+
+review37 = Review.create!(
+  description: "Awesome shoes",
+  rating: 5,
+  user_id: u6.id,
+  product_id: fog_6.id
+)
+
+review38 = Review.create!(
+  description: "Awesome shoes",
+  rating: 5,
+  user_id: u6.id,
+  product_id: yeezy10.id
+)
+
+review37 = Review.create!(
+  description: "Awesome colors",
+  rating: 4,
+  user_id: u6.id,
+  product_id: yeezy9.id
+)
+
+review38 = Review.create!(
+  description: "Awesome colors",
+  rating: 4,
+  user_id: u6.id,
+  product_id: lebron_1.id
+)
+
+review38 = Review.create!(
+  description: "Awesome colors",
+  rating: 4,
+  user_id: u3.id,
+  product_id: lebron_2.id
 )

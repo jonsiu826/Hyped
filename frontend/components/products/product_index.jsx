@@ -29,11 +29,11 @@ class ProductIndex extends React.Component {
                 {
                     link:"/collection/air-jordan-4",
                     img:"https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpicture4.png"
-                },
-                {
-                    link:"/collection/air-jordan-4",
-                    img:"https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpicture5.png"
                 }
+                // {
+                //     link:"/collection/yeezy",
+                //     img:"https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/splashpicture5.png"
+                // }
             
             ]
         }
