@@ -30,7 +30,7 @@ function Modal({ modal, closeModal }) {
         default:
             return null;
     }
-    debugger
+    console.log(component.type.WrappedComponent.name)
     if (component.type.WrappedComponent.name === "EditReviewFormIndex") {
         return (
             <div className="modal-background1" onClick={closeModal}>
