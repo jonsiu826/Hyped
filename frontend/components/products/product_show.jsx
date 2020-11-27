@@ -30,7 +30,7 @@ class ProductShow extends React.Component {
    
 
     render() {
-        debugger
+        // debugger
         if (!this.props.product) return null;
         let showProduct;
         this.props.product ? showProduct = this.props.product : showProduct = null
