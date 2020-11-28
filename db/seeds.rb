@@ -594,17 +594,17 @@ lebron_2 = Product.create!(
    description: "The LeBron 17 combines first-of-its-kind Max Air in the heel with two Zoom Air pods in the forefoot for comfort and responsiveness. The LeBron 17 also features an innovative, incredibly lightweight knitposite upper for ultimate movement and flexibility."
 )
 
-lebron_3 = Product.create!(
-   name: "LeBron 18 'Sisterhood'", 
+lebron_6 = Product.create!(
+   name: "LeBron 15 'Fruity Pebbles'", 
    brand: "Nike", 
-   release_date: "2020-06-15", 
-   colorway: "Melon Tint/Melon Tint", 
+   release_date: "2018-03-30", 
+   colorway: "Multi-Color/White", 
    technology: "Air", 
    category: "Basketball", 
-   silhouette: "LeBron 18", 
-   main_color: "Orange", 
+   silhouette: "Lebron 15", 
+   main_color: "White", 
    designer:"Jason Petrie",
-   description: "The Nike LeBron 18 is customised for the King's high-powered style of play, featuring a lightweight KnitPosite 2.0 upper, combining elements from some of his favourite models (15 to 17) as well as an Air Max unit in the heel and a full-length Zoom Air Bag — the biggest airbag Nike has ever put in a basketball sneaker."
+   description: "Inspired by LeBron James’ favorite breakfast cereal, the LeBron 15 ‘Fruity Pebbles’ were debuted on-foot by James during a February 2018 home game. It features a bright multi-colored BattleKnit upper with white detailing on the tongue, heel collar, laces and pull tab. Other details a white midsole, a clear full-length Zoom Air unit, and an ice-blue translucent outsole, with signature LeBron branding on the insoles. It released to the public in March 2018."
 )
 
 lebron_4 = Product.create!(
@@ -633,17 +633,17 @@ lebron_5 = Product.create!(
    description: "Streetball legend John Strickland gets a commemorative exclusive to celebrate his famous saying “Finish Your Breakfast,” which refers to the act of ‘schooling’ your defender and scoring off the dribble. The LeBron 12 EXT 'Prism' features a Hyperfuse upper dressed in a multicolor pixel theme with Hyperposite details on the collar and side panels. The sneaker also sports “Finish Your Breakfast” lettering on the heel tab, a pixelated Swoosh, and an icy translucent outsole."
 )
 
-lebron_6 = Product.create!(
-   name: "LeBron 15 'Fruity Pebbles'", 
+lebron_3 = Product.create!(
+   name: "LeBron 18 'Sisterhood'", 
    brand: "Nike", 
-   release_date: "2018-03-30", 
-   colorway: "Multi-Color/White", 
+   release_date: "2020-06-15", 
+   colorway: "Melon Tint/Melon Tint", 
    technology: "Air", 
    category: "Basketball", 
-   silhouette: "Lebron 15", 
-   main_color: "White", 
+   silhouette: "LeBron 18", 
+   main_color: "Orange", 
    designer:"Jason Petrie",
-   description: "Inspired by LeBron James’ favorite breakfast cereal, the LeBron 15 ‘Fruity Pebbles’ were debuted on-foot by James during a February 2018 home game. It features a bright multi-colored BattleKnit upper with white detailing on the tongue, heel collar, laces and pull tab. Other details a white midsole, a clear full-length Zoom Air unit, and an ice-blue translucent outsole, with signature LeBron branding on the insoles. It released to the public in March 2018."
+   description: "The Nike LeBron 18 is customised for the King's high-powered style of play, featuring a lightweight KnitPosite 2.0 upper, combining elements from some of his favourite models (15 to 17) as well as an Air Max unit in the heel and a full-length Zoom Air Bag — the biggest airbag Nike has ever put in a basketball sneaker."
 )
 
 lebron_7 = Product.create!(
