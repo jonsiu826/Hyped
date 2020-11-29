@@ -26,7 +26,7 @@ class OffwhiteIndex extends React.Component {
             <div>
                 <div className="collection-container">
                     <div className="collection-left-panel">
-                        <h1 className="yeezy-title">Off-White</h1>
+                        <h1 className="yeezy-title">Off White</h1>
                         <p className="kobe-desc">Creative director Virigl Abloh describes his fashion label as "the grey area between black and white." Founded in 2012, OFF-WHITE bridges the gap between streetwear and luxury and is known for its stylized use of quotation marks, bold graphics and unconventional silhouettes typified in its Nike collaboration.</p>
                     </div>
                     <div>
