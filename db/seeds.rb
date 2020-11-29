@@ -393,7 +393,7 @@ kobe5_3 = Product.create!(
    technology: " Zoom Air", 
    category: "Basketball", 
    silhouette: "Zoom Kobe 5", 
-   main_color: "Black", 
+   main_color: "White", 
    designer:"Eric Avar",
    description: "The Nike Kobe 5 Protro 'Big Stage' gets its name from the shoe that Kobe Bryant wore during the 2010 NBA Finals, which culminated in the Mamba clinching his fifth and final championship with the Lakers. The design combines ‘home’ and ‘away’ editions of the ‘Big Stage’ Kobe 5 with graphic elements borrowed from the ‘Parade’ PE, which cover the lateral side of the left shoe and medial side of the right. Contrasting pops of metallic gold appear on the sneaker’s heel and branding hits."
 )
@@ -1834,4 +1834,25 @@ review38 = Review.create!(
   rating: 4,
   user_id: u3.id,
   product_id: lebron_2.id
+)
+
+review39 = Review.create!(
+  description: "Awesome colors",
+  rating: 4,
+  user_id: u3.id,
+  product_id: chuck1.id
+)
+
+review40 = Review.create!(
+  description: "Nice shoes!",
+  rating: 4,
+  user_id: u3.id,
+  product_id: chuck2.id
+)
+
+review41 = Review.create!(
+  description: "Nice shoes!",
+  rating: 4,
+  user_id: u4.id,
+  product_id: fog_8.id
 )
