@@ -21,52 +21,9 @@ function Modal({ modal, closeModal }) {
         case 'collection':
             component = <CollectionContainer />;
             break;
-        // case 'edit_review':
-        //     component = <EditReviewContainer />;
-        //     break;
-        // case 'order':
-        //     component = <OrderContainer />;
-        //     break;
         default:
             return null;
     }
-    debugger
-    console.log(component.type.WrappedComponent.name)
-    console.log(component)
-    // if (component.type.WrappedComponent.name === "EditReviewFormIndex") {
-    //     return (
-    //         <div className="modal-background1" onClick={closeModal}>
-    //             <div className="modal-child1" onClick={e => e.stopPropagation()}>
-    //                 <div className="modal-content1">
-    //                     {component} 
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     )    
-
-    // } else if (component.type.WrappedComponent.name === "CollectionIndex"){
-    //      return (
-    //         <div className="modal-background" onClick={closeModal}>
-    //             <div className="modal-child" onClick={e => e.stopPropagation()}>
-    //                 <div className="modal-content">
-    //                     <div>
-    //                         {component} 
-    //                     </div>
-    //                 </div>
-    //             </div>
-    //         </div>
-    //      )
-    // } else if (component.type.WrappedComponent.name === "Order"){
-    //      return (
-    //         <div className="modal-background-order" onClick={closeModal}>
-    //             <div className="modal-child-order" onClick={e => e.stopPropagation()}>
-    //                 <div className="modal-content-order">
-    //                     {component} 
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     )
-    // } else {
         return (
             <div className="modal-background" onClick={closeModal}>
                 <div className="modal-child" onClick={e => e.stopPropagation()}>
