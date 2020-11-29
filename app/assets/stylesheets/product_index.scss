@@ -27,19 +27,28 @@
 }
 
 .travis-text{
-  position: absolute;
-  bottom: 30px;
-  left: 16px;
-  font-size: 50px;
-  padding-bottom: 1%;
-  color: black;
-  padding-left: 5%;
-
+    position: absolute;
+    bottom: 30px;
+    left: 16px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    padding-bottom: 1%;
+    color: black;
+    padding-left: 5%;
 }
 
-// .kobe-button{
-//     background-color: white;
-// }
+.index-text{
+position: absolute;
+    bottom: -64px;
+    left: 16px;
+    font-size: 50px;
+    color: floralwhite;
+    padding-left: 5%;
+    font-size: 64px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
+    -webkit-text-stroke: 2px black;
+}
 
 .sneaker-container{
  text-decoration: none;
@@ -56,19 +65,15 @@
 }
 
 .sneaker-indexitem{
-display: flex;
-    /* flex-flow: wrap row; */
+    display: flex;
     justify-content: space-around;
     text-align: center;
-    /* position: relative; */
-    /* margin: 0px 10%; */
     font-family: sans-serif;
     text-transform: uppercase;
     flex-direction: column;
     font-size: 11px;
     padding: 3rem;
     letter-spacing: 1px;
-    /* padding-top: 10%; */
     width: 200px;
     border: 1px solid lightgray;
     height: 230px;
@@ -78,24 +83,19 @@ display: flex;
 }
 .release-date{
    padding-top: 10px;
-    /* text-decoration: none; */
     color: black;
     font-size: 15px;
 }
 
 .product-image{
-width: 165px;
-    /* height: 110px; */
-    /* padding-left: 8px; */
-    /* padding-top: 29px; */
+    width: 165px;
     margin-left: 8px;
     margin-top: 42px;
 }
 
 .sneaker-name{
-       padding-top: 10%;
+    padding-top: 10%;
     font-family: serif;
-    /* justify-content: center; */
     width: 90%;
     text-decoration: none;
     color: black;
@@ -117,18 +117,8 @@ width: 165px;
     font-size: 40px;
     justify-content: center;
     padding: 5%;
-    // border: 1px solid black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
-// .main-product-header{
-//     display: flex;
-//     font-size: 40px;
-//     justify-content: center;
-//     padding: 5%;
-//     margin-top: -200px;
-//     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-// }
 
 .shopall-header{
     display: flex;
@@ -146,21 +136,13 @@ width: 165px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-// .carousel-photo{
-//   // width: 100px;
-//   // background-color: blue;
-// }
-
 .carousel-bar{
   width: 100%;
-  // background-color: yellow;
 }
 
 .carousel-shoe-photo{
   width: 180px;
   height: 100px;
-  // width: 195px;
-  // height: 110px;
   display: flex;
   justify-content: center;
   margin-right: 65px;
@@ -168,7 +150,6 @@ width: 165px;
 
 .carousel-shoe-name{
   display: flex;
-  // justify-content: center;
   padding-left: 10%;
   padding-top: 5%;
   width: 50%;

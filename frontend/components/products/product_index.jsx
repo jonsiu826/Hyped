@@ -124,6 +124,7 @@ class ProductIndex extends React.Component {
                         src={this.state.images[this.state.currentImage].img}
                         alt="cleaning images"
                         />
+                        <h1 className="index-text">Welcome to Hyped</h1>
                     </Link>
                 </div>
                 <h1 className="product-header">View Our Collection</h1>

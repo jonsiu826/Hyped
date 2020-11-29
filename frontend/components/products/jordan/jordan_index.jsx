@@ -94,20 +94,6 @@ class JordanIndex extends React.Component {
                 <ul className="product-ul">
                     {products}
                 </ul>
-                {/* <h2 className="carousel-title"> Top Trending Sneakers</h2>
-                <div className="carousel-container">
-                    <Carousel className="carousel-bar" breakPoints={breakPoints}>
-                        {photos.map((photo, idx) => {
-                            return (
-                                <Link key={idx} to={photo.link} className="carousel-box">
-                                    <img className="carousel-shoe-photo" src={photo.url} />
-                                    <p className="carousel-shoe-name">{photo.name}</p>
-                                </Link>
-                            )
-                        }
-                        )}
-                    </Carousel>
-                </div> */}
 
             </div>
         )
