@@ -19,7 +19,6 @@ const receiveProduct = payload => {
 
 export const fetchProducts = () => {
     return (dispatch) => {
-    //    debugger
         return ProductApiUtil.fetchProducts().then((payload) => {
             dispatch(receiveProducts(payload))
         })
@@ -33,7 +32,3 @@ export const fetchProduct = (productId) => {
         })
     }
 }
-
-
-// export const searchProduct = (query, page) => dispatch => ProductApiUtil.searchProduct(query, page)
-//   .then( payload => dispatch(receiveSearch(payload)));

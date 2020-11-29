@@ -5,7 +5,6 @@ import { deleteReview , updateReview} from '../../actions/review_actions';
 import { openModal, closeModal } from '../../actions/modal_actions';
 
 const mapStateToProps = (state) => {
-    // debugger
     return {
         reviews: Object.values(state.entities.reviews),
         users: state.entities.users,

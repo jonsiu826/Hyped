@@ -4,8 +4,6 @@ import React from 'react';
 class EditReviewFormIndexItem extends React.Component {
     constructor(props) {
         super(props)
-        debugger
-        // this.state = {rating: false, edit:false}
         this.state = this.props.review
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -20,17 +18,9 @@ handleChange(type) {
 
 handleSubmit(e) {
     e.preventDefault();
-    // debugger
-    // let review = { description: this.state.description, rating: this.state.rating, user_id: this.props.currentUser.id, product_id: this.props.match.params.productId }
     let newReview = { id: this.state.id, description: this.state.description, rating: this.state.rating, user_id: this.state.user_id, product_id: this.state.product_id}
     this.props.updateReview(newReview);
     this.props.closeModal();
-    //  this.props.editComment({
-    //             id: this.props.comment.id,
-    //             body: this.state.body,
-    //             author_id: this.props.currentUser.id,
-    //             post_id: this.props.comment.post_id
-    //         })
 }
 
     render() {

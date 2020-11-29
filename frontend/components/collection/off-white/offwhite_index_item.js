@@ -6,7 +6,6 @@ class OffWhiteIndexItem extends React.Component{
         super(props)
     }
     render(){
-        debugger
         if (this.props.product.name.split(" ").includes("Off-White")){
             return (
                 <div className="sneaker-container">

@@ -8,11 +8,8 @@ const usersReducers = (state = {}, action) => {
 
     switch (action.type) {
         case RECEIVE_PRODUCT:
-            // debugger
             return Object.assign({}, state, action.payload.users)
-
         case RECEIVE_CURRENT_USER:
-            // debugger
             nextState[action.currentUser.id] = action.currentUser
             return nextState;
         default:

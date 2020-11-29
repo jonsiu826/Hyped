@@ -4,7 +4,6 @@ import { createReview } from '../../actions/review_actions'
 import {withRouter} from 'react-router-dom'
 
 const mapStateToProps = (state, ownProps) => {
-    // debugger
     return {
         review: {
             description: "",

@@ -40,7 +40,6 @@ class ProductIndex extends React.Component {
     }
    
     switchImage() {
-        // debugger
         if (this.state.currentImage < this.state.images.length - 1) {
         this.setState({
             currentImage: this.state.currentImage + 1

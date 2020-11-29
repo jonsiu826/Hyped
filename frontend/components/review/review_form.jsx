@@ -16,7 +16,6 @@ class ReviewForm extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        // debugger
         let review = { description: this.state.description, rating: this.state.rating, user_id: this.props.currentUser.id, product_id: this.props.match.params.productId}
         this.props.createReview(review);
         this.setState({
@@ -62,13 +61,11 @@ class ReviewForm extends React.Component {
                                      onChange={this.handleChange("rating")} value="5" />
                             </label> 
                         </div>
-                        {/* <textarea onChange={(e) => this.setState({body: e.currentTarget.value})} value={this.state.body}/> */}
                         <button className="form-button"onClick={this.handleSubmit}>Add Review</button>
                     </form>
                 </div>
             )
         }
-        // debugger
         return (
           this.props.currentUser ? leavereview : signin
         )

@@ -9,7 +9,6 @@ class Order extends React.Component {
 
 
     render() {
-        debugger
         if (this.props.currentUser === undefined){
             return (
                 <div className="order-container">

@@ -20,10 +20,7 @@ class SearchIndex extends React.Component {
     }
 
     render () {
-        debugger
         const { search } = this.state;
-        // const { products } = this.props;
-        
         if (!this.props.products) return null;
         const search_products = this.props.products.map((product, idx) => {
             return <SearchIndexItem product={product} key={idx} search={search}/>

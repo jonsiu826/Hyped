@@ -20,10 +20,7 @@ class SessionForm extends React.Component {
             this.props.processForm(user).then(() => {
                 this.props.closeModal()
                 this.props.history.push("/")
-            // }).fail(() => {
-            //     this.setState({ errors: this.props.errors })
             })
-        //     this.setState({ email: "", username: "", password: "" });
     }
 
     componentWillUnmount(){
@@ -79,9 +76,9 @@ class SessionForm extends React.Component {
 
         let errorUsername;
         let errorUsernameStyle = "";
-        // debugger
+
         if (this.props.errors.includes("Username can't be blank")){
-            // debugger
+
             errorUsername = "Username can't be blank";
             errorUsernameStyle = "redunderline";
         }
@@ -90,7 +87,6 @@ class SessionForm extends React.Component {
         let errorPassword;
         let errorPasswordStyle = "";
         if (this.props.errors.includes("Password is too short (minimum is 6 characters)")) {
-            // debugger
             errorPassword = "Password is too short (minimum is 6 character)";
             errorPasswordStyle = "redunderline";
         };

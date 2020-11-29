@@ -3,7 +3,6 @@ import Order from './order';
 import { closeModal} from '../../actions/modal_actions';
 
 const mapStateToProps = (state) => {
-    debugger
     return {
         currentUser: state.entities.users[state.session.id]
     }

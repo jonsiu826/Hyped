@@ -3,7 +3,6 @@ import EditReviewForm from "./edit_review_form_index_item"
 
 class ReviewIndexItem extends React.Component{
     constructor(props){
-        // debugger
         super(props)
     }
 
@@ -13,8 +12,6 @@ class ReviewIndexItem extends React.Component{
         let user;
         if (!this.props.review) return null;
         user = this.props.users[this.props.review.user_id]
-        // debugger
-
         let deleteButton;
         if (this.props.currentUser && this.props.currentUser.id === user.id) {
             deleteButton = <button className="review-button" onClick={() => this.props.deleteReview(this.props.review.id)}>Delete Review</button>
@@ -28,17 +25,6 @@ class ReviewIndexItem extends React.Component{
         } else {
             editButton = null
         }
-
-        // let editButton;
-        // if (this.props.currentUser && this.props.currentUser.id === user.id) {
-        //     editButton = <button onClick={() => this.props.updateReview(this.props.review.id)}>Edit Review</button>
-        // } else {
-        //     editButton = null
-        // }
-        // debugger
-        // if (!this.props.handleReviewEdit) return null;
-        // this.props.handleReviewEdit(this.props.review.id)
-        
     
         return(
             <div className="single-review-container">

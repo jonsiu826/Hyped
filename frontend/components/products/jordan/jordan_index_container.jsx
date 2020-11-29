@@ -3,7 +3,6 @@ import JordanIndex from './jordan_index';
 import { fetchProducts } from '../../../actions/product_actions';
 
 const mapStateToProps = (state) => {
-    // debugger
     return {
         products: Object.values(state.entities.products).slice(0,8)
     }
