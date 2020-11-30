@@ -36,16 +36,17 @@
 }
 
 .index-text{
-position: absolute;
-    bottom: -131px;
-    left: 16px;
-    font-size: 50px;
     color: floralwhite;
     padding-left: 5%;
     font-size: 64px;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 5px;
     -webkit-text-stroke: 2px black;
+    position: absolute;
+    left: 9px;
+    top: 760px;
+    padding-bottom: 1%;
+    padding-left: 4%;
 }
 
 .sneaker-container{
