@@ -29,6 +29,10 @@ class ReviewForm extends React.Component {
             <p className="signin-review">Please sign in to leave a review</p>
         )
 
+        // const existedreview = (
+        //     <p className="signin-review">It seems like you already placed a review on this product. If you'd like to create a new review, please delete you old review, else, you can edit your review by  </p>
+        // )
+
         let leavereview;
         if (this.props.currentUser) {
             leavereview = (

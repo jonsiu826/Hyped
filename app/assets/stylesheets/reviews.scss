@@ -86,6 +86,19 @@ textarea{
     font-size: 20px;
 }
 
+.existed-review{
+    display: flex;
+    border: 1px solid lightgray;
+    border-right: none;
+    padding-top: 108px;
+    padding-left: 121px;
+    padding-right: 100px;
+    height: 213px;
+    width: 330px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+
 .create-review-container{
        display: flex;
     flex-direction: column;
