@@ -1,0 +1,52 @@
+.styles-container{
+    padding-top: 100px
+}
+
+.styles-column-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 90px;
+  padding-left: 150px;
+}
+
+.styles-column {
+  display: flex;
+  min-width: 325px;
+  max-width: 325px;
+  height: 2800px;
+  flex-wrap: wrap;
+}
+
+.style-picture{
+    width: 85%;
+    height: auto;
+    padding-bottom: 100px;
+}
+
+.style-picture:hover{
+     transition: transform .3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.style-header-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    
+}
+
+.styles-title{
+    font-size: 35px;
+    margin-bottom: 17px;
+    line-height: 1.38;
+    letter-spacing: 0.3px;
+    
+}
+
+.styles-message{
+    color: gray;
+    line-height: 1.38;
+    letter-spacing: 0.1px;
+}

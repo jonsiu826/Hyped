@@ -20,8 +20,9 @@ import YeezyCollectionContainer from './collection/yeezy/yeezy_collection_contai
 import FogContainer from './collection/fear_of_god/fog_container';
 import LebronContainer from './collection/lebron/lebron_container'
 import Jordan4Container from './collection/jordan4/jordan4_container';
-import OffWhiteContainer from './collection/off-white/offwhite_container'
-import ConverseContainer from './collection/converse/converse_container'
+import OffWhiteContainer from './collection/off-white/offwhite_container';
+import ConverseContainer from './collection/converse/converse_container';
+import Styles from './styles/styles';
 
 import {
     Route,
@@ -40,9 +41,8 @@ const App = () => (
         <OrderModal />
         <header>
                 <HeaderContainer/> 
-            {/* <Link to="/" className="header-link"></Link> */}
         </header>
-                {/* <Route exact path="/" component={GreetingContainer} /> */}
+              
         <Switch>
             <Route exact path="/products/:productId" component={ProductShowContainer}/>
             <Route exact path="/collection/kobe" component={KobeContainer}/>
@@ -53,8 +53,9 @@ const App = () => (
             <Route exact path="/collection/fear-of-god" component={FogContainer}/>
             <Route exact path="/collection/converse" component={ConverseContainer}/>
             <Route exact path="/collection/off-white" component={OffWhiteContainer}/>
+            <Route exact path='/styles' component={Styles} />
             <Route exact path='/search' component={SearchContainer} />
-             <Route exact path='/sneakers' component={SneakersContainer} />
+            <Route exact path='/sneakers' component={SneakersContainer} />
             <AuthRoute exact path="/login" component={LoginFormContainer} />
             <AuthRoute exact path="/signup" component={SignupFormContainer} />
             <Route exact path="/" component={ProductIndexContainer}/>
