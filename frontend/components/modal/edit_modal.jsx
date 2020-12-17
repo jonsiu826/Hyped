@@ -2,10 +2,8 @@ import React from 'react';
 import { closeModal, openModal } from '../../actions/modal_actions';
 import { connect } from 'react-redux';
 import { Link } from "react-router-dom";
-import GreetingContainer from '../greeting/greeting_container';
 import EditReviewContainer from "../review/edit_review_container";
-import CollectionContainer from "../collection/collection_container";
-import OrderContainer from "../order/order_container"
+
 
 function EditModal({ modal, closeModal }) {
     if (!modal) {

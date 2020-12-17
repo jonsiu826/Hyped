@@ -24,6 +24,11 @@ class Greeting extends React.Component {
                             <i class="fas fa-angle-right"></i>
                         </div>
                     </div>
+                     <div>
+                        <Link to="/styles" className="modal-link" onClick={this.props.closeModal}>
+                            Styles
+                        </Link>
+                    </div> 
                    
                     <div>
                         <Link to="/sneakers" className="modal-link" onClick={this.props.closeModal}>
@@ -73,6 +78,11 @@ class Greeting extends React.Component {
                                 <i className="fas fa-angle-right"></i>
                             </div>
                         </div>
+                        <div>
+                            <Link to="/styles" className="modal-link" onClick={this.props.closeModal}>
+                                Styles
+                            </Link>
+                        </div> 
                         <div>
                             <Link to="/sneakers" className="modal-link" onClick={this.props.closeModal}>
                                 Shop All

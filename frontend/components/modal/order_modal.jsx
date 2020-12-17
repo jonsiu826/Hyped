@@ -13,15 +13,6 @@ function EditModal({ modal, closeModal }) {
     }
     let component;
     switch (modal) {
-        // case 'login_signup':
-        //     component = <GreetingContainer />;
-        //     break;
-        // case 'collection':
-        //     component = <CollectionContainer />;
-        //     break;
-        // case 'edit_review':
-        //     component = <EditReviewContainer />;
-        //     break;
         case 'order':
             component = <OrderContainer />;
             break;
@@ -39,7 +30,7 @@ function EditModal({ modal, closeModal }) {
         )
     
     }
-//  }
+
 
 const mapStateToProps = state => {
     return {
