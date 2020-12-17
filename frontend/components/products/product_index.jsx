@@ -66,20 +66,20 @@ class ProductIndex extends React.Component {
             {
                 name: "Yeezy 700 V3 'Wave Runner'",
                 url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/yeezy_waverunner.jpeg",
-                link: "/products/29"
+                link: "/products/61"
 
             },
             {
                 name: "Yeezy 350 V2 'Israfil'",
                 url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/yeezy_israfil.jpeg",
-                link: "/products/30"
+                link: "/products/62"
 
             },
           
             {
                 name: "Zoom Kobe 5 Protro 'DeMar DeRozan' PE",
                 url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe_demar_PE.jpeg",
-                link: "/products/9"
+                link: "/products/25"
             },
             {
                 name: "Air Jordan 1 Retro High OG 'Crimson Tint'",
@@ -94,13 +94,18 @@ class ProductIndex extends React.Component {
             {
                 name: "Zoom Kobe 5 Protro 'P.J. Tucker' PE",
                 url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe_tucker_PE.jpeg",
-                link: "/products/13"
+                link: "/products/29"
             },
              {
                 name: "Zoom Kobe 5 Protro '5 Rings'",
                 url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/Kobe_5rings.jpeg",
-                link: "/products/10"
+                link: "/products/26"
             },
+             {
+                name: "Off-White x Chuck 70 'The Ten'",
+                url: "https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/chuck_ten.jpeg",
+                link: "/products/75"
+            }
          
         ]
 
