@@ -15,50 +15,64 @@ class Styles extends React.Component{
                 <p className="styles-message">Scroll to discover and shop trending styles.</p>
               </div>
             <div className="styles-column-container">
-                <div>
-                    <div>
+                <div >
+                    <Link to="/products/6" >
                         <img className="style-picture" src="https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/aj1_pink.jpeg" alt=""/>
-                    </div>
-                    <div>
+                    </Link>
+                    <Link to="/products/5" >
                         <img className="style-picture" src="https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/aj1_travis.jpeg" alt=""/>
-                    </div>
-                    <div>
+                    </Link>
+                    <Link to="/products/61" >
                         <img className="style-picture" src="https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/yeezy_waverunnerstyles.jpeg" alt=""/>
-                    </div>
-                    <div>
+                    </Link>
+                    <Link to="/products/18" >
                         <img className="style-picture" src="https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/aj4_bred.jpeg" alt=""/>
-                    </div>
+                    </Link>
+                    
+                      <Link to="/products/68" >
+                        <img className="style-picture" src="https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/yeezy_glow_styles.jpeg" alt=""/>
+                    </Link>
                 </div>
                 <div className="style-column">
-                    <div>
+                    <Link to="/products/80" >
                         <img className="style-picture" src="https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/converse_white.jpeg" alt=""/>
-                    </div>
-                    <div>
+                    </Link>
+                   <Link to="/products/31" >
                         <img className="style-picture" src="https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/kobe_grinch.jpeg" alt=""/>
-                    </div>
-                    <div>
-                        <img className="style-picture" src="https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/aj4_blackcats.jpeg" alt=""/>
-                    </div>
-                    <div>
-                        <img className="style-picture" src="https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/offwhite-af1.jpeg" alt=""/>
-                    </div>
+                   </Link>
+       
+                    <Link to="/products/75" >
+                        <img className="style-picture" src="https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/offwhite-chuck.jpeg" alt=""/>
+                    </Link>
+                     <Link to="/products/67" >
+                        <img className="style-picture" src="https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/yeezy_slides.jpeg" alt=""/>
+                    </Link>
+                    <Link to="/products/1" >
+                        <img className="style-picture" src="https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/aj1_chicao_styles.jpeg" alt=""/>
+                    </Link>
+                   
                 </div>
                      <div className="style-column">
-                    <div>
+                     <Link to="/products/51" >
                         <img className="style-picture" src="https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/fog-oatmeal.jpeg" alt=""/>
-                    </div>
-                    <div>
+                    </Link>
+                     <Link to="/products/82" >
                         <img className="style-picture" src="https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/offwhite-air-vap.jpeg" alt=""/>
-                    </div>
-                    <div>
-                        <img className="style-picture" src="https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/offwhite-chuck.jpeg" alt=""/>
-                    </div>
-                    <div>
-                        <img className="style-picture" src="https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/yeezy_slides.jpeg" alt=""/>
-                    </div>
-                    <div>
+                    </Link>
+                    <Link to="/products/19" >
+                        <img className="style-picture" src="https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/aj4_blackcats.jpeg" alt=""/>
+                    </Link>
+                     
+                     <Link to="/products/85" >
+                        <img className="style-picture" src="https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/offwhite-af1.jpeg" alt=""/>
+                    </Link>
+                    
+                     <Link to="/products/20" >
                         <img className="style-picture" src="https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/aj4-union.jpg" alt=""/>
-                    </div>
+                    </Link>
+                    <Link to="/products/11" >
+                        <img className="style-picture" src="https://hyped-shoes-seed.s3-us-west-1.amazonaws.com/offwhite_aj1_unc.jpeg" alt=""/>
+                    </Link>
                 </div>
             </div>
             
